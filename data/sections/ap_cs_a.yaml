@@ -1,0 +1,62 @@
+# Section: AP Computer Science A
+# Layer 2: Section-level metadata. Updated at enrollment changes.
+
+section:
+  id: AP-CSA
+  course: AP Computer Science A
+  course_code: CS-APCSA
+  period: 8
+  room: TBD  # likely a computer lab; confirm with administration
+  grade_levels: [10, 11, 12]
+  standards_framework: College Board AP Computer Science A Course and Exam Description (CED)
+  ap_course: true
+  semester_structure: full_year
+
+enrollment:
+  target_size: 22
+  actual_size: null
+  note: AP enrollment is self-selected. Lab capacity may constrain enrollment ceiling.
+
+staffing:
+  teacher: Eric
+  co_teacher: null
+  ict_model: false
+  paraprofessional: null
+
+special_education:
+  estimated_iep_count: null
+  estimated_504_count: null
+  estimated_percent_with_plan: null
+  common_accommodation_codes: []
+  differentiation_note: >
+    AP course. All accommodation obligations apply. Note that some standard
+    accommodations (e.g., extended time) interact with programming-based
+    assessments differently than with paper tests — consider how time limits
+    apply to lab/coding tasks specifically. Document decisions with case managers.
+  ict_model: false
+  co_teacher_coverage: none
+
+ap_exam:
+  administering_body: College Board
+  exam_month: May
+  language: Java
+  ssd_deadline_note: >
+    Same College Board SSD process as AP Statistics. Request accommodations in
+    fall semester. Note that AP CSA includes a free-response section requiring
+    code writing — clarify scribe and read-aloud accommodation application with
+    College Board SSD for programming content specifically.
+  calculator_policy: >
+    No calculator permitted on AP CSA exam. Students write Java code by hand
+    on the free-response section.
+
+pacing:
+  curriculum_reference: null
+  pacing_guide: null
+  note: >
+    Pacing must account for lab time for coding practice. Backward-map from May exam.
+    Java is the required language for the AP exam.
+
+notes: >
+  Cross-disciplinary course for Eric — math background + CS content. Note any
+  content areas requiring additional preparation time in the five-month runway.
+  Room assignment should be confirmed early; lab availability affects lesson design.

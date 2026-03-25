@@ -1,0 +1,45 @@
+# Section: Algebra — Period 4
+# Layer 2: Section-level metadata. Updated at enrollment changes.
+
+section:
+  id: ALG-03
+  course: Algebra I
+  course_code: MTH-ALG1
+  period: 4
+  room: TBD
+  grade_levels: [9]
+  standards_framework: Common Core State Standards — Mathematics (CCSS-M)
+  ap_course: false
+  semester_structure: full_year
+
+enrollment:
+  target_size: 28
+  actual_size: null
+  note: Target sizes are estimates; actual enrollment TBD.
+
+staffing:
+  teacher: Eric
+  co_teacher: null
+  ict_model: false
+  paraprofessional: null
+
+special_education:
+  estimated_iep_count: null
+  estimated_504_count: null
+  estimated_percent_with_plan: null
+  common_accommodation_codes: []
+  differentiation_note: >
+    No co-teacher. Full differentiation and accommodation load on teacher.
+    Monitor IEP count at roster receipt — if high, flag for co-teacher
+    request through administration.
+  ict_model: false
+  co_teacher_coverage: none
+
+pacing:
+  curriculum_reference: null
+  pacing_guide: null
+
+notes: >
+  Third Algebra section. Same course as ALG-01 and ALG-02 but a distinct
+  instructional group. Do not assume pacing is synchronized across Algebra
+  sections without explicit coordination.
