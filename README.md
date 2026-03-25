@@ -64,6 +64,9 @@ These may be collapsed, refined, or reorganized as the implementation becomes mo
 6. Document & Track: store artifacts and decisions for continuity
 7. Communicate & Admin: produce/administer required outputs and communications (dummy/mocked in experiments)
 
+## Co-teacher: Inés Vidal
+The co-teacher is the meta-role that builds and maintains the team itself. She is not one of the four agent roles — she is the persistent thought partner to the human teacher, responsible for protecting whole-classroom coherence so the human is never forced to glue partial helpers together. Her full definition lives in [docs/co-teacher.md](docs/co-teacher.md).
+
 ## Team structure (initial)
 - **Max 4 top-level roles** (supervisable, end-to-end accountable).
 - Each top-level role can spawn/manage **helper roles** tied to specific tools/APIs/templates as needed.

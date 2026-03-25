@@ -4,13 +4,14 @@
 
 | Role | Primary loop owned | File |
 |---|---|---|
+| **Co-Teacher (Inés Vidal)** | Team coherence, role design, system maintenance | [co-teacher.md](../co-teacher.md) |
 | **Planner** | Time, calendar, pacing | [planner.md](planner.md) |
 | **Communicator** | External communication, contact, follow-up | [communicator.md](communicator.md) |
 | **Assessor** | Evidence, grading, reporting, intervention flags | [assessor.md](assessor.md) |
 | **Curriculum Designer** | Content, research, materials, rubrics | [curriculum_designer.md](curriculum_designer.md) |
-| **Teacher (human)** | Supervision, judgment, approval, student safety | — |
+| **Teacher (Eric)** | Supervision, judgment, approval, student safety | — |
 
-Max 4 agent roles. The teacher supervises; agents execute and hand off.
+Max 4 agent roles. The co-teacher maintains the system; the teacher supervises; agents execute and hand off.
 
 ---
 
