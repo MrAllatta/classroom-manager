@@ -1,0 +1,264 @@
+# Student Profile Schema
+# Canonical field definitions for a student record in this system.
+# This file defines the SHAPE of a student record, not any student data.
+#
+# Privacy: Fields marked _sensitive are FERPA-protected.
+#          In production, these fields must never pass through an LLM context window.
+#          Tools must query and compute locally; only results (not raw records) are surfaced.
+#          In the current experimental phase, all student data is synthetic/dummy only.
+#
+# SESIS integration: Fields marked sesis_source indicate they will eventually be
+#          populated from SESIS exports rather than manual entry.
+
+# ── IDENTITY ────────────────────────────────────────────────────────────────────
+student_id:
+  type: string
+  required: true
+  description: Unique student identifier. In NYC DOE, this is the OSIS number.
+  sesis_source: true
+  sensitive: false  # ID alone is not sensitive; combined with other fields, handle with care
+  example: "1234567"
+
+last_name:
+  type: string
+  required: true
+  sensitive: true
+  sesis_source: true
+
+first_name:
+  type: string
+  required: true
+  sensitive: true
+  sesis_source: true
+
+preferred_name:
+  type: string
+  required: false
+  sensitive: true
+  description: Name the student uses if different from legal first name.
+
+grade:
+  type: integer
+  required: true
+  sensitive: false
+
+date_of_birth:
+  type: date  # YYYY-MM-DD
+  required: false
+  sensitive: true
+  sesis_source: true
+
+gender_marker:
+  type: string
+  required: false
+  sensitive: true
+  description: As recorded on official records. Does not imply preferred pronouns.
+
+pronouns:
+  type: string
+  required: false
+  sensitive: false
+  description: Student's preferred pronouns. Collected directly, not from SESIS.
+  example: "she/her"
+
+# ── ENROLLMENT ──────────────────────────────────────────────────────────────────
+sections:
+  type: list[string]
+  required: true
+  sensitive: false
+  description: List of section IDs (e.g., ALG-01, AP-STAT) in which the student is enrolled.
+  note: A student may appear in multiple sections (e.g., enrolled in two courses).
+
+homeroom:
+  type: string
+  required: false
+  sensitive: false
+
+# ── SUPPORT PLAN ────────────────────────────────────────────────────────────────
+plan_type:
+  type: enum
+  values: [IEP, 504, none]
+  required: true
+  sensitive: true
+  sesis_source: true
+  description: >
+    Formal support plan type. Do not infer from enrollment pathway.
+    Every student gets this field; 'none' is an explicit value, not an absence.
+
+disability_category:
+  type: string
+  required: false
+  sensitive: true
+  sesis_source: true
+  description: >
+    NYS disability classification as listed on IEP. Not stored for 504-only students.
+    Used for compliance reporting, not for instructional decisions.
+  example: "Learning Disability"
+
+case_manager:
+  type: string
+  required: false
+  sensitive: false
+  description: Name of the student's special education case manager (IEP students only).
+  sesis_source: true
+
+# ── ACCOMMODATIONS ──────────────────────────────────────────────────────────────
+accommodations:
+  type: list[accommodation_entry]
+  required: false
+  sensitive: true
+  description: >
+    List of active accommodation entries for this student.
+    Each entry references a code from data/schema/accommodation_types.yaml.
+
+accommodation_entry:
+  fields:
+    code:
+      type: string
+      required: true
+      description: Accommodation code. Must match a code in accommodation_types.yaml.
+      example: TIME_EXTENDED_15
+    applies_to:
+      type: enum
+      values: [testing, instruction, both]
+      required: true
+    context_note:
+      type: string
+      required: false
+      description: >
+        Student-specific implementation note (e.g., "read aloud problem stems only,
+        not answer choices"). Overrides or refines the general accommodation description.
+    verified_date:
+      type: date
+      required: false
+      description: Date this accommodation was confirmed on current IEP/504.
+
+# ── COMPLIANCE DATES (PLACEHOLDER) ──────────────────────────────────────────────
+compliance:
+  type: object
+  required: false
+  sensitive: true
+  sesis_source: true
+  description: >
+    Compliance tracking for IEP students. Implementation pending.
+    Fields defined here to reserve structure; populate when compliance
+    tracking workflow is built.
+  fields:
+    annual_review_due:
+      type: date
+      description: Date by which the annual IEP review meeting must be held.
+    triennial_evaluation_due:
+      type: date
+      description: Date by which the triennial re-evaluation must be completed.
+    last_annual_review:
+      type: date
+    last_triennial:
+      type: date
+    next_iep_meeting_scheduled:
+      type: date
+    meeting_participants_required:
+      type: list[string]
+      description: Roles required at the meeting (e.g., parent, general ed teacher, sped teacher, psychologist).
+
+# ── CONTACT ─────────────────────────────────────────────────────────────────────
+contacts:
+  type: list[contact_entry]
+  required: false
+  sensitive: true
+  description: Parent/guardian contact records for this student.
+
+contact_entry:
+  fields:
+    relationship:
+      type: string
+      example: "parent/guardian"
+    name:
+      type: string
+      sensitive: true
+    phone:
+      type: string
+      sensitive: true
+    email:
+      type: string
+      sensitive: true
+    preferred_language:
+      type: string
+      description: Language preference for communication.
+      example: "Spanish"
+    preferred_contact_method:
+      type: enum
+      values: [phone, email, text, written]
+    note:
+      type: string
+      description: Free-text note about this contact (e.g., best time to reach, interpreter needed).
+
+# ── PERFORMANCE / INSTRUCTIONAL ──────────────────────────────────────────────────
+performance_tier:
+  type: enum
+  values: [emerging, developing, proficient, advanced]
+  required: false
+  sensitive: false
+  description: >
+    Current instructional performance tier, teacher-assigned based on assessment data.
+    Not equivalent to a grade. Updated by the Assessor role after each assessment cycle.
+    Intentionally coarse — do not use for reporting.
+
+mastery_by_standard:
+  type: object
+  required: false
+  sensitive: false
+  description: >
+    Key-value map of standard code → mastery level. Populated and maintained
+    by the Assessor role. See assessor.md for mastery level definitions.
+  example:
+    CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+    CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+
+intervention_flags:
+  type: list[string]
+  required: false
+  sensitive: false
+  description: >
+    Active intervention flags raised by the Assessor. Consumed by the Communicator
+    for outreach and by the Planner for differentiation.
+  example: ["at_risk_failing", "missing_three_or_more_assignments"]
+
+# ── COMMUNICATION LOG ────────────────────────────────────────────────────────────
+communication_log:
+  type: list[log_entry]
+  required: false
+  sensitive: true
+  description: >
+    Log of teacher-initiated contacts regarding this student.
+    Written by the Communicator role. Read by the Assessor and Teacher.
+
+log_entry:
+  fields:
+    date:
+      type: date
+    method:
+      type: enum
+      values: [phone, email, text, in_person, written_note]
+    contact_name:
+      type: string
+    summary:
+      type: string
+      description: Brief summary of the communication. Not a verbatim transcript.
+    outcome:
+      type: string
+      description: What was resolved or what the next step is.
+    follow_up_required:
+      type: boolean
+    follow_up_date:
+      type: date
+
+# ── METADATA ─────────────────────────────────────────────────────────────────────
+meta:
+  schema_version: "0.1.0"
+  last_updated: "2026-03-25"
+  maintained_by: Inés Vidal
+  note: >
+    This schema defines field names and types only. Actual student records live
+    in data/students/ and are subject to FERPA. In experimental phase, only
+    synthetic records exist. Do not add real student data until production
+    privacy gates are verified (see data/school/context.yaml: production_gate).
