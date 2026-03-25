@@ -61,10 +61,23 @@ Communicator
 
 ## Classroom context
 
-- Setting: NYC high school mathematics
-- Students: 133
-- Deployment target: 2026–27 school year
-- Current phase: experimental — dummy data, mocked actions, end-to-end workflow validation
+- **School:** Columbia Secondary School, Manhattan, NYC DOE
+- **Population:** Bimodal — gen ed is screened, special ed is unscreened. All sections include students with varied support needs.
+- **Teacher:** Eric (5 months to start of year; 5 years since last classroom)
+- **Sections (5 total, ~133 students):**
+
+| Section ID | Course | Period | ICT | Notes |
+|---|---|---|---|---|
+| ALG-01 | Algebra I | 1 | No | No co-teacher |
+| ALG-02 | Algebra I | 2 | Yes | Co-teacher TBD |
+| ALG-03 | Algebra I | 4 | No | No co-teacher |
+| AP-STAT | AP Statistics | 6 | No | College Board SSD process applies |
+| AP-CSA | AP Computer Science A | 8 | No | Java; lab room TBD |
+
+- **Standards frameworks:** CCSS-M (Algebra), College Board CED (AP Statistics, AP CS A)
+- **Deployment target:** 2026–27 school year
+- **Current phase:** Experimental — dummy/synthetic data, mocked actions, end-to-end workflow validation
+- **Data layer:** `data/` directory — see `data/README.md` for structure, access rules, and privacy policy
 
 ---
 
