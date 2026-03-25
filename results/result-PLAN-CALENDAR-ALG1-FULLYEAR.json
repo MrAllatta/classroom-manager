@@ -1,0 +1,12 @@
+{
+  "task_id": "PLAN-CALENDAR-ALG1-FULLYEAR",
+  "status": "done",
+  "summary": "Full-year pacing calendar generated for Algebra I (ALG-01, ALG-02, ALG-03), 2026-27. 10 units mapped across 170 instructional days, September 9, 2026 through June 30, 2027. 10 buffer days placed at post-break transitions and flex/review points. All 10 assessment dates avoid Mondays. Calendar note: Units 9 and 10 overlap with the Regents prep window due to calendar math (179 available weekdays - 10 buffers = 169 net slots; 170th day is June 30). Late-June delivery should be framed as integrated Regents review. NY Next Gen standards alignment deferred pending teacher spec.",
+  "deliverables": {
+    "calendar_ALG1_fullyear.md": "deliverables/calendar_ALG1_fullyear.md",
+    "calendar_ALG1_fullyear.json": "deliverables/calendar_ALG1_fullyear.json"
+  },
+  "upstream_tasks": ["CURRDES-SCOPE-ALG1-FULLYEAR"],
+  "completed_at": "2026-03-25T22:52:00Z",
+  "version": 1
+}

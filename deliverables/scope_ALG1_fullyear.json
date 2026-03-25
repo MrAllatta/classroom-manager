@@ -1,0 +1,133 @@
+{
+  "course": "Algebra I",
+  "sections": ["ALG-01", "ALG-02", "ALG-03"],
+  "school_year": "2026-27",
+  "standards_framework": "CCSS-M",
+  "ny_next_gen_revision": "deferred",
+  "total_instructional_days": 170,
+  "summative_model": "end_of_unit_test",
+  "generated_by": "CURRDES-SCOPE-ALG1-FULLYEAR",
+  "generated_at": "2026-03-25T22:41:00Z",
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Foundations: Numbers, Expressions, and the Language of Algebra",
+      "instructional_days": 15,
+      "summative_assessment": "end_of_unit_test",
+      "ccss_standards": ["N-RN.1", "N-RN.2", "N-RN.3", "A-SSE.1a", "A-SSE.1b"],
+      "essential_questions": [
+        "What makes an expression meaningful in a mathematical context?",
+        "How does the number system extend beyond integers, and why does it matter?",
+        "How do we communicate mathematical relationships using symbolic language?"
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Equations and Inequalities in One Variable",
+      "instructional_days": 18,
+      "summative_assessment": "end_of_unit_test",
+      "ccss_standards": ["A-CED.1", "A-CED.4", "A-REI.1", "A-REI.3"],
+      "essential_questions": [
+        "What does it mean to 'solve' an equation, and what justifies each step?",
+        "How are equations and inequalities different, and how are their solution sets different?",
+        "How do we model real-world constraints using equations and inequalities?"
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Linear Functions and Their Graphs",
+      "instructional_days": 22,
+      "summative_assessment": "end_of_unit_test",
+      "ccss_standards": ["F-IF.1", "F-IF.2", "F-IF.4", "F-IF.5", "F-IF.7a", "A-CED.2"],
+      "essential_questions": [
+        "What is a function, and how is it different from a general relation?",
+        "What does the graph of a linear function tell us about the relationship it models?",
+        "How do rate of change and initial value appear in equations, tables, and graphs?"
+      ]
+    },
+    {
+      "unit_number": 4,
+      "title": "Writing and Interpreting Linear Equations",
+      "instructional_days": 16,
+      "summative_assessment": "end_of_unit_test",
+      "ccss_standards": ["A-CED.2", "F-IF.6", "F-BF.1a", "F-LE.1a", "F-LE.1b", "F-LE.5"],
+      "essential_questions": [
+        "Why are there multiple forms of a linear equation, and when is each form most useful?",
+        "How do we build a linear model from data or a verbal description?",
+        "What do slope and y-intercept mean in a real-world context?"
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "Systems of Equations and Inequalities",
+      "instructional_days": 18,
+      "summative_assessment": "end_of_unit_test",
+      "ccss_standards": ["A-CED.3", "A-REI.5", "A-REI.6", "A-REI.10", "A-REI.12"],
+      "essential_questions": [
+        "When two linear relationships interact, what does the solution to a system tell us?",
+        "How do different solution methods compare in efficiency and clarity?",
+        "How do we represent and interpret constraints using systems of inequalities?"
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Exponents and Exponential Functions",
+      "instructional_days": 16,
+      "summative_assessment": "end_of_unit_test",
+      "ccss_standards": ["N-RN.1", "N-RN.2", "F-LE.1c", "F-LE.2", "F-LE.3", "F-LE.5", "F-BF.1a"],
+      "essential_questions": [
+        "What distinguishes exponential growth from linear growth?",
+        "How do properties of exponents connect to the behavior of exponential functions?",
+        "Where do exponential models appear in the real world, and what are their limits?"
+      ]
+    },
+    {
+      "unit_number": 7,
+      "title": "Polynomial Expressions and Operations",
+      "instructional_days": 14,
+      "summative_assessment": "end_of_unit_test",
+      "ccss_standards": ["A-SSE.2", "A-APR.1", "A-APR.3"],
+      "essential_questions": [
+        "How are polynomials similar to and different from integers as mathematical objects?",
+        "What does the structure of a polynomial expression reveal about its behavior?",
+        "How do operations on polynomials prepare us for solving quadratic equations?"
+      ]
+    },
+    {
+      "unit_number": 8,
+      "title": "Factoring and Solving Quadratic Equations",
+      "instructional_days": 20,
+      "summative_assessment": "end_of_unit_test",
+      "ccss_standards": ["A-SSE.3a", "A-SSE.3b", "A-REI.4a", "A-REI.4b", "A-APR.3"],
+      "essential_questions": [
+        "Why do quadratic equations sometimes have two solutions, one solution, or no real solutions?",
+        "How do different solution methods (factoring, completing the square, quadratic formula) relate to each other?",
+        "What does it mean to 'factor' an expression, and what do the factors reveal?"
+      ]
+    },
+    {
+      "unit_number": 9,
+      "title": "Quadratic Functions and Their Graphs",
+      "instructional_days": 18,
+      "summative_assessment": "end_of_unit_test",
+      "ccss_standards": ["F-IF.4", "F-IF.5", "F-IF.7a", "F-IF.8a", "F-BF.3", "A-CED.1"],
+      "essential_questions": [
+        "How does the vertex form of a quadratic reveal information that standard form does not?",
+        "What do transformations of a quadratic function look like graphically and algebraically?",
+        "How do we choose the right form of a quadratic equation for a given purpose?"
+      ]
+    },
+    {
+      "unit_number": 10,
+      "title": "Statistics: Describing and Interpreting Data",
+      "instructional_days": 13,
+      "summative_assessment": "end_of_unit_test",
+      "ccss_standards": ["S-ID.1", "S-ID.2", "S-ID.3", "S-ID.5", "S-ID.6a", "S-ID.6c", "S-ID.7", "S-ID.8", "S-ID.9"],
+      "essential_questions": [
+        "How do we choose the right summary statistics and displays to describe a data set?",
+        "What does a linear model tell us, and how do we evaluate how well it fits?",
+        "Why is the distinction between correlation and causation important in real-world reasoning?"
+      ]
+    }
+  ]
+}

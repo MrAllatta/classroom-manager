@@ -1,0 +1,123 @@
+{
+  "course": "Algebra I",
+  "sections": ["ALG-01", "ALG-02", "ALG-03"],
+  "school_year": "2026-27",
+  "generated_by": "PLAN-CALENDAR-ALG1-FULLYEAR",
+  "generated_at": "2026-03-25T22:47:24Z",
+  "total_instructional_days": 170,
+  "buffer_days": 10,
+  "buffer_dates": [
+    {"date": "2027-01-04", "label": "Post–Winter Recess buffer day 1"},
+    {"date": "2027-01-05", "label": "Post–Winter Recess buffer day 2"},
+    {"date": "2027-02-04", "label": "Unit 5 flex/review (organic buffer)"},
+    {"date": "2027-02-22", "label": "Post–Mid-Winter Recess buffer day 1"},
+    {"date": "2027-02-23", "label": "Post–Mid-Winter Recess buffer day 2"},
+    {"date": "2027-04-14", "label": "Post–Spring Recess buffer day 1"},
+    {"date": "2027-04-15", "label": "Post–Spring Recess buffer day 2"},
+    {"date": "2027-05-12", "label": "Unit 8 flex/review (organic buffer)"},
+    {"date": "2027-06-03", "label": "Pre–Regents prep buffer day 1"},
+    {"date": "2027-06-04", "label": "Pre–Regents prep buffer day 2"}
+  ],
+  "regents_prep_start": "2027-06-05",
+  "regents_exam_approx": "2027-06-17",
+  "calendar_notes": [
+    "The 2026-27 NYC DOE school calendar yields 179 non-blackout weekdays between 2026-09-09 and 2027-06-30.",
+    "With 10 buffer days reserved, 169 net instructional slots exist before June 30; the 170th day falls on 2027-06-30.",
+    "The two pre-Regents buffer days (2027-06-03 and 2027-06-04) fall within the Unit 9 and Unit 10 instruction window due to this 1-day shortfall in the calendar parameters.",
+    "Units 9 and 10 run past the Regents prep start date of 2027-06-05; teachers should treat those sessions as concurrent light-review delivery while Regents prep is underway.",
+    "All end-of-unit assessments avoid Mondays per the stated assessment-day rule.",
+    "NY Next Gen standards alignment is deferred pending teacher specification."
+  ],
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Foundations: Numbers, Expressions, and the Language of Algebra",
+      "start_date": "2026-09-09",
+      "end_date": "2026-10-01",
+      "assessment_date": "2026-10-01",
+      "instructional_days": 15,
+      "calendar_weeks": 3
+    },
+    {
+      "unit_number": 2,
+      "title": "Equations and Inequalities in One Variable",
+      "start_date": "2026-10-02",
+      "end_date": "2026-10-28",
+      "assessment_date": "2026-10-28",
+      "instructional_days": 18,
+      "calendar_weeks": 4
+    },
+    {
+      "unit_number": 3,
+      "title": "Linear Functions and Their Graphs",
+      "start_date": "2026-10-29",
+      "end_date": "2026-12-03",
+      "assessment_date": "2026-12-03",
+      "instructional_days": 22,
+      "calendar_weeks": 5
+    },
+    {
+      "unit_number": 4,
+      "title": "Writing and Interpreting Linear Equations",
+      "start_date": "2026-12-04",
+      "end_date": "2027-01-07",
+      "assessment_date": "2027-01-07",
+      "instructional_days": 16,
+      "calendar_weeks": 4
+    },
+    {
+      "unit_number": 5,
+      "title": "Systems of Equations and Inequalities",
+      "start_date": "2027-01-08",
+      "end_date": "2027-02-03",
+      "assessment_date": "2027-02-03",
+      "instructional_days": 18,
+      "calendar_weeks": 4
+    },
+    {
+      "unit_number": 6,
+      "title": "Exponents and Exponential Functions",
+      "start_date": "2027-02-05",
+      "end_date": "2027-03-09",
+      "assessment_date": "2027-03-09",
+      "instructional_days": 16,
+      "calendar_weeks": 4
+    },
+    {
+      "unit_number": 7,
+      "title": "Polynomial Expressions and Operations",
+      "start_date": "2027-03-10",
+      "end_date": "2027-03-30",
+      "assessment_date": "2027-03-30",
+      "instructional_days": 14,
+      "calendar_weeks": 3
+    },
+    {
+      "unit_number": 8,
+      "title": "Factoring and Solving Quadratic Equations",
+      "start_date": "2027-03-31",
+      "end_date": "2027-05-11",
+      "assessment_date": "2027-05-11",
+      "instructional_days": 20,
+      "calendar_weeks": 4
+    },
+    {
+      "unit_number": 9,
+      "title": "Quadratic Functions and Their Graphs",
+      "start_date": "2027-05-13",
+      "end_date": "2027-06-10",
+      "assessment_date": "2027-06-10",
+      "instructional_days": 18,
+      "calendar_weeks": 4
+    },
+    {
+      "unit_number": 10,
+      "title": "Statistics: Describing and Interpreting Data",
+      "start_date": "2027-06-11",
+      "end_date": "2027-06-30",
+      "assessment_date": "2027-06-30",
+      "instructional_days": 13,
+      "calendar_weeks": 3
+    }
+  ]
+}

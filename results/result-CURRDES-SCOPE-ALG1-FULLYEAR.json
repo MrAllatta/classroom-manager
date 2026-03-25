@@ -1,0 +1,14 @@
+{
+  "task_id": "CURRDES-SCOPE-ALG1-FULLYEAR",
+  "status": "done",
+  "summary": "Full-year Algebra I scope and sequence produced. 10 units, 170 instructional days, CCSS-M aligned. One end-of-unit test per unit. NY Next Gen revision deferred pending spec.",
+  "completed_at": "2026-03-25T22:41:00Z",
+  "version": 1,
+  "deliverables": {
+    "scope_ALG1_fullyear.md": "deliverables/scope_ALG1_fullyear.md",
+    "scope_ALG1_fullyear.json": "deliverables/scope_ALG1_fullyear.json"
+  },
+  "unit_count": 10,
+  "total_instructional_days": 170,
+  "downstream_ready_for": ["PLANNER-PACING-ALG1"]
+}
