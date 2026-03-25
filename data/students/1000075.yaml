@@ -1,0 +1,35 @@
+# Student: Sam Khan
+# OSIS: 1000075
+# Sections: ALG-03
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000075
+first_name: Sam
+last_name: Khan
+grade: 9
+date_of_birth: 2007-07-18
+sections:
+  - ALG-03
+plan_type: IEP
+pronouns: he/him
+disability_category: Autism Spectrum Disorder
+accommodations:
+  -
+    code: TIME_UNLIMITED
+    applies_to: instruction
+    verified_date: 2026-02-07
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: parent/guardian
+    name: Taylor Nguyen
+    phone: 212-174-1742
+    email: pa_452@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

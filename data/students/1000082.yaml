@@ -1,0 +1,32 @@
+# Student: Riley Nguyen
+# OSIS: 1000082
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000082
+first_name: Riley
+last_name: Nguyen
+grade: 9
+date_of_birth: 2011-09-25
+sections:
+  - ALG-03
+plan_type: none
+pronouns: he/him
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+intervention_flags:
+  - attendance_concern
+contacts:
+  -
+    relationship: parent/guardian
+    name: Taylor Lee
+    phone: 212-988-8790
+    email: pa_147@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: Please call before 8am
+communication_log: []

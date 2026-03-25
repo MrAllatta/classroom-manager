@@ -1,0 +1,39 @@
+# Student: Dakota Kowalski
+# OSIS: 1000071
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000071
+first_name: Dakota
+last_name: Kowalski
+grade: 9
+date_of_birth: 2011-10-03
+sections:
+  - ALG-03
+plan_type: none
+pronouns: she/her
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+intervention_flags:
+  - at_risk_failing
+contacts:
+  -
+    relationship: guardian
+    name: Taylor Murphy
+    phone: 212-215-6417
+    email: ma_848@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+  -
+    relationship: parent/guardian
+    name: Alex Khan
+    phone: 212-445-5833
+    email: ca_790@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: Please call before 8am
+communication_log: []

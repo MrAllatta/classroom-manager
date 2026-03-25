@@ -1,0 +1,37 @@
+# Student: Dakota Shah
+# OSIS: 1000030
+# Sections: ALG-02
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000030
+first_name: Dakota
+last_name: Shah
+grade: 9
+date_of_birth: 2007-05-05
+sections:
+  - ALG-02
+plan_type: none
+pronouns: he/him
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: parent/guardian
+    name: Dakota Garcia
+    phone: 212-422-5135
+    email: pa_218@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+    note: "Best time: after 5pm"
+  -
+    relationship: emergency contact
+    name: Morgan Johnson
+    phone: 212-292-9494
+    email: pa_737@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+communication_log: []

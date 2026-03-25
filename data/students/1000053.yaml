@@ -1,0 +1,30 @@
+# Student: Maria Brown
+# OSIS: 1000053
+# Sections: ALG-02
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000053
+first_name: Maria
+last_name: Brown
+grade: 9
+date_of_birth: 2007-12-29
+sections:
+  - ALG-02
+plan_type: none
+gender_marker: F
+pronouns: he/him
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: parent/guardian
+    name: "Amanda O'Brien"
+    phone: 212-695-6447
+    email: ma_145@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+communication_log: []

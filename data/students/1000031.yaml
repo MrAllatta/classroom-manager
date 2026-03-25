@@ -1,0 +1,46 @@
+# Student: Mohammad Ali
+# OSIS: 1000031
+# Sections: ALG-02
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000031
+first_name: Mohammad
+last_name: Ali
+grade: 9
+date_of_birth: 2007-10-02
+sections:
+  - ALG-02
+plan_type: IEP
+gender_marker: M
+pronouns: they/them
+disability_category: Emotional Disability
+case_manager: Ms. Shah
+accommodations:
+  -
+    code: SCHED_MULTIPLE_SESSIONS
+    applies_to: instruction
+    verified_date: 2025-06-21
+    context_note: Include visual supports
+  -
+    code: INST_COPY_OF_NOTES
+    applies_to: instruction
+    verified_date: 2025-05-17
+  -
+    code: PRES_LARGE_PRINT
+    applies_to: testing
+    verified_date: 2025-04-23
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: emergency contact
+    name: James Kim
+    phone: 212-961-2858
+    email: pa_220@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

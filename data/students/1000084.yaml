@@ -1,0 +1,52 @@
+# Student: Michelle Martinez
+# OSIS: 1000084
+# Sections: AP-STAT
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000084
+first_name: Michelle
+last_name: Martinez
+grade: 10
+date_of_birth: 2012-03-09
+sections:
+  - AP-STAT
+plan_type: IEP
+gender_marker: F
+disability_category: Emotional Disability
+case_manager: Ms. Garcia
+accommodations:
+  -
+    code: SETTING_SEPARATE
+    applies_to: both
+    verified_date: 2026-01-07
+  -
+    code: TIME_EXTENDED_15
+    applies_to: instruction
+    verified_date: 2025-08-10
+  -
+    code: TIME_UNLIMITED
+    applies_to: instruction
+    verified_date: 2025-08-09
+    context_note: Check before exam season
+  -
+    code: RESP_SCRIBE
+    applies_to: both
+    verified_date: 2025-10-22
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+intervention_flags:
+  - missing_three_or_more_assignments
+  - attendance_concern
+contacts:
+  -
+    relationship: emergency contact
+    name: "Michelle O'Brien"
+    phone: 212-376-2674
+    email: ma_189@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

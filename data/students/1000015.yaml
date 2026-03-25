@@ -1,0 +1,30 @@
+# Student: Rachel Hassan
+# OSIS: 1000015
+# Sections: ALG-01
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000015
+first_name: Rachel
+last_name: Hassan
+grade: 9
+date_of_birth: 2009-01-04
+sections:
+  - ALG-01
+plan_type: none
+gender_marker: F
+pronouns: he/him
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: parent/guardian
+    name: Priya Hassan
+    phone: 212-417-4680
+    email: ma_250@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

@@ -1,0 +1,59 @@
+# Student: Dakota Rosenberg
+# OSIS: 1000032
+# Sections: ALG-02
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000032
+first_name: Dakota
+last_name: Rosenberg
+grade: 9
+date_of_birth: 2011-01-21
+sections:
+  - ALG-02
+plan_type: IEP
+pronouns: they/them
+disability_category: Learning Disability
+case_manager: Ms. Rosenberg
+accommodations:
+  -
+    code: INST_MANIPULATIVES
+    applies_to: testing
+    verified_date: 2025-06-15
+    context_note: Include visual supports
+  -
+    code: LANG_BILINGUAL_GLOSSARY
+    applies_to: both
+    verified_date: 2025-04-27
+  -
+    code: LANG_TRANSLATED_DIRECTIONS
+    applies_to: testing
+    verified_date: 2025-07-13
+  -
+    code: INST_CHECK_IN
+    applies_to: instruction
+    verified_date: 2026-02-16
+    context_note: Coordinate with case manager
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: guardian
+    name: Riley Hernandez
+    phone: 212-881-9903
+    email: pa_566@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+    note: "Best time: after 5pm"
+  -
+    relationship: emergency contact
+    name: Taylor Rosenberg
+    phone: 212-894-7730
+    email: ma_425@email.com
+    preferred_language: English
+    preferred_contact_method: email
+    note: Bilingual household
+communication_log: []

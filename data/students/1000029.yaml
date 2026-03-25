@@ -1,0 +1,47 @@
+# Student: Anthony Ali
+# OSIS: 1000029
+# Sections: ALG-02
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000029
+first_name: Anthony
+last_name: Ali
+grade: 9
+date_of_birth: 2010-09-03
+sections:
+  - ALG-02
+plan_type: 504
+gender_marker: M
+accommodations:
+  -
+    code: RESP_GRAPHIC_ORGANIZER
+    applies_to: both
+    verified_date: 2025-07-12
+    context_note: Include visual supports
+  -
+    code: SCHED_MULTIPLE_SESSIONS
+    applies_to: both
+    verified_date: 2025-07-15
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: guardian
+    name: Jamal Hernandez
+    phone: 212-605-8172
+    email: ma_712@email.com
+    preferred_language: English
+    preferred_contact_method: email
+    note: Please call before 8am
+  -
+    relationship: guardian
+    name: David Garcia
+    phone: 212-334-1339
+    email: ca_941@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+communication_log: []

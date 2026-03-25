@@ -1,0 +1,29 @@
+# Student: Sam Murphy
+# OSIS: 1000002
+# Sections: ALG-01
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000002
+first_name: Sam
+last_name: Murphy
+grade: 9
+date_of_birth: 2009-07-14
+sections:
+  - ALG-01
+plan_type: none
+pronouns: she/her
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: emergency contact
+    name: Riley Patel
+    phone: 212-259-4527
+    email: pa_204@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

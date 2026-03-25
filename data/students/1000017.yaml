@@ -1,0 +1,57 @@
+# Student: Dakota Kowalski
+# OSIS: 1000017
+# Sections: ALG-01
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000017
+first_name: Dakota
+last_name: Kowalski
+grade: 9
+date_of_birth: 2010-11-13
+sections:
+  - ALG-01
+plan_type: IEP
+pronouns: he/him
+disability_category: Intellectual Disability
+case_manager: Ms. Hernandez
+accommodations:
+  -
+    code: INST_COPY_OF_NOTES
+    applies_to: instruction
+    verified_date: 2025-07-30
+  -
+    code: SETTING_PREFERENTIAL_SEATING
+    applies_to: instruction
+    verified_date: 2025-07-26
+  -
+    code: PRES_READ_ALOUD_ALL
+    applies_to: instruction
+    verified_date: 2025-08-08
+    context_note: Check before exam season
+  -
+    code: TIME_UNLIMITED
+    applies_to: both
+    verified_date: 2026-02-13
+    context_note: Check before exam season
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: emergency contact
+    name: "Sam O'Brien"
+    phone: 212-353-5543
+    email: ca_596@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+  -
+    relationship: parent/guardian
+    name: Sam Kim
+    phone: 212-378-6502
+    email: pa_653@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

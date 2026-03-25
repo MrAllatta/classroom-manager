@@ -1,0 +1,56 @@
+# Student: Riley Martinez
+# OSIS: 1000076
+# Sections: ALG-03
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000076
+first_name: Riley
+last_name: Martinez
+grade: 9
+date_of_birth: 2010-12-02
+sections:
+  - ALG-03
+plan_type: IEP
+pronouns: they/them
+disability_category: Emotional Disability
+case_manager: "Ms. O'Brien"
+accommodations:
+  -
+    code: INST_DIRECTIONS_REPEATED
+    applies_to: testing
+    verified_date: 2026-01-20
+  -
+    code: BEH_SENSORY_BREAKS
+    applies_to: testing
+    verified_date: 2025-07-10
+  -
+    code: TIME_EXTENDED_15
+    applies_to: both
+    verified_date: 2026-01-30
+  -
+    code: PRES_READ_ALOUD_DIRECTIONS
+    applies_to: testing
+    verified_date: 2025-08-02
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Taylor Cohen
+    phone: 212-103-1372
+    email: pa_574@email.com
+    preferred_language: English
+    preferred_contact_method: text
+  -
+    relationship: emergency contact
+    name: Taylor Kim
+    phone: 212-571-6671
+    email: ma_382@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: "Best time: after 5pm"
+communication_log: []

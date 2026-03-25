@@ -1,0 +1,30 @@
+# Student: Robert Martinez
+# OSIS: 1000115
+# Sections: AP-CSA
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000115
+first_name: Robert
+last_name: Martinez
+grade: 10
+date_of_birth: 2009-01-27
+sections:
+  - AP-CSA
+plan_type: none
+gender_marker: M
+pronouns: she/her
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: guardian
+    name: Benjamin Kowalski
+    phone: 212-452-7732
+    email: pa_492@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

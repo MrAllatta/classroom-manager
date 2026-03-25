@@ -1,0 +1,55 @@
+# Student: Jessica O'Brien
+# OSIS: 1000051
+# Sections: ALG-02
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000051
+first_name: Jessica
+last_name: "O'Brien"
+grade: 9
+date_of_birth: 2011-11-10
+sections:
+  - ALG-02
+plan_type: IEP
+gender_marker: F
+disability_category: Intellectual Disability
+case_manager: Ms. Martinez
+accommodations:
+  -
+    code: LANG_BILINGUAL_GLOSSARY
+    applies_to: instruction
+    verified_date: 2025-06-27
+  -
+    code: SETTING_PREFERENTIAL_SEATING
+    applies_to: testing
+    verified_date: 2025-06-28
+  -
+    code: TIME_EXTENDED_DOUBLE
+    applies_to: testing
+    verified_date: 2026-01-14
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+intervention_flags:
+  - at_risk_failing
+  - missing_three_or_more_assignments
+contacts:
+  -
+    relationship: parent/guardian
+    name: Natalia Garcia
+    phone: 212-327-8391
+    email: pa_127@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+  -
+    relationship: guardian
+    name: Priya Jones
+    phone: 212-183-7142
+    email: ma_128@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+    note: Please call before 8am
+communication_log: []

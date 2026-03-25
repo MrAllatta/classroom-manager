@@ -1,0 +1,28 @@
+# Student: Casey Johnson
+# OSIS: 1000047
+# Sections: ALG-02
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000047
+first_name: Casey
+last_name: Johnson
+grade: 9
+date_of_birth: 2010-08-24
+sections:
+  - ALG-02
+plan_type: none
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: parent/guardian
+    name: Casey Johnson
+    phone: 212-353-8172
+    email: pa_636@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

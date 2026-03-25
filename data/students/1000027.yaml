@@ -1,0 +1,36 @@
+# Student: Taylor O'Brien
+# OSIS: 1000027
+# Sections: ALG-01
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000027
+first_name: Taylor
+last_name: "O'Brien"
+grade: 9
+date_of_birth: 2008-09-04
+sections:
+  - ALG-01
+plan_type: none
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: emergency contact
+    name: Sam Rosenberg
+    phone: 212-702-8025
+    email: pa_682@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: Please call before 8am
+  -
+    relationship: parent/guardian
+    name: Taylor Ahmed
+    phone: 212-316-5335
+    email: ca_183@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

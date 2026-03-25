@@ -1,0 +1,58 @@
+# Student: Keisha Williams
+# OSIS: 1000044
+# Sections: ALG-02
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000044
+first_name: Keisha
+last_name: Williams
+grade: 9
+date_of_birth: 2010-10-20
+sections:
+  - ALG-02
+plan_type: IEP
+gender_marker: F
+disability_category: Other Health Impairment
+accommodations:
+  -
+    code: INST_CHUNKED_TASKS
+    applies_to: instruction
+    verified_date: 2025-09-28
+  -
+    code: RESP_SPEECH_TO_TEXT
+    applies_to: testing
+    verified_date: 2025-09-10
+  -
+    code: INST_COPY_OF_NOTES
+    applies_to: both
+    verified_date: 2025-07-03
+    context_note: Coordinate with case manager
+  -
+    code: INST_CHECK_IN
+    applies_to: testing
+    verified_date: 2025-07-15
+    context_note: Include visual supports
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: emergency contact
+    name: Jennifer Rodriguez
+    phone: 212-489-9725
+    email: ca_335@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: Bilingual household
+  -
+    relationship: parent/guardian
+    name: Laura Rosenberg
+    phone: 212-859-1693
+    email: pa_119@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+    note: Please call before 8am
+communication_log: []

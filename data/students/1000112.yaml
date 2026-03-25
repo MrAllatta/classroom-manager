@@ -1,0 +1,56 @@
+# Student: Alex Johnson
+# OSIS: 1000112
+# Sections: AP-CSA
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000112
+first_name: Alex
+last_name: Johnson
+grade: 12
+date_of_birth: 2008-08-19
+sections:
+  - AP-CSA
+plan_type: 504
+pronouns: they/them
+accommodations:
+  -
+    code: SETTING_REDUCED_DISTRACTION
+    applies_to: testing
+    verified_date: 2025-05-19
+    context_note: Include visual supports
+  -
+    code: RESP_SPEECH_TO_TEXT
+    applies_to: instruction
+    verified_date: 2025-04-25
+    context_note: Coordinate with case manager
+  -
+    code: BEH_BEHAVIOR_PLAN
+    applies_to: both
+    verified_date: 2026-02-08
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+intervention_flags:
+  - at_risk_failing
+  - attendance_concern
+contacts:
+  -
+    relationship: parent/guardian
+    name: Morgan Gonzalez
+    phone: 212-487-6754
+    email: ca_484@email.com
+    preferred_language: English
+    preferred_contact_method: email
+    note: Please call before 8am
+  -
+    relationship: parent/guardian
+    name: Casey Davis
+    phone: 212-175-1547
+    email: pa_120@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+    note: "Best time: after 5pm"
+communication_log: []

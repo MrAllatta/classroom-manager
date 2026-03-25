@@ -1,0 +1,30 @@
+# Student: Yuki Johnson
+# OSIS: 1000054
+# Sections: ALG-02
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000054
+first_name: Yuki
+last_name: Johnson
+grade: 9
+date_of_birth: 2008-01-22
+sections:
+  - ALG-02
+plan_type: none
+gender_marker: F
+pronouns: they/them
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: guardian
+    name: Keisha Lopez
+    phone: 212-507-9897
+    email: pa_359@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

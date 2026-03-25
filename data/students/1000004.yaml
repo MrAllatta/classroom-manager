@@ -1,0 +1,51 @@
+# Student: Michael Murphy
+# OSIS: 1000004
+# Sections: ALG-01
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000004
+first_name: Michael
+last_name: Murphy
+grade: 9
+date_of_birth: 2008-02-06
+sections:
+  - ALG-01
+plan_type: 504
+gender_marker: M
+pronouns: he/him
+case_manager: Ms. Davis
+accommodations:
+  -
+    code: SETTING_PREFERENTIAL_SEATING
+    applies_to: both
+    verified_date: 2025-05-24
+  -
+    code: PRES_LARGE_PRINT
+    applies_to: both
+    verified_date: 2025-07-19
+    context_note: Coordinate with case manager
+  -
+    code: PRES_READ_ALOUD_DIRECTIONS
+    applies_to: instruction
+    verified_date: 2025-11-03
+    context_note: Include visual supports
+  -
+    code: BEH_BEHAVIOR_PLAN
+    applies_to: both
+    verified_date: 2025-06-16
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Luis Nguyen
+    phone: 212-997-6155
+    email: ma_771@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+    note: Please call before 8am
+communication_log: []

@@ -1,0 +1,37 @@
+# Student: Angela Lee
+# OSIS: 1000063
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000063
+first_name: Angela
+last_name: Lee
+grade: 9
+date_of_birth: 2010-02-15
+sections:
+  - ALG-03
+plan_type: none
+gender_marker: F
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: emergency contact
+    name: Aaliyah Kowalski
+    phone: 212-415-9148
+    email: ma_192@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+  -
+    relationship: parent/guardian
+    name: Yuki Nguyen
+    phone: 212-461-1797
+    email: ma_388@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+    note: Please call before 8am
+communication_log: []

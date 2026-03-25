@@ -1,0 +1,53 @@
+# Student: Casey Smith
+# OSIS: 1000080
+# Sections: ALG-03
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000080
+first_name: Casey
+last_name: Smith
+grade: 9
+date_of_birth: 2008-07-29
+sections:
+  - ALG-03
+plan_type: 504
+case_manager: Ms. Johnson
+accommodations:
+  -
+    code: SETTING_REDUCED_DISTRACTION
+    applies_to: both
+    verified_date: 2025-06-18
+  -
+    code: SETTING_PREFERENTIAL_SEATING
+    applies_to: both
+    verified_date: 2025-04-01
+    context_note: Check before exam season
+  -
+    code: BEH_BEHAVIOR_PLAN
+    applies_to: testing
+    verified_date: 2026-01-16
+    context_note: Check before exam season
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+intervention_flags:
+  - at_risk_failing
+contacts:
+  -
+    relationship: guardian
+    name: Casey Lee
+    phone: 212-437-4768
+    email: pa_683@email.com
+    preferred_language: English
+    preferred_contact_method: email
+  -
+    relationship: guardian
+    name: "Sam O'Brien"
+    phone: 212-941-9005
+    email: ca_757@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

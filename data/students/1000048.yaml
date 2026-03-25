@@ -1,0 +1,38 @@
+# Student: Kevin Martinez
+# OSIS: 1000048
+# Sections: ALG-02
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000048
+first_name: Kevin
+last_name: Martinez
+grade: 9
+date_of_birth: 2007-11-23
+sections:
+  - ALG-02
+plan_type: none
+preferred_name: Kevin
+gender_marker: M
+pronouns: they/them
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: guardian
+    name: Hassan Khan
+    phone: 212-972-3463
+    email: pa_183@email.com
+    preferred_language: English
+    preferred_contact_method: text
+  -
+    relationship: guardian
+    name: Marcus Ahmed
+    phone: 212-815-7421
+    email: ma_709@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

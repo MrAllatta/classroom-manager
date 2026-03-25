@@ -1,0 +1,46 @@
+# Student: Jennifer Chen
+# OSIS: 1000109
+# Sections: AP-CSA
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000109
+first_name: Jennifer
+last_name: Chen
+grade: 11
+date_of_birth: 2012-03-17
+sections:
+  - AP-CSA
+plan_type: 504
+gender_marker: F
+pronouns: she/her
+case_manager: Ms. Rosenberg
+accommodations:
+  -
+    code: SETTING_REDUCED_DISTRACTION
+    applies_to: testing
+    verified_date: 2026-01-26
+  -
+    code: RESP_GRAPHIC_ORGANIZER
+    applies_to: testing
+    verified_date: 2026-02-13
+  -
+    code: TIME_EXTENDED_DOUBLE
+    applies_to: testing
+    verified_date: 2025-09-07
+    context_note: Include visual supports
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: guardian
+    name: Maria Ali
+    phone: 212-817-6761
+    email: ca_677@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: Bilingual household
+communication_log: []

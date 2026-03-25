@@ -1,0 +1,30 @@
+# Student: Fatima Hassan
+# OSIS: 1000131
+# Sections: AP-CSA
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000131
+first_name: Fatima
+last_name: Hassan
+grade: 11
+date_of_birth: 2009-09-18
+sections:
+  - AP-CSA
+plan_type: none
+gender_marker: F
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: emergency contact
+    name: Maria Lopez
+    phone: 212-853-1795
+    email: ca_543@email.com
+    preferred_language: English
+    preferred_contact_method: email
+    note: "Best time: after 5pm"
+communication_log: []

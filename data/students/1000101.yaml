@@ -1,0 +1,31 @@
+# Student: Alex Shah
+# OSIS: 1000101
+# Sections: AP-STAT
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000101
+first_name: Alex
+last_name: Shah
+grade: 9
+date_of_birth: 2010-08-30
+sections:
+  - AP-STAT
+plan_type: none
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+intervention_flags:
+  - attendance_concern
+  - at_risk_failing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Alex Ali
+    phone: 212-240-1185
+    email: ma_608@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+communication_log: []

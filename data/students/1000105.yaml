@@ -1,0 +1,46 @@
+# Student: Fatima Patel
+# OSIS: 1000105
+# Sections: AP-STAT
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000105
+first_name: Fatima
+last_name: Patel
+grade: 12
+date_of_birth: 2009-08-30
+sections:
+  - AP-STAT
+plan_type: 504
+gender_marker: F
+case_manager: Ms. Chen
+accommodations:
+  -
+    code: BEH_SENSORY_BREAKS
+    applies_to: instruction
+    verified_date: 2025-07-01
+  -
+    code: PRES_READ_ALOUD_ALL
+    applies_to: testing
+    verified_date: 2026-01-08
+  -
+    code: RESP_WORD_PROCESSOR
+    applies_to: both
+    verified_date: 2025-09-21
+    context_note: Check before exam season
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+intervention_flags:
+  - missing_three_or_more_assignments
+contacts:
+  -
+    relationship: parent/guardian
+    name: Amanda Rodriguez
+    phone: 212-208-3693
+    email: pa_577@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+communication_log: []

@@ -1,0 +1,36 @@
+# Student: Alex Nguyen
+# OSIS: 1000088
+# Sections: AP-STAT
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000088
+first_name: Alex
+last_name: Nguyen
+grade: 9
+date_of_birth: 2011-11-22
+sections:
+  - AP-STAT
+plan_type: none
+pronouns: he/him
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: guardian
+    name: Morgan Martinez
+    phone: 212-110-2615
+    email: pa_327@email.com
+    preferred_language: English
+    preferred_contact_method: text
+  -
+    relationship: parent/guardian
+    name: Dakota Brown
+    phone: 212-500-8586
+    email: ca_702@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

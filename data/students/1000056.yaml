@@ -1,0 +1,39 @@
+# Student: Sofia Garcia
+# OSIS: 1000056
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000056
+first_name: Sofia
+last_name: Garcia
+grade: 9
+date_of_birth: 2012-02-10
+sections:
+  - ALG-03
+plan_type: none
+gender_marker: F
+pronouns: he/him
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: guardian
+    name: Rachel Murphy
+    phone: 212-867-3621
+    email: ma_246@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: "Best time: after 5pm"
+  -
+    relationship: parent/guardian
+    name: Jessica Kim
+    phone: 212-897-7001
+    email: pa_492@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: Please call before 8am
+communication_log: []

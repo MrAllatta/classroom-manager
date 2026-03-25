@@ -1,0 +1,36 @@
+# Student: Hassan Lee
+# OSIS: 1000078
+# Sections: ALG-03
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000078
+first_name: Hassan
+last_name: Lee
+grade: 9
+date_of_birth: 2012-06-15
+sections:
+  - ALG-03
+plan_type: 504
+gender_marker: M
+case_manager: Ms. Khan
+accommodations:
+  -
+    code: PRES_READ_ALOUD_ALL
+    applies_to: both
+    verified_date: 2025-05-13
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: emergency contact
+    name: Andre Garcia
+    phone: 212-648-4120
+    email: ma_374@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+    note: "Best time: after 5pm"
+communication_log: []

@@ -1,0 +1,31 @@
+# Student: Priya Khan
+# OSIS: 1000085
+# Sections: AP-STAT
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000085
+first_name: Priya
+last_name: Khan
+grade: 10
+date_of_birth: 2010-11-09
+sections:
+  - AP-STAT
+plan_type: none
+gender_marker: F
+pronouns: she/her
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: emergency contact
+    name: Amanda Rodriguez
+    phone: 212-411-1110
+    email: pa_440@email.com
+    preferred_language: English
+    preferred_contact_method: email
+    note: Bilingual household
+communication_log: []

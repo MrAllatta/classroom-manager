@@ -1,0 +1,39 @@
+# Student: Juan Brown
+# OSIS: 1000091
+# Sections: AP-STAT
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000091
+first_name: Juan
+last_name: Brown
+grade: 12
+date_of_birth: 2007-02-20
+sections:
+  - AP-STAT
+plan_type: none
+gender_marker: M
+pronouns: he/him
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: emergency contact
+    name: Carlos Nguyen
+    phone: 212-492-7931
+    email: ma_598@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: Please call before 8am
+  -
+    relationship: parent/guardian
+    name: Benjamin Chen
+    phone: 212-601-5732
+    email: ma_291@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+    note: Bilingual household
+communication_log: []

@@ -1,0 +1,29 @@
+# Student: Michelle Gonzalez
+# OSIS: 1000024
+# Sections: ALG-01
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000024
+first_name: Michelle
+last_name: Gonzalez
+grade: 9
+date_of_birth: 2007-03-18
+sections:
+  - ALG-01
+plan_type: none
+gender_marker: F
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: emergency contact
+    name: Elena Williams
+    phone: 212-460-8434
+    email: pa_413@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+communication_log: []

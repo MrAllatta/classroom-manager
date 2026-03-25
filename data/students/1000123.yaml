@@ -1,0 +1,30 @@
+# Student: Benjamin Lee
+# OSIS: 1000123
+# Sections: AP-CSA
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000123
+first_name: Benjamin
+last_name: Lee
+grade: 11
+date_of_birth: 2011-08-09
+sections:
+  - AP-CSA
+plan_type: none
+gender_marker: M
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: guardian
+    name: Jamal Lee
+    phone: 212-118-1067
+    email: ca_851@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: Bilingual household
+communication_log: []

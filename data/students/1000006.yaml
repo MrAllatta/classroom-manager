@@ -1,0 +1,51 @@
+# Student: Alex Islam
+# OSIS: 1000006
+# Sections: ALG-01
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000006
+first_name: Alex
+last_name: Islam
+grade: 9
+date_of_birth: 2010-08-24
+sections:
+  - ALG-01
+plan_type: 504
+pronouns: they/them
+accommodations:
+  -
+    code: LANG_TRANSLATED_DIRECTIONS
+    applies_to: testing
+    verified_date: 2025-12-20
+  -
+    code: TIME_UNLIMITED
+    applies_to: both
+    verified_date: 2025-12-01
+  -
+    code: BEH_SENSORY_BREAKS
+    applies_to: both
+    verified_date: 2025-07-22
+    context_note: Check before exam season
+  -
+    code: SCHED_BREAKS
+    applies_to: both
+    verified_date: 2025-11-13
+    context_note: Coordinate with case manager
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+intervention_flags:
+  - at_risk_failing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Riley Kowalski
+    phone: 212-951-6038
+    email: ma_159@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: "Best time: after 5pm"
+communication_log: []

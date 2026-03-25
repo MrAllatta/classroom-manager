@@ -1,0 +1,42 @@
+# Student: Hassan Jones
+# OSIS: 1000010
+# Sections: ALG-01
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000010
+first_name: Hassan
+last_name: Jones
+grade: 9
+date_of_birth: 2011-12-17
+sections:
+  - ALG-01
+plan_type: IEP
+preferred_name: Hassan
+gender_marker: M
+disability_category: Learning Disability
+case_manager: Ms. Khan
+accommodations:
+  -
+    code: SCHED_MULTIPLE_SESSIONS
+    applies_to: testing
+    verified_date: 2025-08-29
+    context_note: Include visual supports
+  -
+    code: PRES_LARGE_PRINT
+    applies_to: instruction
+    verified_date: 2025-10-01
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: emergency contact
+    name: "Kevin O'Brien"
+    phone: 212-174-1152
+    email: pa_736@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

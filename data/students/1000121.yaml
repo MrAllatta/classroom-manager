@@ -1,0 +1,37 @@
+# Student: Sam Rosenberg
+# OSIS: 1000121
+# Sections: AP-CSA
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000121
+first_name: Sam
+last_name: Rosenberg
+grade: 11
+date_of_birth: 2009-12-10
+sections:
+  - AP-CSA
+plan_type: IEP
+disability_category: Intellectual Disability
+case_manager: Ms. Islam
+accommodations:
+  -
+    code: PRES_READ_ALOUD_DIRECTIONS
+    applies_to: instruction
+    verified_date: 2025-11-01
+    context_note: Coordinate with case manager
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: guardian
+    name: Jordan Gonzalez
+    phone: 212-231-5237
+    email: ca_927@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: Bilingual household
+communication_log: []

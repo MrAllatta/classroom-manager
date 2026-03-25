@@ -1,0 +1,47 @@
+# Student: Alex Kim
+# OSIS: 1000007
+# Sections: ALG-01
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000007
+first_name: Alex
+last_name: Kim
+grade: 9
+date_of_birth: 2009-07-14
+sections:
+  - ALG-01
+plan_type: IEP
+disability_category: Emotional Disability
+case_manager: Ms. Rosenberg
+accommodations:
+  -
+    code: PRES_READ_ALOUD_DIRECTIONS
+    applies_to: testing
+    verified_date: 2026-01-06
+  -
+    code: LANG_BILINGUAL_GLOSSARY
+    applies_to: instruction
+    verified_date: 2025-08-26
+  -
+    code: RESP_GRAPHIC_ORGANIZER
+    applies_to: instruction
+    verified_date: 2026-01-27
+  -
+    code: RESP_CALCULATOR
+    applies_to: both
+    verified_date: 2026-01-04
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: guardian
+    name: Jordan Lopez
+    phone: 212-343-5562
+    email: ca_597@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

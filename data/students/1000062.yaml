@@ -1,0 +1,32 @@
+# Student: Angela Khan
+# OSIS: 1000062
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000062
+first_name: Angela
+last_name: Khan
+grade: 9
+date_of_birth: 2007-03-29
+sections:
+  - ALG-03
+plan_type: none
+gender_marker: F
+pronouns: she/her
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+intervention_flags:
+  - missing_three_or_more_assignments
+contacts:
+  -
+    relationship: emergency contact
+    name: "Sarah O'Brien"
+    phone: 212-479-9437
+    email: ca_208@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+communication_log: []

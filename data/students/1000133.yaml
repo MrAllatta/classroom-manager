@@ -1,0 +1,48 @@
+# Student: Maria Lopez
+# OSIS: 1000133
+# Sections: AP-CSA
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000133
+first_name: Maria
+last_name: Lopez
+grade: 11
+date_of_birth: 2007-02-15
+sections:
+  - AP-CSA
+plan_type: IEP
+gender_marker: F
+disability_category: Emotional Disability
+accommodations:
+  -
+    code: BEH_BEHAVIOR_PLAN
+    applies_to: both
+    verified_date: 2025-08-08
+  -
+    code: INST_CHECK_IN
+    applies_to: both
+    verified_date: 2025-09-29
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: parent/guardian
+    name: Sofia Hassan
+    phone: 212-157-4275
+    email: pa_868@email.com
+    preferred_language: English
+    preferred_contact_method: email
+    note: "Best time: after 5pm"
+  -
+    relationship: parent/guardian
+    name: Keisha Lee
+    phone: 212-871-9866
+    email: ma_467@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+    note: Please call before 8am
+communication_log: []

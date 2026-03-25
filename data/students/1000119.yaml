@@ -1,0 +1,46 @@
+# Student: Natalia Lopez
+# OSIS: 1000119
+# Sections: AP-CSA
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000119
+first_name: Natalia
+last_name: Lopez
+grade: 12
+date_of_birth: 2012-03-08
+sections:
+  - AP-CSA
+plan_type: IEP
+gender_marker: F
+disability_category: Emotional Disability
+case_manager: Ms. Patel
+accommodations:
+  -
+    code: RESP_CALCULATOR
+    applies_to: instruction
+    verified_date: 2025-10-17
+  -
+    code: RESP_SPEECH_TO_TEXT
+    applies_to: instruction
+    verified_date: 2025-06-02
+    context_note: Coordinate with case manager
+  -
+    code: RESP_SCRIBE
+    applies_to: both
+    verified_date: 2026-01-02
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: emergency contact
+    name: Sarah Ahmed
+    phone: 212-277-1138
+    email: ma_358@email.com
+    preferred_language: English
+    preferred_contact_method: email
+    note: Please call before 8am
+communication_log: []

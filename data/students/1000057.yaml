@@ -1,0 +1,30 @@
+# Student: Sam Kim
+# OSIS: 1000057
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000057
+first_name: Sam
+last_name: Kim
+grade: 9
+date_of_birth: 2011-07-29
+sections:
+  - ALG-03
+plan_type: none
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+intervention_flags:
+  - missing_three_or_more_assignments
+contacts:
+  -
+    relationship: parent/guardian
+    name: Dakota Lopez
+    phone: 212-496-2929
+    email: pa_893@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+communication_log: []

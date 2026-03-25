@@ -1,0 +1,49 @@
+# Student: Sofia Kowalski
+# OSIS: 1000012
+# Sections: ALG-01
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000012
+first_name: Sofia
+last_name: Kowalski
+grade: 9
+date_of_birth: 2010-04-22
+sections:
+  - ALG-01
+plan_type: 504
+gender_marker: F
+pronouns: he/him
+case_manager: Ms. Lopez
+accommodations:
+  -
+    code: TIME_EXTENDED_15
+    applies_to: instruction
+    verified_date: 2025-10-19
+  -
+    code: SETTING_REDUCED_DISTRACTION
+    applies_to: both
+    verified_date: 2025-12-30
+  -
+    code: BEH_BEHAVIOR_PLAN
+    applies_to: testing
+    verified_date: 2025-06-28
+  -
+    code: PRES_VISUAL_SUPPORTS
+    applies_to: instruction
+    verified_date: 2025-08-28
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: parent/guardian
+    name: "Michelle O'Brien"
+    phone: 212-673-7658
+    email: ca_867@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: "Best time: after 5pm"
+communication_log: []

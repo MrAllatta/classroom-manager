@@ -1,0 +1,42 @@
+# Student: Jamal Lee
+# OSIS: 1000043
+# Sections: ALG-02
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000043
+first_name: Jamal
+last_name: Lee
+grade: 9
+date_of_birth: 2009-03-07
+sections:
+  - ALG-02
+plan_type: 504
+gender_marker: M
+case_manager: "Ms. O'Brien"
+accommodations:
+  -
+    code: RESP_SCRIBE
+    applies_to: instruction
+    verified_date: 2025-12-29
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: guardian
+    name: Juan Brown
+    phone: 212-419-6314
+    email: ca_710@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+  -
+    relationship: parent/guardian
+    name: James Patel
+    phone: 212-553-7947
+    email: pa_721@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+communication_log: []

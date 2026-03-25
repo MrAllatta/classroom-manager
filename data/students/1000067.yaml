@@ -1,0 +1,36 @@
+# Student: Taylor Miller
+# OSIS: 1000067
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000067
+first_name: Taylor
+last_name: Miller
+grade: 9
+date_of_birth: 2010-12-23
+sections:
+  - ALG-03
+plan_type: none
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Casey Lopez
+    phone: 212-312-6325
+    email: ca_589@email.com
+    preferred_language: English
+    preferred_contact_method: email
+  -
+    relationship: parent/guardian
+    name: Dakota Hernandez
+    phone: 212-450-9950
+    email: pa_792@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: Please call before 8am
+communication_log: []

@@ -1,0 +1,36 @@
+# Student: Elena Martinez
+# OSIS: 1000008
+# Sections: ALG-01
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000008
+first_name: Elena
+last_name: Martinez
+grade: 9
+date_of_birth: 2007-02-10
+sections:
+  - ALG-01
+plan_type: IEP
+gender_marker: F
+pronouns: she/her
+disability_category: Emotional Disability
+accommodations:
+  -
+    code: RESP_SPEECH_TO_TEXT
+    applies_to: instruction
+    verified_date: 2025-07-06
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Priya Chen
+    phone: 212-516-8956
+    email: pa_318@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+communication_log: []

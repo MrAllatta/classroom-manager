@@ -1,0 +1,44 @@
+# Student: Angela Chen
+# OSIS: 1000127
+# Sections: AP-CSA
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000127
+first_name: Angela
+last_name: Chen
+grade: 9
+date_of_birth: 2011-01-28
+sections:
+  - AP-CSA
+plan_type: IEP
+gender_marker: F
+disability_category: Intellectual Disability
+case_manager: Ms. Nguyen
+accommodations:
+  -
+    code: INST_MANIPULATIVES
+    applies_to: both
+    verified_date: 2025-12-19
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: emergency contact
+    name: Amina Cohen
+    phone: 212-494-8835
+    email: pa_764@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+  -
+    relationship: parent/guardian
+    name: Jennifer Martinez
+    phone: 212-526-8908
+    email: ca_794@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+    note: Bilingual household
+communication_log: []

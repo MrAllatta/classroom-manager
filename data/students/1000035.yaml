@@ -1,0 +1,32 @@
+# Student: Jordan Kowalski
+# OSIS: 1000035
+# Sections: ALG-02
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000035
+first_name: Jordan
+last_name: Kowalski
+grade: 9
+date_of_birth: 2007-11-20
+sections:
+  - ALG-02
+plan_type: none
+pronouns: he/him
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+intervention_flags:
+  - attendance_concern
+  - missing_three_or_more_assignments
+contacts:
+  -
+    relationship: guardian
+    name: Dakota Johnson
+    phone: 212-693-6977
+    email: ca_234@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

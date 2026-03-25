@@ -1,0 +1,44 @@
+# Student: Priya Smith
+# OSIS: 1000126
+# Sections: AP-CSA
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000126
+first_name: Priya
+last_name: Smith
+grade: 10
+date_of_birth: 2008-10-27
+sections:
+  - AP-CSA
+plan_type: IEP
+gender_marker: F
+disability_category: Autism Spectrum Disorder
+case_manager: Ms. Patel
+accommodations:
+  -
+    code: RESP_WORD_PROCESSOR
+    applies_to: instruction
+    verified_date: 2025-07-01
+  -
+    code: PRES_BRAILLE
+    applies_to: testing
+    verified_date: 2026-02-03
+    context_note: Coordinate with case manager
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+intervention_flags:
+  - at_risk_failing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Aaliyah Rodriguez
+    phone: 212-192-9383
+    email: ma_840@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: Please call before 8am
+communication_log: []

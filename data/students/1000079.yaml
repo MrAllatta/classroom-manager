@@ -1,0 +1,30 @@
+# Student: Luis Jones
+# OSIS: 1000079
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000079
+first_name: Luis
+last_name: Jones
+grade: 9
+date_of_birth: 2010-06-18
+sections:
+  - ALG-03
+plan_type: none
+gender_marker: M
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: guardian
+    name: Christopher Davis
+    phone: 212-646-6886
+    email: pa_367@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+    note: Bilingual household
+communication_log: []

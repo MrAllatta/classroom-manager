@@ -1,0 +1,36 @@
+# Student: Riley Murphy
+# OSIS: 1000036
+# Sections: ALG-02
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000036
+first_name: Riley
+last_name: Murphy
+grade: 9
+date_of_birth: 2009-01-25
+sections:
+  - ALG-02
+plan_type: IEP
+pronouns: they/them
+disability_category: Other Health Impairment
+case_manager: Ms. Ahmed
+accommodations:
+  -
+    code: RESP_WORD_PROCESSOR
+    applies_to: instruction
+    verified_date: 2025-10-12
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Taylor Rosenberg
+    phone: 212-792-7511
+    email: ca_474@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

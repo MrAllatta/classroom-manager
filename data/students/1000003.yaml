@@ -1,0 +1,45 @@
+# Student: Riley Nguyen
+# OSIS: 1000003
+# Sections: ALG-01
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000003
+first_name: Riley
+last_name: Nguyen
+grade: 9
+date_of_birth: 2008-12-14
+sections:
+  - ALG-01
+plan_type: IEP
+disability_category: Emotional Disability
+case_manager: "Ms. O'Brien"
+accommodations:
+  -
+    code: SETTING_REDUCED_DISTRACTION
+    applies_to: both
+    verified_date: 2025-10-10
+    context_note: Check before exam season
+  -
+    code: RESP_SCRIBE
+    applies_to: both
+    verified_date: 2026-01-18
+  -
+    code: PRES_READ_ALOUD_ALL
+    applies_to: testing
+    verified_date: 2025-05-26
+    context_note: Include visual supports
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: parent/guardian
+    name: "Taylor O'Brien"
+    phone: 212-396-2307
+    email: ma_987@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

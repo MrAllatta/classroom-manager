@@ -1,0 +1,38 @@
+# Student: Rachel Islam
+# OSIS: 1000124
+# Sections: AP-CSA
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000124
+first_name: Rachel
+last_name: Islam
+grade: 9
+date_of_birth: 2008-10-30
+sections:
+  - AP-CSA
+plan_type: none
+gender_marker: F
+pronouns: she/her
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: parent/guardian
+    name: Angela Kowalski
+    phone: 212-601-6885
+    email: ma_268@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+  -
+    relationship: parent/guardian
+    name: Yuki Khan
+    phone: 212-122-9267
+    email: ma_226@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+    note: "Best time: after 5pm"
+communication_log: []

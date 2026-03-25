@@ -1,0 +1,53 @@
+# Student: Dakota Smith
+# OSIS: 1000081
+# Sections: ALG-03
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000081
+first_name: Dakota
+last_name: Smith
+grade: 9
+date_of_birth: 2009-06-11
+sections:
+  - ALG-03
+plan_type: IEP
+pronouns: they/them
+disability_category: Other Health Impairment
+accommodations:
+  -
+    code: PRES_LARGE_PRINT
+    applies_to: testing
+    verified_date: 2025-08-16
+    context_note: Coordinate with case manager
+  -
+    code: LANG_BILINGUAL_GLOSSARY
+    applies_to: both
+    verified_date: 2025-10-22
+    context_note: Include visual supports
+  -
+    code: RESP_SPEECH_TO_TEXT
+    applies_to: instruction
+    verified_date: 2026-01-13
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: parent/guardian
+    name: Alex Lopez
+    phone: 212-839-5501
+    email: ca_393@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: Please call before 8am
+  -
+    relationship: emergency contact
+    name: Casey Martinez
+    phone: 212-198-9591
+    email: ma_346@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

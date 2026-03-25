@@ -1,0 +1,35 @@
+# Student: Riley Rodriguez
+# OSIS: 1000046
+# Sections: ALG-02
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000046
+first_name: Riley
+last_name: Rodriguez
+grade: 9
+date_of_birth: 2008-01-01
+sections:
+  - ALG-02
+plan_type: none
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: emergency contact
+    name: Sam Murphy
+    phone: 212-381-1920
+    email: pa_619@email.com
+    preferred_language: English
+    preferred_contact_method: email
+  -
+    relationship: parent/guardian
+    name: Alex Brown
+    phone: 212-951-5703
+    email: ma_760@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

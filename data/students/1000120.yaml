@@ -1,0 +1,31 @@
+# Student: Carlos Lopez
+# OSIS: 1000120
+# Sections: AP-CSA
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000120
+first_name: Carlos
+last_name: Lopez
+grade: 10
+date_of_birth: 2008-09-10
+sections:
+  - AP-CSA
+plan_type: none
+gender_marker: M
+pronouns: they/them
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: emergency contact
+    name: Kevin Hassan
+    phone: 212-243-1417
+    email: ca_609@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+    note: Bilingual household
+communication_log: []

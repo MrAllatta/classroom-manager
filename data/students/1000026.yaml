@@ -1,0 +1,30 @@
+# Student: Marcus Gonzalez
+# OSIS: 1000026
+# Sections: ALG-01
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000026
+first_name: Marcus
+last_name: Gonzalez
+grade: 9
+date_of_birth: 2007-03-22
+sections:
+  - ALG-01
+plan_type: none
+gender_marker: M
+pronouns: she/her
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Michael Patel
+    phone: 212-982-8827
+    email: ma_941@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

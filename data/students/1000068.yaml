@@ -1,0 +1,30 @@
+# Student: Yuki Ali
+# OSIS: 1000068
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000068
+first_name: Yuki
+last_name: Ali
+grade: 9
+date_of_birth: 2010-12-05
+sections:
+  - ALG-03
+plan_type: none
+preferred_name: Yuki
+gender_marker: F
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: emergency contact
+    name: Michelle Hernandez
+    phone: 212-914-5480
+    email: pa_224@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

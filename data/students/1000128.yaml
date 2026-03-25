@@ -1,0 +1,28 @@
+# Student: Riley Lopez
+# OSIS: 1000128
+# Sections: AP-CSA
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000128
+first_name: Riley
+last_name: Lopez
+grade: 9
+date_of_birth: 2008-04-30
+sections:
+  - AP-CSA
+plan_type: none
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: emergency contact
+    name: Taylor Gonzalez
+    phone: 212-454-7305
+    email: ma_959@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

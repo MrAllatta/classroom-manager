@@ -1,0 +1,43 @@
+# Student: Fatima Jones
+# OSIS: 1000125
+# Sections: AP-CSA
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000125
+first_name: Fatima
+last_name: Jones
+grade: 10
+date_of_birth: 2010-07-14
+sections:
+  - AP-CSA
+plan_type: IEP
+gender_marker: F
+disability_category: Learning Disability
+case_manager: Ms. Lee
+accommodations:
+  -
+    code: RESP_CALCULATOR
+    applies_to: testing
+    verified_date: 2025-06-07
+    context_note: Include visual supports
+  -
+    code: LANG_TRANSLATED_DIRECTIONS
+    applies_to: instruction
+    verified_date: 2025-12-27
+    context_note: Coordinate with case manager
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: emergency contact
+    name: Sarah Lee
+    phone: 212-811-1152
+    email: pa_530@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: Bilingual household
+communication_log: []

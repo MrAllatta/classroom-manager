@@ -1,0 +1,41 @@
+# Student: Taylor Gonzalez
+# OSIS: 1000114
+# Sections: AP-CSA
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000114
+first_name: Taylor
+last_name: Gonzalez
+grade: 9
+date_of_birth: 2008-02-18
+sections:
+  - AP-CSA
+plan_type: 504
+pronouns: he/him
+accommodations:
+  -
+    code: TIME_UNLIMITED
+    applies_to: instruction
+    verified_date: 2025-05-15
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: parent/guardian
+    name: Casey Martinez
+    phone: 212-875-8357
+    email: ma_271@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+  -
+    relationship: emergency contact
+    name: Jordan Hassan
+    phone: 212-545-4308
+    email: ca_251@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

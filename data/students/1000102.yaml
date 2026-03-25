@@ -1,0 +1,33 @@
+# Student: Jessica Gonzalez
+# OSIS: 1000102
+# Sections: AP-STAT
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000102
+first_name: Jessica
+last_name: Gonzalez
+grade: 9
+date_of_birth: 2009-11-23
+sections:
+  - AP-STAT
+plan_type: none
+gender_marker: F
+pronouns: she/her
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+intervention_flags:
+  - at_risk_failing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Aaliyah Rosenberg
+    phone: 212-680-3734
+    email: pa_261@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+    note: Please call before 8am
+communication_log: []

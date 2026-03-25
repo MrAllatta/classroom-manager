@@ -1,0 +1,38 @@
+# Student: Riley Smith
+# OSIS: 1000013
+# Sections: ALG-01
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000013
+first_name: Riley
+last_name: Smith
+grade: 9
+date_of_birth: 2012-02-24
+sections:
+  - ALG-01
+plan_type: IEP
+preferred_name: Riley
+pronouns: they/them
+disability_category: Emotional Disability
+case_manager: Ms. Martinez
+accommodations:
+  -
+    code: RESP_SPEECH_TO_TEXT
+    applies_to: both
+    verified_date: 2025-11-18
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Sam Johnson
+    phone: 212-211-8119
+    email: pa_846@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+    note: Please call before 8am
+communication_log: []

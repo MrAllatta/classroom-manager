@@ -1,0 +1,37 @@
+# Student: Yuki Cohen
+# OSIS: 1000117
+# Sections: AP-CSA
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000117
+first_name: Yuki
+last_name: Cohen
+grade: 12
+date_of_birth: 2009-09-16
+sections:
+  - AP-CSA
+plan_type: none
+gender_marker: F
+pronouns: they/them
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: guardian
+    name: Sofia Lopez
+    phone: 212-910-3604
+    email: ma_418@email.com
+    preferred_language: English
+    preferred_contact_method: text
+  -
+    relationship: parent/guardian
+    name: Jennifer Lee
+    phone: 212-996-4288
+    email: ma_355@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

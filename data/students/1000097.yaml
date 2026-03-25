@@ -1,0 +1,36 @@
+# Student: Jessica Rodriguez
+# OSIS: 1000097
+# Sections: AP-STAT
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000097
+first_name: Jessica
+last_name: Rodriguez
+grade: 9
+date_of_birth: 2009-02-13
+sections:
+  - AP-STAT
+plan_type: none
+gender_marker: F
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: parent/guardian
+    name: Maria Ali
+    phone: 212-451-2975
+    email: pa_810@email.com
+    preferred_language: English
+    preferred_contact_method: email
+  -
+    relationship: emergency contact
+    name: Jessica Khan
+    phone: 212-925-2678
+    email: ma_420@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+communication_log: []

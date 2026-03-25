@@ -1,0 +1,39 @@
+# Student: Priya Davis
+# OSIS: 1000050
+# Sections: ALG-02
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000050
+first_name: Priya
+last_name: Davis
+grade: 9
+date_of_birth: 2009-06-07
+sections:
+  - ALG-02
+plan_type: none
+preferred_name: Priya
+gender_marker: F
+pronouns: they/them
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: parent/guardian
+    name: Elena Kim
+    phone: 212-416-8684
+    email: ma_476@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: Bilingual household
+  -
+    relationship: guardian
+    name: Laura Lopez
+    phone: 212-640-7859
+    email: ma_936@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

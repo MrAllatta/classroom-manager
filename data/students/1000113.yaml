@@ -1,0 +1,61 @@
+# Student: Priya Martinez
+# OSIS: 1000113
+# Sections: AP-CSA
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000113
+first_name: Priya
+last_name: Martinez
+grade: 10
+date_of_birth: 2009-06-09
+sections:
+  - AP-CSA
+plan_type: IEP
+gender_marker: F
+disability_category: Intellectual Disability
+case_manager: Ms. Hernandez
+accommodations:
+  -
+    code: INST_MANIPULATIVES
+    applies_to: both
+    verified_date: 2025-08-09
+  -
+    code: PRES_LARGE_PRINT
+    applies_to: instruction
+    verified_date: 2025-08-18
+  -
+    code: TIME_UNLIMITED
+    applies_to: testing
+    verified_date: 2025-10-12
+  -
+    code: INST_CHECK_IN
+    applies_to: instruction
+    verified_date: 2025-10-31
+    context_note: Check before exam season
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+intervention_flags:
+  - attendance_concern
+  - missing_three_or_more_assignments
+contacts:
+  -
+    relationship: parent/guardian
+    name: Sofia Brown
+    phone: 212-103-8005
+    email: ma_401@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: "Best time: after 5pm"
+  -
+    relationship: parent/guardian
+    name: Maria Lee
+    phone: 212-274-5781
+    email: ma_584@email.com
+    preferred_language: English
+    preferred_contact_method: email
+    note: Bilingual household
+communication_log: []

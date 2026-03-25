@@ -1,0 +1,56 @@
+# Student: Morgan Kim
+# OSIS: 1000103
+# Sections: AP-STAT
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000103
+first_name: Morgan
+last_name: Kim
+grade: 9
+date_of_birth: 2007-03-18
+sections:
+  - AP-STAT
+plan_type: 504
+pronouns: he/him
+case_manager: Ms. Khan
+accommodations:
+  -
+    code: TIME_EXTENDED_15
+    applies_to: both
+    verified_date: 2025-09-21
+    context_note: Include visual supports
+  -
+    code: RESP_SCRIBE
+    applies_to: instruction
+    verified_date: 2025-08-19
+  -
+    code: PRES_READ_ALOUD_ALL
+    applies_to: instruction
+    verified_date: 2025-11-15
+    context_note: Check before exam season
+  -
+    code: PRES_BRAILLE
+    applies_to: testing
+    verified_date: 2025-12-08
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: guardian
+    name: Sam Cohen
+    phone: 212-179-7108
+    email: ma_614@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+  -
+    relationship: parent/guardian
+    name: Morgan Garcia
+    phone: 212-998-8620
+    email: pa_892@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+communication_log: []

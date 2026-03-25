@@ -1,0 +1,49 @@
+# Student: Riley Hassan
+# OSIS: 1000042
+# Sections: ALG-02
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000042
+first_name: Riley
+last_name: Hassan
+grade: 9
+date_of_birth: 2011-07-11
+sections:
+  - ALG-02
+plan_type: IEP
+pronouns: he/him
+disability_category: Learning Disability
+accommodations:
+  -
+    code: PRES_READ_ALOUD_DIRECTIONS
+    applies_to: instruction
+    verified_date: 2025-12-27
+    context_note: Check before exam season
+  -
+    code: SETTING_SEPARATE
+    applies_to: testing
+    verified_date: 2025-07-19
+    context_note: Check before exam season
+  -
+    code: RESP_SCRIBE
+    applies_to: both
+    verified_date: 2025-03-31
+  -
+    code: SCHED_BREAKS
+    applies_to: both
+    verified_date: 2025-10-10
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: emergency contact
+    name: Alex Shah
+    phone: 212-714-6119
+    email: pa_206@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

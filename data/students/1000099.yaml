@@ -1,0 +1,33 @@
+# Student: Amanda Kim
+# OSIS: 1000099
+# Sections: AP-STAT
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000099
+first_name: Amanda
+last_name: Kim
+grade: 9
+date_of_birth: 2007-03-23
+sections:
+  - AP-STAT
+plan_type: none
+gender_marker: F
+pronouns: they/them
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+intervention_flags:
+  - at_risk_failing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Michelle Williams
+    phone: 212-235-7337
+    email: ca_530@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+    note: Bilingual household
+communication_log: []

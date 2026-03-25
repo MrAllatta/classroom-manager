@@ -1,0 +1,38 @@
+# Student: Dakota Ali
+# OSIS: 1000066
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000066
+first_name: Dakota
+last_name: Ali
+grade: 9
+date_of_birth: 2012-06-08
+sections:
+  - ALG-03
+plan_type: none
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+intervention_flags:
+  - at_risk_failing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Riley Williams
+    phone: 212-789-2795
+    email: pa_697@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+    note: Please call before 8am
+  -
+    relationship: parent/guardian
+    name: Dakota Patel
+    phone: 212-771-4728
+    email: ca_152@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

@@ -1,0 +1,41 @@
+# Student: Riley Hassan
+# OSIS: 1000058
+# Sections: ALG-03
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000058
+first_name: Riley
+last_name: Hassan
+grade: 9
+date_of_birth: 2008-07-09
+sections:
+  - ALG-03
+plan_type: 504
+pronouns: he/him
+case_manager: Ms. Garcia
+accommodations:
+  -
+    code: LANG_BILINGUAL_GLOSSARY
+    applies_to: testing
+    verified_date: 2025-08-23
+  -
+    code: RESP_GRAPHIC_ORGANIZER
+    applies_to: instruction
+    verified_date: 2025-06-29
+    context_note: Check before exam season
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: guardian
+    name: Sam Rosenberg
+    phone: 212-261-3852
+    email: pa_620@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: "Best time: after 5pm"
+communication_log: []

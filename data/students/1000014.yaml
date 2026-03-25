@@ -1,0 +1,38 @@
+# Student: Sam Hassan
+# OSIS: 1000014
+# Sections: ALG-01
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000014
+first_name: Sam
+last_name: Hassan
+grade: 9
+date_of_birth: 2008-02-03
+sections:
+  - ALG-01
+plan_type: none
+preferred_name: Sam
+pronouns: she/her
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: guardian
+    name: Casey Lee
+    phone: 212-530-7211
+    email: ca_866@email.com
+    preferred_language: English
+    preferred_contact_method: text
+  -
+    relationship: emergency contact
+    name: Alex Shah
+    phone: 212-393-4443
+    email: pa_904@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: Bilingual household
+communication_log: []

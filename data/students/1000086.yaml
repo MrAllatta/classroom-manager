@@ -1,0 +1,30 @@
+# Student: Jennifer Jones
+# OSIS: 1000086
+# Sections: AP-STAT
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000086
+first_name: Jennifer
+last_name: Jones
+grade: 10
+date_of_birth: 2010-01-31
+sections:
+  - AP-STAT
+plan_type: none
+gender_marker: F
+pronouns: she/her
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: emergency contact
+    name: Priya Williams
+    phone: 212-485-5592
+    email: pa_473@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

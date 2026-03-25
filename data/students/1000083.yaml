@@ -1,0 +1,51 @@
+# Student: Jennifer Nguyen
+# OSIS: 1000083
+# Sections: ALG-03
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000083
+first_name: Jennifer
+last_name: Nguyen
+grade: 9
+date_of_birth: 2012-01-30
+sections:
+  - ALG-03
+plan_type: 504
+gender_marker: F
+case_manager: Ms. Rodriguez
+accommodations:
+  -
+    code: TIME_EXTENDED_15
+    applies_to: instruction
+    verified_date: 2025-06-17
+  -
+    code: INST_CHECK_IN
+    applies_to: both
+    verified_date: 2025-08-15
+  -
+    code: PRES_LARGE_PRINT
+    applies_to: both
+    verified_date: 2025-04-30
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: guardian
+    name: "Laura O'Brien"
+    phone: 212-857-3292
+    email: ca_841@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: Bilingual household
+  -
+    relationship: parent/guardian
+    name: Amanda Miller
+    phone: 212-337-2245
+    email: pa_719@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

@@ -1,0 +1,37 @@
+# Student: Angela Williams
+# OSIS: 1000019
+# Sections: ALG-01
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000019
+first_name: Angela
+last_name: Williams
+grade: 9
+date_of_birth: 2011-04-27
+sections:
+  - ALG-01
+plan_type: none
+gender_marker: F
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: guardian
+    name: Natalia Patel
+    phone: 212-954-2341
+    email: pa_119@email.com
+    preferred_language: English
+    preferred_contact_method: text
+  -
+    relationship: guardian
+    name: Priya Ahmed
+    phone: 212-170-1659
+    email: ma_353@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: "Best time: after 5pm"
+communication_log: []

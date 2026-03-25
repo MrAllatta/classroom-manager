@@ -1,0 +1,39 @@
+# Student: Andre Ali
+# OSIS: 1000110
+# Sections: AP-CSA
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000110
+first_name: Andre
+last_name: Ali
+grade: 12
+date_of_birth: 2007-10-09
+sections:
+  - AP-CSA
+plan_type: none
+preferred_name: Andre
+gender_marker: M
+pronouns: she/her
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Kevin Shah
+    phone: 212-430-3235
+    email: ma_849@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+    note: Please call before 8am
+  -
+    relationship: guardian
+    name: Juan Ali
+    phone: 212-675-6846
+    email: ma_781@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

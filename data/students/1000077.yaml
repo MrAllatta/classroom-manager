@@ -1,0 +1,44 @@
+# Student: Marcus Kowalski
+# OSIS: 1000077
+# Sections: ALG-03
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000077
+first_name: Marcus
+last_name: Kowalski
+grade: 9
+date_of_birth: 2007-05-31
+sections:
+  - ALG-03
+plan_type: IEP
+gender_marker: M
+disability_category: Autism Spectrum Disorder
+case_manager: Ms. Rodriguez
+accommodations:
+  -
+    code: INST_CHECK_IN
+    applies_to: both
+    verified_date: 2025-09-13
+  -
+    code: INST_MANIPULATIVES
+    applies_to: instruction
+    verified_date: 2025-12-09
+  -
+    code: RESP_SPEECH_TO_TEXT
+    applies_to: testing
+    verified_date: 2025-05-24
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: emergency contact
+    name: Marcus Patel
+    phone: 212-162-3869
+    email: ca_795@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+communication_log: []

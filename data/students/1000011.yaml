@@ -1,0 +1,40 @@
+# Student: Keisha Islam
+# OSIS: 1000011
+# Sections: ALG-01
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000011
+first_name: Keisha
+last_name: Islam
+grade: 9
+date_of_birth: 2012-05-04
+sections:
+  - ALG-01
+plan_type: 504
+gender_marker: F
+pronouns: she/her
+case_manager: Ms. Johnson
+accommodations:
+  -
+    code: PRES_VISUAL_SUPPORTS
+    applies_to: testing
+    verified_date: 2025-04-03
+    context_note: Include visual supports
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+intervention_flags:
+  - attendance_concern
+contacts:
+  -
+    relationship: parent/guardian
+    name: Amina Lopez
+    phone: 212-600-5114
+    email: ma_194@email.com
+    preferred_language: English
+    preferred_contact_method: email
+    note: "Best time: after 5pm"
+communication_log: []

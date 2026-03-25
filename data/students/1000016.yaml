@@ -1,0 +1,31 @@
+# Student: Priya Rodriguez
+# OSIS: 1000016
+# Sections: ALG-01
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000016
+first_name: Priya
+last_name: Rodriguez
+grade: 9
+date_of_birth: 2009-05-29
+sections:
+  - ALG-01
+plan_type: none
+gender_marker: F
+pronouns: he/him
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: parent/guardian
+    name: Natalia Kim
+    phone: 212-280-9486
+    email: pa_151@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+    note: "Best time: after 5pm"
+communication_log: []

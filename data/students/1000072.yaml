@@ -1,0 +1,30 @@
+# Student: Priya Davis
+# OSIS: 1000072
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000072
+first_name: Priya
+last_name: Davis
+grade: 9
+date_of_birth: 2007-05-14
+sections:
+  - ALG-03
+plan_type: none
+gender_marker: F
+pronouns: he/him
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: guardian
+    name: Maria Patel
+    phone: 212-769-6890
+    email: ca_341@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

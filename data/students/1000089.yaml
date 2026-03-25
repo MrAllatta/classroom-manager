@@ -1,0 +1,54 @@
+# Student: Fatima Murphy
+# OSIS: 1000089
+# Sections: AP-STAT
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000089
+first_name: Fatima
+last_name: Murphy
+grade: 11
+date_of_birth: 2008-04-28
+sections:
+  - AP-STAT
+plan_type: 504
+gender_marker: F
+pronouns: they/them
+accommodations:
+  -
+    code: SCHED_BREAKS
+    applies_to: testing
+    verified_date: 2025-07-31
+  -
+    code: RESP_CALCULATOR
+    applies_to: testing
+    verified_date: 2025-04-02
+  -
+    code: RESP_WORD_PROCESSOR
+    applies_to: instruction
+    verified_date: 2026-02-09
+    context_note: Include visual supports
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+intervention_flags:
+  - at_risk_failing
+contacts:
+  -
+    relationship: guardian
+    name: Aaliyah Martinez
+    phone: 212-548-8412
+    email: pa_168@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+    note: "Best time: after 5pm"
+  -
+    relationship: parent/guardian
+    name: Angela Ahmed
+    phone: 212-211-3692
+    email: ca_349@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

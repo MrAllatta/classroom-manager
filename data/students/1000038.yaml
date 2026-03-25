@@ -1,0 +1,43 @@
+# Student: Sofia Ali
+# OSIS: 1000038
+# Sections: ALG-02
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000038
+first_name: Sofia
+last_name: Ali
+grade: 9
+date_of_birth: 2007-12-25
+sections:
+  - ALG-02
+plan_type: 504
+gender_marker: F
+accommodations:
+  -
+    code: LANG_BILINGUAL_GLOSSARY
+    applies_to: instruction
+    verified_date: 2025-10-22
+    context_note: Check before exam season
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: emergency contact
+    name: Priya Rosenberg
+    phone: 212-471-2627
+    email: ca_476@email.com
+    preferred_language: English
+    preferred_contact_method: text
+  -
+    relationship: emergency contact
+    name: Amina Lee
+    phone: 212-225-8450
+    email: ma_778@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: "Best time: after 5pm"
+communication_log: []

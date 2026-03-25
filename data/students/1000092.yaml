@@ -1,0 +1,51 @@
+# Student: Fatima Gonzalez
+# OSIS: 1000092
+# Sections: AP-STAT
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000092
+first_name: Fatima
+last_name: Gonzalez
+grade: 9
+date_of_birth: 2010-01-29
+sections:
+  - AP-STAT
+plan_type: IEP
+gender_marker: F
+disability_category: Other Health Impairment
+accommodations:
+  -
+    code: SCHED_BREAKS
+    applies_to: testing
+    verified_date: 2025-10-09
+    context_note: Coordinate with case manager
+  -
+    code: SCHED_MULTIPLE_SESSIONS
+    applies_to: both
+    verified_date: 2026-02-02
+    context_note: Coordinate with case manager
+  -
+    code: SETTING_SEPARATE
+    applies_to: both
+    verified_date: 2025-11-04
+    context_note: Include visual supports
+  -
+    code: INST_CHUNKED_TASKS
+    applies_to: both
+    verified_date: 2025-03-26
+    context_note: Coordinate with case manager
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: parent/guardian
+    name: Keisha Johnson
+    phone: 212-381-4683
+    email: ca_395@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

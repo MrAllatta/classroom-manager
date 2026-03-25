@@ -1,0 +1,46 @@
+# Student: Yuki Lopez
+# OSIS: 1000122
+# Sections: AP-CSA
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000122
+first_name: Yuki
+last_name: Lopez
+grade: 9
+date_of_birth: 2011-10-25
+sections:
+  - AP-CSA
+plan_type: IEP
+gender_marker: F
+pronouns: he/him
+disability_category: Autism Spectrum Disorder
+case_manager: Ms. Jones
+accommodations:
+  -
+    code: TIME_EXTENDED_15
+    applies_to: instruction
+    verified_date: 2025-10-06
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: guardian
+    name: Natalia Johnson
+    phone: 212-991-3470
+    email: ma_305@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+    note: Bilingual household
+  -
+    relationship: parent/guardian
+    name: Angela Rosenberg
+    phone: 212-832-3954
+    email: ma_599@email.com
+    preferred_language: Spanish
+    preferred_contact_method: text
+    note: Bilingual household
+communication_log: []

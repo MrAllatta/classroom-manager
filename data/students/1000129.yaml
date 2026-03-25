@@ -1,0 +1,37 @@
+# Student: Jamal Kim
+# OSIS: 1000129
+# Sections: AP-CSA
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000129
+first_name: Jamal
+last_name: Kim
+grade: 10
+date_of_birth: 2008-11-14
+sections:
+  - AP-CSA
+plan_type: none
+gender_marker: M
+pronouns: he/him
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: emergency contact
+    name: Mohammad Garcia
+    phone: 212-570-8277
+    email: ca_558@email.com
+    preferred_language: English
+    preferred_contact_method: email
+  -
+    relationship: parent/guardian
+    name: Ahmed Khan
+    phone: 212-769-1291
+    email: ma_513@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+communication_log: []

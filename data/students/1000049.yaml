@@ -1,0 +1,35 @@
+# Student: Morgan Lopez
+# OSIS: 1000049
+# Sections: ALG-02
+# Plan Type: 504
+# Generated: 2026-03-25
+
+student_id: 1000049
+first_name: Morgan
+last_name: Lopez
+grade: 9
+date_of_birth: 2011-07-12
+sections:
+  - ALG-02
+plan_type: 504
+pronouns: she/her
+case_manager: Ms. Johnson
+accommodations:
+  -
+    code: SCHED_MULTIPLE_SESSIONS
+    applies_to: both
+    verified_date: 2025-05-30
+performance_tier: advanced
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: guardian
+    name: Casey Lee
+    phone: 212-449-8967
+    email: ma_331@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

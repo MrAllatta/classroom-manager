@@ -1,0 +1,29 @@
+# Student: Alex Ahmed
+# OSIS: 1000052
+# Sections: ALG-02
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000052
+first_name: Alex
+last_name: Ahmed
+grade: 9
+date_of_birth: 2009-11-27
+sections:
+  - ALG-02
+plan_type: none
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: parent/guardian
+    name: Sam Miller
+    phone: 212-101-6780
+    email: ma_684@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+    note: "Best time: after 5pm"
+communication_log: []

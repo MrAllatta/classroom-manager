@@ -1,0 +1,28 @@
+# Student: Alex Hassan
+# OSIS: 1000005
+# Sections: ALG-01
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000005
+first_name: Alex
+last_name: Hassan
+grade: 9
+date_of_birth: 2009-09-11
+sections:
+  - ALG-01
+plan_type: none
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: guardian
+    name: Jordan Shah
+    phone: 212-545-3591
+    email: pa_103@email.com
+    preferred_language: English
+    preferred_contact_method: text
+communication_log: []

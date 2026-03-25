@@ -1,0 +1,30 @@
+# Student: Jamal Jones
+# OSIS: 1000065
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000065
+first_name: Jamal
+last_name: Jones
+grade: 9
+date_of_birth: 2009-01-31
+sections:
+  - ALG-03
+plan_type: none
+gender_marker: M
+performance_tier: proficient
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: parent/guardian
+    name: Carlos Ali
+    phone: 212-441-8761
+    email: ca_567@email.com
+    preferred_language: English
+    preferred_contact_method: text
+    note: "Best time: after 5pm"
+communication_log: []

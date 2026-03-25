@@ -1,0 +1,38 @@
+# Student: Robert Ahmed
+# OSIS: 1000096
+# Sections: AP-STAT
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000096
+first_name: Robert
+last_name: Ahmed
+grade: 10
+date_of_birth: 2010-02-18
+sections:
+  - AP-STAT
+plan_type: none
+gender_marker: M
+pronouns: she/her
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: advanced
+contacts:
+  -
+    relationship: parent/guardian
+    name: Robert Rosenberg
+    phone: 212-261-8230
+    email: pa_100@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+    note: "Best time: after 5pm"
+  -
+    relationship: guardian
+    name: Juan Rosenberg
+    phone: 212-997-5489
+    email: ma_770@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+communication_log: []

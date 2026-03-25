@@ -1,0 +1,29 @@
+# Student: Sam Brown
+# OSIS: 1000073
+# Sections: ALG-03
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000073
+first_name: Sam
+last_name: Brown
+grade: 9
+date_of_birth: 2009-07-31
+sections:
+  - ALG-03
+plan_type: none
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: developing
+  CCSS.MATH.CONTENT.HSA.CED.A.1: developing
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: parent/guardian
+    name: Dakota Rodriguez
+    phone: 212-565-7121
+    email: pa_818@email.com
+    preferred_language: English
+    preferred_contact_method: email
+    note: Please call before 8am
+communication_log: []

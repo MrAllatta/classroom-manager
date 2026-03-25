@@ -1,0 +1,49 @@
+# Student: Anthony Murphy
+# OSIS: 1000107
+# Sections: AP-STAT
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000107
+first_name: Anthony
+last_name: Murphy
+grade: 10
+date_of_birth: 2010-03-11
+sections:
+  - AP-STAT
+plan_type: IEP
+gender_marker: M
+pronouns: they/them
+disability_category: Other Health Impairment
+case_manager: Ms. Murphy
+accommodations:
+  -
+    code: INST_MANIPULATIVES
+    applies_to: testing
+    verified_date: 2025-11-20
+  -
+    code: RESP_CALCULATOR
+    applies_to: instruction
+    verified_date: 2025-12-09
+  -
+    code: SETTING_REDUCED_DISTRACTION
+    applies_to: both
+    verified_date: 2025-04-14
+  -
+    code: RESP_SCRIBE
+    applies_to: instruction
+    verified_date: 2025-06-13
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: emerging
+contacts:
+  -
+    relationship: parent/guardian
+    name: Michael Davis
+    phone: 212-151-3752
+    email: ca_543@email.com
+    preferred_language: English
+    preferred_contact_method: email
+communication_log: []

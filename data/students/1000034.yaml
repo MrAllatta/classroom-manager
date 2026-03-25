@@ -1,0 +1,57 @@
+# Student: Casey Chen
+# OSIS: 1000034
+# Sections: ALG-02
+# Plan Type: IEP
+# Generated: 2026-03-25
+
+student_id: 1000034
+first_name: Casey
+last_name: Chen
+grade: 9
+date_of_birth: 2011-04-02
+sections:
+  - ALG-02
+plan_type: IEP
+disability_category: Other Health Impairment
+case_manager: Ms. Hassan
+accommodations:
+  -
+    code: INST_COPY_OF_NOTES
+    applies_to: testing
+    verified_date: 2025-08-11
+    context_note: Include visual supports
+  -
+    code: PRES_LARGE_PRINT
+    applies_to: testing
+    verified_date: 2025-08-12
+  -
+    code: RESP_WORD_PROCESSOR
+    applies_to: both
+    verified_date: 2025-09-25
+    context_note: Coordinate with case manager
+  -
+    code: PRES_BRAILLE
+    applies_to: testing
+    verified_date: 2025-08-05
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: emerging
+  CCSS.MATH.CONTENT.HSA.CED.A.1: advanced
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: parent/guardian
+    name: Dakota Nguyen
+    phone: 212-246-4804
+    email: pa_753@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+  -
+    relationship: parent/guardian
+    name: Dakota Kowalski
+    phone: 212-394-9955
+    email: ma_175@email.com
+    preferred_language: Spanish
+    preferred_contact_method: email
+    note: Bilingual household
+communication_log: []

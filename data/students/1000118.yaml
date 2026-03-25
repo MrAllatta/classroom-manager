@@ -1,0 +1,29 @@
+# Student: Andre Gonzalez
+# OSIS: 1000118
+# Sections: AP-CSA
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000118
+first_name: Andre
+last_name: Gonzalez
+grade: 10
+date_of_birth: 2007-09-26
+sections:
+  - AP-CSA
+plan_type: none
+gender_marker: M
+performance_tier: developing
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: advanced
+  CCSS.MATH.CONTENT.HSA.CED.A.1: emerging
+  CCSS.MATH.CONTENT.HSA.REI.A.1: developing
+contacts:
+  -
+    relationship: emergency contact
+    name: Benjamin Brown
+    phone: 212-452-3679
+    email: pa_866@email.com
+    preferred_language: English
+    preferred_contact_method: phone
+communication_log: []

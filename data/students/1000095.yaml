@@ -1,0 +1,30 @@
+# Student: Maria Rosenberg
+# OSIS: 1000095
+# Sections: AP-STAT
+# Plan Type: none
+# Generated: 2026-03-25
+
+student_id: 1000095
+first_name: Maria
+last_name: Rosenberg
+grade: 10
+date_of_birth: 2009-05-14
+sections:
+  - AP-STAT
+plan_type: none
+gender_marker: F
+pronouns: they/them
+performance_tier: emerging
+mastery_by_standard:
+  CCSS.MATH.CONTENT.HSA.REI.B.3: proficient
+  CCSS.MATH.CONTENT.HSA.CED.A.1: proficient
+  CCSS.MATH.CONTENT.HSA.REI.A.1: proficient
+contacts:
+  -
+    relationship: emergency contact
+    name: Michelle Rosenberg
+    phone: 212-164-9756
+    email: pa_323@email.com
+    preferred_language: Spanish
+    preferred_contact_method: phone
+communication_log: []
