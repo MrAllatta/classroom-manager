@@ -1,0 +1,70 @@
+# School Context
+# Layer 1: Environmental constants. Set once per school year. Read by all roles.
+# Human-editable. Do not store student-identifiable data in this file.
+
+school:
+  name: Columbia Secondary School
+  short_name: CSS
+  district: New York City Department of Education
+  borough: Manhattan
+  grades: [6, 7, 8, 9, 10, 11, 12]  # 6-12 combined middle/high school
+  type: public_screened_combined
+
+population:
+  description: >
+    Bimodal student population. General education enrollment is screened
+    (competitive admissions). Special education enrollment is unscreened
+    (students are placed by the DOE without admissions screening).
+    This produces a population with wide variance in prior academic preparation
+    and support needs. Differentiation is non-negotiable across all sections.
+  gen_ed_pathway: screened
+  sped_pathway: unscreened
+  note: >
+    Do not infer a student's support needs from their pathway. Screened
+    gen-ed students may carry 504 plans or other documented needs. Every
+    student is assessed individually.
+
+special_education:
+  governing_framework: IDEA
+  local_system: SESIS  # NYC DOE Special Education Student Information System
+  sesis_integration_status: planned  # not yet connected; see data/README.md
+  plan_types:
+    - code: IEP
+      label: Individualized Education Program
+      legal_basis: IDEA Part B
+      note: Mandated services, annual review required, triennial evaluation required
+    - code: 504
+      label: Section 504 Accommodation Plan
+      legal_basis: Rehabilitation Act Section 504
+      note: Accommodations only, no mandated services; annual review best practice
+    - code: none
+      label: No formal plan
+      note: Student may still have documented instructional supports or informal accommodations
+
+compliance:
+  annual_review_tracking: placeholder  # field reserved; implementation pending
+  triennial_evaluation_tracking: placeholder
+  note: >
+    Compliance date tracking is a high-priority feature. Early completion of
+    special education reports is valued by colleagues and administration.
+    Design should surface upcoming deadlines proactively.
+
+privacy:
+  ferpa_applies: true
+  sensitive_fields_marker: _sensitive  # fields suffixed with _sensitive are FERPA-protected
+  data_access_policy: >
+    Student-level data must never be passed through an LLM context window in
+    production. Tools should query local data and return computed results only.
+    In the current dummy/experimental phase, synthetic data is used exclusively.
+  student_data_directory: data/students/
+  production_gate: locked  # set to 'unlocked' only when live data safeguards are verified
+
+academic_calendar:
+  system: NYC DOE
+  year: "2026-27"
+  note: Calendar details to be populated when school year schedule is confirmed.
+
+teacher:
+  name: Eric
+  role: classroom_teacher
+  co_teacher_agent: Inés Vidal
