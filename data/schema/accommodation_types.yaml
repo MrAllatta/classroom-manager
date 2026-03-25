@@ -1,0 +1,231 @@
+# Accommodation Types — Structured Reference
+# This is reference data, not student data. It contains no personally identifiable information.
+# Source: NYC DOE IEP/504 accommodation frameworks and NYS testing accommodation codes.
+# Used by: Assessor (assessment design), Planner (lesson design flags), Communicator (correspondence)
+#
+# Structure:
+#   Each accommodation has:
+#     code:        Machine-readable identifier (use this in student profiles)
+#     label:       Human-readable short name
+#     category:    Grouping for filtering and planning purposes
+#     applies_to:  [testing, instruction, both]
+#     description: What this accommodation means in practice
+#     notes:       Implementation notes for the teacher
+
+accommodation_types:
+
+  # ── TIME ────────────────────────────────────────────────────────────────────
+  - code: TIME_EXTENDED_15
+    label: Extended Time (time + 1.5×)
+    category: time
+    applies_to: testing
+    description: Student receives 50% additional time on timed assessments.
+    notes: Most common accommodation. Must be reflected in all formal assessments.
+
+  - code: TIME_EXTENDED_DOUBLE
+    label: Extended Time (double time, 2×)
+    category: time
+    applies_to: testing
+    description: Student receives double time on timed assessments.
+    notes: Less common. Verify on current IEP/504 — code changes if it reverts to 1.5×.
+
+  - code: TIME_UNLIMITED
+    label: Unlimited Time
+    category: time
+    applies_to: testing
+    description: No time limit on assessments.
+    notes: Rare. Confirm with case manager before implementation.
+
+  # ── SETTING ─────────────────────────────────────────────────────────────────
+  - code: SETTING_SEPARATE
+    label: Separate Testing Location
+    category: setting
+    applies_to: testing
+    description: Student takes assessments in a small group or individual setting outside the classroom.
+    notes: Coordinate with school test coordinator for room assignment. Advance notice required.
+
+  - code: SETTING_PREFERENTIAL_SEATING
+    label: Preferential Seating
+    category: setting
+    applies_to: [testing, instruction]
+    description: Student is seated to minimize distractions and maximize access (e.g., near the board, away from door).
+    notes: Teacher discretion on placement. Note student preference in classroom setup.
+
+  - code: SETTING_REDUCED_DISTRACTION
+    label: Reduced Distraction Environment
+    category: setting
+    applies_to: [testing, instruction]
+    description: Student requires a low-stimulation environment during assessments or independent work.
+    notes: Often paired with SETTING_SEPARATE for tests.
+
+  # ── PRESENTATION ────────────────────────────────────────────────────────────
+  - code: PRES_READ_ALOUD_ALL
+    label: Read Aloud (all text)
+    category: presentation
+    applies_to: [testing, instruction]
+    description: All written text, including directions and questions, is read aloud to the student.
+    notes: >
+      For math, this typically includes reading problem stems. Verify whether
+      answer choices are included — this varies by IEP. See PRES_READ_ALOUD_DIRECTIONS.
+
+  - code: PRES_READ_ALOUD_DIRECTIONS
+    label: Read Aloud (directions only)
+    category: presentation
+    applies_to: [testing, instruction]
+    description: Only assessment or task directions are read aloud. Student reads question content independently.
+    notes: More restrictive than PRES_READ_ALOUD_ALL. Common on math assessments.
+
+  - code: PRES_LARGE_PRINT
+    label: Large Print Materials
+    category: presentation
+    applies_to: [testing, instruction]
+    description: All printed materials provided at enlarged font size (typically 18pt or per IEP spec).
+    notes: Coordinate printing in advance. Digital materials may substitute if font is adjustable.
+
+  - code: PRES_BRAILLE
+    label: Braille
+    category: presentation
+    applies_to: [testing, instruction]
+    description: Materials provided in Braille.
+    notes: Requires advance coordination with vision services provider.
+
+  - code: PRES_VISUAL_SUPPORTS
+    label: Visual Supports / Graphic Organizers
+    category: presentation
+    applies_to: [testing, instruction]
+    description: Student receives visual aids, graphic organizers, or structured note templates.
+    notes: Can be implemented instructionally without formal plan; required if mandated.
+
+  # ── RESPONSE ────────────────────────────────────────────────────────────────
+  - code: RESP_SCRIBE
+    label: Scribe
+    category: response
+    applies_to: testing
+    description: A scribe records the student's verbal responses verbatim.
+    notes: Scribe must be trained. Student dictates; scribe does not interpret. Requires advance arrangement.
+
+  - code: RESP_SPEECH_TO_TEXT
+    label: Speech-to-Text Technology
+    category: response
+    applies_to: [testing, instruction]
+    description: Student uses speech recognition software to produce written responses.
+    notes: Verify technology availability and student familiarity before assessments.
+
+  - code: RESP_CALCULATOR
+    label: Calculator (when not otherwise permitted)
+    category: response
+    applies_to: testing
+    description: Student may use a calculator on assessments where it is not standard.
+    notes: >
+      Verify which calculator type is specified. Does not override test security rules
+      for standardized exams (e.g., AP exams have their own calculator policies).
+
+  - code: RESP_WORD_PROCESSOR
+    label: Word Processor / Typed Response
+    category: response
+    applies_to: testing
+    description: Student may type responses rather than write by hand.
+    notes: Spell-check settings vary by plan. Confirm whether spell-check is permitted.
+
+  - code: RESP_GRAPHIC_ORGANIZER
+    label: Graphic Organizer for Written Response
+    category: response
+    applies_to: testing
+    description: Student may use a pre-structured graphic organizer when producing extended written responses.
+    notes: Common for students with organizational processing needs.
+
+  # ── SCHEDULING ──────────────────────────────────────────────────────────────
+  - code: SCHED_MULTIPLE_SESSIONS
+    label: Multiple Testing Sessions
+    category: scheduling
+    applies_to: testing
+    description: Student may complete an assessment across multiple sittings.
+    notes: Coordinate with administration for scheduling and test security between sessions.
+
+  - code: SCHED_BREAKS
+    label: Scheduled Breaks During Testing
+    category: scheduling
+    applies_to: testing
+    description: Student is permitted scheduled breaks without it counting against their time.
+    notes: Document break intervals as specified in the plan. Common for anxiety and attention needs.
+
+  # ── INSTRUCTIONAL SUPPORTS ──────────────────────────────────────────────────
+  - code: INST_CHUNKED_TASKS
+    label: Chunked or Segmented Tasks
+    category: instructional
+    applies_to: instruction
+    description: Extended tasks are broken into smaller, discrete segments for the student.
+    notes: Primarily an instructional design consideration, not a testing accommodation.
+
+  - code: INST_DIRECTIONS_REPEATED
+    label: Directions Repeated or Clarified
+    category: instructional
+    applies_to: [testing, instruction]
+    description: Student may request that directions be repeated or rephrased without penalty.
+    notes: Applies to verbal directions. Does not allow clarification of test content on standardized exams.
+
+  - code: INST_CHECK_IN
+    label: Frequent Teacher Check-In
+    category: instructional
+    applies_to: instruction
+    description: Teacher or paraprofessional checks in with student at regular intervals during independent work.
+    notes: Frequency should be specified in the IEP or 504.
+
+  - code: INST_MANIPULATIVES
+    label: Manipulatives / Concrete Tools
+    category: instructional
+    applies_to: [testing, instruction]
+    description: Student may use physical manipulatives (e.g., number lines, algebra tiles) to support understanding.
+    notes: For math. Verify whether permitted on formal assessments.
+
+  - code: INST_COPY_OF_NOTES
+    label: Copy of Class Notes or Teacher Outlines
+    category: instructional
+    applies_to: instruction
+    description: Student receives a copy of notes or an outline rather than copying from the board.
+    notes: Often implemented as a matter of access; does not require formal plan in many cases.
+
+  # ── BEHAVIORAL / EXECUTIVE FUNCTION ─────────────────────────────────────────
+  - code: BEH_BEHAVIOR_PLAN
+    label: Behavior Intervention Plan (BIP)
+    category: behavioral
+    applies_to: [testing, instruction]
+    description: Student has a formal Behavior Intervention Plan associated with their IEP.
+    notes: BIP must be implemented consistently. Coordinate with case manager and any support staff.
+
+  - code: BEH_SENSORY_BREAKS
+    label: Sensory Breaks
+    category: behavioral
+    applies_to: [testing, instruction]
+    description: Student may take sensory regulation breaks as needed.
+    notes: >
+      Breaks are non-punitive and non-academic in nature. Coordinate with OT if sensory
+      tools are involved.
+
+  # ── LANGUAGE ACCESS ──────────────────────────────────────────────────────────
+  - code: LANG_BILINGUAL_GLOSSARY
+    label: Bilingual Glossary (non-ELA)
+    category: language
+    applies_to: testing
+    description: Student may use a bilingual word-to-word glossary on non-ELA assessments.
+    notes: Permitted on NYS math and science assessments for ELL/MLL students.
+
+  - code: LANG_TRANSLATED_DIRECTIONS
+    label: Translated Directions
+    category: language
+    applies_to: testing
+    description: Assessment directions are provided in the student's home language.
+    notes: Coordinate with translation services in advance for formal assessments.
+
+# ── METADATA ───────────────────────────────────────────────────────────────────
+meta:
+  last_reviewed: "2026-03-25"
+  reviewer: Inés Vidal
+  source_frameworks:
+    - NYC DOE IEP accommodation coding system
+    - NYS testing accommodations (NYSED)
+    - Section 504 best practice frameworks
+  note: >
+    This list is not exhaustive. Accommodations not listed here should be added
+    with a code, label, category, and description before being assigned to a student.
+    New codes should follow the naming convention: CATEGORY_DESCRIPTOR.
