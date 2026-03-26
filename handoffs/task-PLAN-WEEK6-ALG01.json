@@ -1,0 +1,59 @@
+{
+  "task_id": "PLAN-WEEK6-ALG01",
+  "goal": "Produce complete lesson plans, student-facing materials, and assessments for Week 6 of Algebra I Section ALG-01 (Sep 23-27, 2026). Plans must align with pacing calendar, unit scope, and curriculum standards.",
+  "plan": {
+    "week_number": 6,
+    "section": "ALG-01",
+    "date_range": {
+      "start": "2026-09-23",
+      "end": "2026-09-27"
+    },
+    "context": {
+      "unit_number": 1,
+      "unit_title": "Linear Equations in One Variable",
+      "unit_week_range": "weeks 1-5",
+      "current_position": "final week of unit",
+      "unit_endpoint_assessment": "on Friday Sep 27 (end of week 6)",
+      "note": "Week 6 is focused on review, problem-solving, and preparation for the unit 1 assessment"
+    },
+    "dependencies": {
+      "scope_file": "deliverables/scope_ALG1_fullyear.json",
+      "calendar_file": "deliverables/calendar_ALG1_fullyear.json",
+      "standards_reference": "NY State Math Standards Grade 8-9, Linear Equations"
+    },
+    "outputs_needed": [
+      "5 daily lesson plans (one per instructional day)",
+      "Warm-up and exit ticket for each day",
+      "A summary of the week's learning objectives",
+      "Unit 1 assessment (if new; otherwise refer to existing)",
+      "Optional: enrichment or remediation exercises"
+    ]
+  },
+  "constraints": {
+    "section": "ALG-01",
+    "week": 6,
+    "course": "Algebra I",
+    "school_year": "2026-27",
+    "class_meeting_schedule": {
+      "Monday": "Per 1, 9:00-9:45am",
+      "Tuesday": "Per 1, 9:00-9:45am",
+      "Wednesday": "Per 1, 9:00-9:45am",
+      "Thursday": "Per 1, 9:00-9:45am",
+      "Friday": "Per 1, 9:00-9:45am (assessment window)"
+    },
+    "lesson_length_minutes": 45,
+    "alignment_required": "NY State Standards for 8-9 grade algebra",
+    "teacher_review_required": true,
+    "no_external_send": true
+  },
+  "deliverables": [
+    "week6_ALG01_lesson_plans.md",
+    "week6_ALG01_materials.md",
+    "week6_ALG01_assessment.md"
+  ],
+  "timeout_seconds": 1200,
+  "version": 1,
+  "created_at": "2026-03-26T13:37:55.748396+00:00",
+  "status": "done",
+  "updated_at": "2026-03-26T14:20:48.662995+00:00"
+}

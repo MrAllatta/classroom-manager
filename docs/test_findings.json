@@ -1,0 +1,76 @@
+[
+  {
+    "test": "Test 1.1 \u2014 Week 6 lesson plans review",
+    "status": "FAIL",
+    "severity": "Critical",
+    "timestamp": "2026-03-26T14:34:29.913854+00:00",
+    "summary": "Lesson plans generated for Week 6 teach Unit 2 content (Linear Equations) instead of Unit 1 content (Foundations: Numbers, Expressions). This is a direct result of executor.py not injecting the scope and calendar files, leaving the model working from goal description alone.",
+    "failures": [
+      {
+        "criterion": "Lesson plans reflect Unit 1 week, not new content",
+        "expected": "Week 6 should cover Foundations unit content: N-RN standards (number system) and A-SSE standards (expressions)",
+        "actual": "Week 6 covers Linear Equations in One Variable (8.EE.C.7) \u2014 this is Unit 2 content",
+        "pass": false
+      },
+      {
+        "criterion": "Standards cited are NY State grade 8-9",
+        "expected": "NY A-SSE.1a, A-SSE.1b (grade 8-9 expressions) or similar Unit 1 standards",
+        "actual": "8.EE.C.7a and 8.EE.C.7b (which are real standards, but wrong unit). Also claims 8.EE.B.5-6 without context.",
+        "pass": false,
+        "note": "Standards exist but are misapplied to wrong unit"
+      },
+      {
+        "criterion": "Assessment scoped to Unit content only",
+        "expected": "Unit 1 assessment: operations on numbers, expression simplification, understanding of mathematical language",
+        "actual": "Assessment covers multi-step equations and word problems (Unit 2 content)",
+        "pass": false
+      },
+      {
+        "criterion": "Warm-ups and exit tickets present and scoped correctly",
+        "expected": "Quick reviews of Unit 1 topics (numbers, expressions)",
+        "actual": "Warm-ups and exits review equations and problem-solving",
+        "pass": false
+      }
+    ],
+    "root_cause": {
+      "issue": "executor.py does not load or inject scope and calendar files",
+      "evidence": "Task JSON references deliverables/scope_ALG1_fullyear.json and calendar as dependencies, but executor.py only passes task structure to model",
+      "consequence": "Model generates from goal description alone: 'Week 6 lesson plans for Algebra I' \u2192 infers 'end-of-unit review' \u2192 picks plausible unit (linear equations)",
+      "test_reference": "Test 1.2 in testing_plan.md identified this as 'a known gap'"
+    },
+    "what_is_working": [
+      "\u2713 Lesson plans ARE structured for 45-minute periods correctly",
+      "\u2713 Duration and timing breakdowns are realistic",
+      "\u2713 Warm-ups and exit tickets ARE present",
+      "\u2713 Assessment structure (Parts A-D) is sound",
+      "\u2713 Teacher notes and pedagogical framing are thoughtful",
+      "\u2713 Differentiation strategies (station rotations, scaffolding) are appropriate"
+    ],
+    "what_is_broken": [
+      "\u2717 Content does not match the scope file for this unit/week",
+      "\u2717 Standards are misapplied (right standards, wrong unit)",
+      "\u2717 No evidence the model read the actual scope or calendar"
+    ],
+    "next_steps": [
+      {
+        "step": 1,
+        "action": "Fix executor.py to inject scope and calendar as context before generating",
+        "why": "Without the actual scope, the model cannot align content to this course's structure",
+        "complexity": "Medium \u2014 requires loading JSON files and prepending to prompt"
+      },
+      {
+        "step": 2,
+        "action": "Re-run PLAN-WEEK6-ALG01 with injected scope/calendar",
+        "why": "Verify the model can generate correct Unit 1 content when given the actual scope",
+        "blockedBy": "Step 1"
+      },
+      {
+        "step": 3,
+        "action": "Review Planner role spec for dependency handling",
+        "why": "Should clarify that scope/calendar are mandatory inputs, not optional",
+        "blockedBy": "None"
+      }
+    ],
+    "note_for_eric": "The lesson plans are pedagogically sound \u2014 they would work well for a real Unit 2 Linear Equations week. But they're the wrong lesson plans for the wrong unit. This test caught exactly the gap your testing plan anticipated."
+  }
+]
