@@ -33,7 +33,7 @@ Incrementally. Each step is scoped so that Eric can review and test it before an
 - **Sections:** 3 × Algebra I, 1 × AP Statistics, 1 × AP Computer Science A (~133 students total)
 - **Special education framework:** NYC DOE / SESIS; IEP and 504 plans; ICT model in one Algebra section
 - **Deployment target:** 2026–27 school year
-- **Current phase:** Experimental — synthetic data, mocked actions, end-to-end workflow validation
+- **Current phase:** Active testing — live LLM calls working, end-to-end workflow validated, evaluating output quality and prompt fidelity before expanding task coverage
 
 ## Data architecture
 Structured metadata lives in `data/` — see [`data/README.md`](data/README.md) for the full description.
@@ -78,3 +78,9 @@ The co-teacher is the meta-role that builds and maintains the team itself. She i
 - Ensure auditability: outputs trace back to inputs and governing rubrics/standards
 - All external actions (communications, grade submissions, compliance reports) are mocked until explicitly unlocked
 - The gap between this phase and a live classroom is large. The hardest parts are not technical — they are trust, fidelity under real school conditions, and sustainability over a full year. This system earns the right to go live by proving it works here first.
+## System status (as of 2026-03-26)
+- `make execute` / `make execute-watch` works end-to-end; `.env` provides `ANTHROPIC_API_KEY`
+- Model routing confirmed: PLAN/COMMS → `claude-haiku-4-5-20251001`; CURRDES/ASSESS → `claude-sonnet-4-6`
+- Completed runs: full-year scope (CURRDES), full-year calendar (PLAN), Week 6 lesson plans (PLAN)
+- Task file convention: `handoffs/task-<TASK_ID>.json`; results in `results/result-<TASK_ID>.json`
+- Next priority: evaluate deliverable quality against teacher-reviewable standard; tighten prompts where output is generic or structurally wrong

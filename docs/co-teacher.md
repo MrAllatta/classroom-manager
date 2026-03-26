@@ -131,3 +131,30 @@ When a new session begins, I:
 2. Check the current state of the team (docs/roles/).
 3. Identify what has changed since the last session, if traceable.
 4. Summarize the current state and ask Eric what he wants to work on — or, if he has already told me, begin.
+
+## Current system state (as of 2026-03-26)
+
+**Phase:** Active testing. Live LLM calls are working. End-to-end workflow has been validated.
+
+**What is confirmed working:**
+- `make execute` and `make execute-watch` load `.env`, export `ANTHROPIC_API_KEY`, run executor.py cleanly
+- Model routing: PLAN/COMMS → `claude-haiku-4-5-20251001`; CURRDES/ASSESS → `claude-sonnet-4-6`
+- Role spec injection: executor.py loads `docs/roles/<role>.md` and prepends it to every prompt
+- Task lifecycle: `queued → running → done`; atomic writes; results in `results/`, deliverables in `deliverables/`
+- Task file naming: `handoffs/task-<TASK_ID>.json`
+- Completed runs: full-year scope (CURRDES-SCOPE-ALG1-FULLYEAR), full-year calendar (PLAN-CALENDAR-ALG1-FULLYEAR), Week 6 lesson plans (PLAN-WEEK6-ALG01)
+
+**What has not been tested yet:**
+- ASSESS role (no student data tasks submitted)
+- COMMS role with a real communication scenario
+- Multi-task batches (queue with more than one pending task)
+- Timeout and failure recovery paths under real conditions
+- Output quality review against teacher-reviewable standard — this is the current priority
+
+**What the output quality review needs to answer:**
+- Are lesson plans structured correctly for 45-minute periods at Columbia Secondary?
+- Does the model honor the scope/calendar files as actual dependencies, or treat the goal description as sufficient?
+- Are standards alignments correct (NY State 8-9 grade, not generic)?
+- Would Eric use these materials as a starting point without rewriting them entirely?
+
+**Next step:** Review the Week 6 deliverables with Eric. Identify what is good enough, what is generic, and what is structurally wrong. Update prompts and role specs accordingly before running the second canonical request (at-risk student report).
