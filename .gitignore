@@ -2,3 +2,4 @@
 *.pyo
 __pycache__/
 classroom-manager.code-workspace
+.env
