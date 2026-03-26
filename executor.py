@@ -119,13 +119,8 @@ def get_llm_client() -> anthropic.Anthropic:
     return anthropic.Anthropic(api_key=api_key)
 
 
-def get_model_for_task(task_id: str) -> str:
-    """
-    Route task to appropriate model based on role prefix in task_id.
-    
-    Task ID format: ROLE-XXXX (e.g., CURRDES-0001)
-    Returns model name from MODEL_MAP or DEFAULT_MODEL.
-    """
+def select_model_for_task(task_id: str) -> str:
+    """Select appropriate model based on task type."""
     try:
         role_prefix = task_id.split("-")[0]
         return MODEL_MAP.get(role_prefix, DEFAULT_MODEL)
@@ -133,11 +128,225 @@ def get_model_for_task(task_id: str) -> str:
         return DEFAULT_MODEL
 
 
+def load_school_context(data_dir: Path = Path("data")) -> Optional[str]:
+    """
+    Load minimal school/classroom identity context.
+    
+    Returns a ~200 token header injected into every prompt:
+    - School name
+    - Student population note  
+    - Teacher name
+    - Course (if in task)
+    
+    This is the stable "always on" context that grounds all work.
+    """
+    school_file = data_dir / "school" / "context.yaml"
+    
+    if not school_file.exists():
+        return None
+    
+    try:
+        with open(school_file, "r") as f:
+            lines = []
+            for line in f:
+                lines.append(line.rstrip())
+            
+            # Simple YAML extraction (sufficient for school context)
+            school_header = "\n".join(lines[:20])  # First ~20 lines
+            return school_header
+    except IOError:
+        return None
+
+
+def load_curriculum_context(
+    task: Dict[str, Any],
+    deliverables_dir: Path = Path("deliverables")
+) -> Optional[str]:
+    """
+    Returns None if not applicable (e.g., ASSESS, COMMS tasks).
+    """
+    # Extract from multiple locations in task structure
+    course = task.get("course")  
+    if not course:
+        course = task.get("constraints", {}).get("course")
+    if course == "Algebra I":
+        course = "ALG1"
+    
+    unit = task.get("unit")
+    if unit is None:
+        unit = task.get("plan", {}).get("unit_number")
+    if unit is None:
+        unit = task.get("plan", {}).get("context", {}).get("unit_number")
+    
+    week = task.get("week")
+    if week is None:
+        week = task.get("plan", {}).get("week_number")
+    if week is None:
+        week = task.get("constraints", {}).get("week")
+    
+    # Curriculum context only applies to tasks with course/unit
+    if not course:
+        return None
+    
+    # ...existing code...
+    
+    try:
+        with open(scope_file, "r") as f:
+            scope = json.load(f)
+        with open(calendar_file, "r") as f:
+            calendar = json.load(f)
+        
+        # Find the relevant unit in scope
+        units = scope.get("units", [])
+        calendar_units = calendar.get("units", [])
+        
+        # If unit number is specified, use it; otherwise infer from week
+        if unit is not None:
+            unit_num = unit
+        elif week is not None:
+            # Infer unit from week number
+            unit_num = _infer_unit_from_week(week, calendar_units)
+            if unit_num is None:
+                return None
+        else:
+            return None
+        
+        # Find matching unit in both scope and calendar
+        scope_unit = next(
+            (u for u in units if u.get("unit") == unit_num),
+            None
+        )
+        calendar_unit = next(
+            (u for u in calendar_units if u.get("unit") == unit_num),
+            None
+        )
+        
+        if not scope_unit or not calendar_unit:
+            return None
+        
+        # Build context snippet (~200 tokens)
+        lines = []
+        lines.append(f"# Unit {unit_num}: {scope_unit.get('title', 'Unit ' + str(unit_num))}")
+        lines.append("")
+        
+        # Standards
+        standards = scope_unit.get("standards", [])
+        if standards:
+            lines.append("## Standards")
+            for std in standards[:8]:  # Limit to first 8
+                lines.append(f"- {std}")
+            lines.append("")
+        
+        # Timeline
+        lines.append("## Timeline")
+        lines.append(f"Start: {calendar_unit.get('start_date', 'TBD')}")
+        lines.append(f"End: {calendar_unit.get('end_date', 'TBD')}")
+        lines.append(f"Instructional Days: {calendar_unit.get('instructional_days', '?')}")
+        lines.append("")
+        
+        # Content snapshot
+        content = scope_unit.get("content", [])
+        if content:
+            lines.append("## Key Content")
+            for item in content[:5]:  # Limit to first 5 items
+                lines.append(f"- {item}")
+            lines.append("")
+        
+        # If week is specified, narrow further
+        if week is not None:
+            week_context = _get_week_context(unit_num, week, calendar_unit)
+            if week_context:
+                lines.append("## Week " + str(week) + " Context")
+                lines.extend(week_context)
+        
+        return "\n".join(lines)
+    
+    except (json.JSONDecodeError, IOError):
+        return None
+
+
+def _infer_unit_from_week(week: int, calendar_units: list) -> Optional[int]:
+    """
+    Given a week number, infer which unit it falls in.
+    Assumes weeks are numbered 1+ and units appear in sequence.
+    """
+    week_count = 0
+    for unit in calendar_units:
+        calendar_weeks = unit.get("calendar_weeks", 0)
+        if week_count + calendar_weeks >= week:
+            return unit.get("unit")
+        week_count += calendar_weeks
+    return None
+
+
+def _get_week_context(unit_num: int, week: int, calendar_unit: Dict[str, Any]) -> Optional[list]:
+    """
+    Extract week-specific context from calendar unit.
+    Returns a list of lines describing what week N covers in this unit.
+    """
+    weeks = calendar_unit.get("weeks", [])
+    
+    # Try to find week entry in calendar
+    for w in weeks:
+        if w.get("week") == week:
+            lines = []
+            if w.get("focus"):
+                lines.append(f"Focus: {w.get('focus')}")
+            if w.get("topics"):
+                for topic in w.get("topics", [])[:3]:
+                    lines.append(f"- {topic}")
+            if w.get("assessments"):
+                lines.append(f"Assessment: {', '.join(w.get('assessments', []))}")
+            return lines if lines else None
+    
+    return None
+
+
+def load_context(
+    task: Dict[str, Any],
+    data_dir: Path = Path("data"),
+    deliverables_dir: Path = Path("deliverables")
+) -> str:
+    """
+    Load and combine minimal context for the task.
+    
+    Returns: school_header + curriculum_snippet (if applicable)
+    
+    This is the core context injection mechanism. For a PLAN-WEEK6-ALG1 task,
+    returns ~400-500 tokens total:
+    - School identity (stable, always present)
+    - Unit 1 scope and calendar snapshot (task-scoped)
+    - Week 6 specifics (task-scoped)
+    
+    For non-curriculum tasks (ASSESS, COMMS), returns school context only.
+    """
+    context_parts = []
+    
+    # 1. School context (always)
+    school = load_school_context(data_dir)
+    if school:
+        context_parts.append("## SCHOOL & CLASSROOM CONTEXT")
+        context_parts.append(school)
+        context_parts.append("")
+    
+    # 2. Curriculum context (if applicable)
+    curriculum = load_curriculum_context(task, deliverables_dir)
+    if curriculum:
+        context_parts.append("## CURRICULUM CONTEXT")
+        context_parts.append(curriculum)
+        context_parts.append("")
+    
+    return "\n".join(context_parts) if context_parts else ""
+
+
 def build_prompt(task: Dict[str, Any]) -> str:
     """
     Build a prompt for the LLM from task structure.
     
-    Includes role specification if available, plus goal, plan, constraints.
+    Includes:
+    1. Minimal school & curriculum context (loaded via load_context())
+    2. Role specification if available
+    3. Goal, plan, constraints from task
     """
     task_id = task.get("task_id", "UNKNOWN")
     goal = task.get("goal", "")
@@ -146,16 +355,27 @@ def build_prompt(task: Dict[str, Any]) -> str:
     
     lines = []
     
-    # Load and inject role specification if available
+    # 1. Load and inject minimal context
+    context = load_context(task)
+    if context:
+        lines.append(context)
+        lines.append("=" * 80)
+        lines.append("")
+    
+    # 2. Load and inject role specification if available
     role_prefix = get_role_prefix(task_id)
     role_spec = load_role_spec(role_prefix) if role_prefix else None
     
     if role_spec:
-        lines.append("# ROLE SPECIFICATION\n")
+        lines.append("## ROLE SPECIFICATION")
         lines.append(role_spec)
-        lines.append("\n" + "=" * 80)
-        lines.append("# TASK DETAILS\n")
+        lines.append("")
+        lines.append("=" * 80)
+        lines.append("")
     
+    # 3. Task details
+    lines.append("## TASK DETAILS")
+    lines.append("")
     lines.append(f"Task ID: {task_id}")
     lines.append(f"Goal: {goal}")
     lines.append("")
@@ -296,7 +516,7 @@ def execute_task(
     
     try:
         # Select model based on task role
-        model = get_model_for_task(task_id)
+        model = select_model_for_task(task_id)
         logger.info(f"Task {task_id} routed to model: {model}")
         
         # Build prompt from task
