@@ -3,14 +3,17 @@
 Directory Executor — minimal, robust file-based task executor.
 
 Watches a handoffs/ directory for task JSON files, marks them as running,
-executes a lightweight generic operation, and writes results and deliverables
-to appropriate folders using atomic writes.
+executes tasks using LLM API calls with model routing, and writes results 
+and deliverables to appropriate folders using atomic writes.
 
 Usage:
     python executor.py [--handoffs-dir DIR] [--results-dir DIR] 
                        [--deliverables-dir DIR] [--tmp-dir DIR]
                        [--poll-interval SECONDS] [--watch | --no-watch]
                        [--log-file FILE]
+
+Environment:
+    ANTHROPIC_API_KEY  Required for LLM API calls
 
 Directory layout:
     handoffs/         input task files (task-<TASK_ID>.json)
@@ -34,11 +37,98 @@ Status lifecycle: queued → running → done (or failed)
 import argparse
 import json
 import logging
+import os
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Any, Optional
+
+try:
+    import anthropic
+except ImportError:
+    print("Error: 'anthropic' library not installed. Install with: pip install anthropic")
+    sys.exit(1)
+
+
+# ============================================================================
+# LLM Configuration and Routing
+# ============================================================================
+
+MODEL_MAP = {
+    "CURRDES": "claude-sonnet-4-5",   # complex reasoning, standards knowledge
+    "PLAN":    "claude-haiku-3-5",    # structured calendar math, cheap
+    "ASSESS":  "claude-sonnet-4-5",   # data analysis, nuanced judgment
+    "COMMS":   "claude-haiku-3-5",    # templated drafting, cheap
+}
+
+DEFAULT_MODEL = "claude-haiku-3-5"
+
+def get_llm_client() -> anthropic.Anthropic:
+    """
+    Initialize Anthropic client from environment API key.
+    
+    Raises ValueError if ANTHROPIC_API_KEY is not set.
+    """
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        raise ValueError(
+            "ANTHROPIC_API_KEY environment variable not set. "
+            "Please set your API key before running the executor."
+        )
+    return anthropic.Anthropic(api_key=api_key)
+
+
+def get_model_for_task(task_id: str) -> str:
+    """
+    Route task to appropriate model based on role prefix in task_id.
+    
+    Task ID format: ROLE-XXXX (e.g., CURRDES-0001)
+    Returns model name from MODEL_MAP or DEFAULT_MODEL.
+    """
+    try:
+        role_prefix = task_id.split("-")[0]
+        return MODEL_MAP.get(role_prefix, DEFAULT_MODEL)
+    except (IndexError, AttributeError):
+        return DEFAULT_MODEL
+
+
+def build_prompt(task: Dict[str, Any]) -> str:
+    """
+    Build a prompt for the LLM from task structure.
+    
+    Includes: goal, plan, constraints, and task metadata.
+    """
+    task_id = task.get("task_id", "UNKNOWN")
+    goal = task.get("goal", "")
+    plan = task.get("plan")
+    constraints = task.get("constraints")
+    
+    lines = [
+        f"Task ID: {task_id}",
+        f"Goal: {goal}",
+        ""
+    ]
+    
+    if plan:
+        lines.append("Plan:")
+        if isinstance(plan, dict):
+            lines.append(json.dumps(plan, indent=2))
+        else:
+            lines.append(str(plan))
+        lines.append("")
+    
+    if constraints:
+        lines.append("Constraints:")
+        if isinstance(constraints, dict):
+            lines.append(json.dumps(constraints, indent=2))
+        else:
+            lines.append(str(constraints))
+        lines.append("")
+    
+    lines.append("Please complete this task and provide your response.")
+    
+    return "\n".join(lines)
 
 
 # ============================================================================
@@ -137,43 +227,68 @@ def validate_task(task: Dict[str, Any], task_id: str, logger: logging.Logger) ->
 def execute_task(
     task: Dict[str, Any],
     deliverables_dir: Path,
-    logger: logging.Logger
+    logger: logging.Logger,
+    llm_client: anthropic.Anthropic
 ) -> tuple[bool, str, Dict[str, str]]:
     """
-    Execute a task by creating deliverables.
+    Execute a task using LLM API calls with model routing.
+    
+    1. Extract role prefix from task_id to select model
+    2. Build prompt from task structure
+    3. Call Claude API
+    4. Write response to deliverables
     
     Returns: (success: bool, summary: str, deliverables_map: dict)
     """
     task_id = task["task_id"]
-    goal = task["goal"]
-    plan = task.get("plan", {})
-    constraints = task.get("constraints", {})
     deliverables_list = task["deliverables"]
     
     # Ensure deliverables directory exists
     deliverables_dir.mkdir(parents=True, exist_ok=True)
     
     deliverables_map = {}
-    created_files = []
     
     try:
+        # Select model based on task role
+        model = get_model_for_task(task_id)
+        logger.info(f"Task {task_id} routed to model: {model}")
+        
+        # Build prompt from task
+        prompt = build_prompt(task)
+        
+        # Call Claude API
+        logger.debug(f"Sending prompt to {model}")
+        message = llm_client.messages.create(
+            model=model,
+            max_tokens=4096,
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ]
+        )
+        
+        # Extract response content
+        response_text = message.content[0].text
+        logger.info(f"Received response from {model} ({len(response_text)} chars)")
+        
+        # Write response to deliverables
         for deliverable_name in deliverables_list:
             deliverable_path = deliverables_dir / deliverable_name
             
             # Create parent directories if needed
             deliverable_path.parent.mkdir(parents=True, exist_ok=True)
             
-            # Generate simple content based on file type
+            # Write response to file (with metadata for markdown)
             if deliverable_name.endswith(".md"):
-                content = _generate_markdown_content(task_id, goal, plan, constraints)
+                content = _wrap_markdown_response(task_id, model, response_text)
             else:
-                content = _generate_generic_content(task_id, goal)
+                content = response_text
             
-            # Write deliverable
             with open(deliverable_path, "w") as f:
                 f.write(content)
             
-            created_files.append(deliverable_path)
             deliverables_map[deliverable_name] = str(deliverable_path)
             logger.info(f"Created deliverable: {deliverable_path}")
         
@@ -187,59 +302,32 @@ def execute_task(
                     {}
                 )
         
-        summary = f"Successfully generated {len(deliverables_list)} deliverable(s) for task {task_id}"
+        summary = f"Successfully generated {len(deliverables_list)} deliverable(s) for task {task_id} using {model}"
         logger.info(summary)
         return (True, summary, deliverables_map)
     
+    except anthropic.APIError as e:
+        error_msg = f"API error executing task {task_id}: {str(e)}"
+        logger.error(error_msg)
+        return (False, error_msg, {})
     except Exception as e:
         error_msg = f"Error executing task {task_id}: {str(e)}"
         logger.error(error_msg)
         return (False, error_msg, {})
 
 
-def _generate_markdown_content(
-    task_id: str,
-    goal: str,
-    plan: Any,
-    constraints: Any
-) -> str:
-    """Generate markdown deliverable content."""
-    lines = [
-        f"# Task {task_id}",
-        "",
-        f"## Goal",
-        goal,
-        "",
-    ]
-    
-    if plan:
-        lines.extend([
-            "## Plan",
-            json.dumps(plan, indent=2) if isinstance(plan, dict) else str(plan),
-            "",
-        ])
-    
-    if constraints:
-        lines.extend([
-            "## Constraints",
-            json.dumps(constraints, indent=2) if isinstance(constraints, dict) else str(constraints),
-            "",
-        ])
-    
-    lines.extend([
-        "---",
-        f"Generated at: {datetime.now(timezone.utc).isoformat()}",
-        f"Task ID: {task_id}",
-    ])
-    
-    return "\n".join(lines)
+def _wrap_markdown_response(task_id: str, model: str, response_text: str) -> str:
+    """Wrap LLM response in markdown with metadata."""
+    return f"""# Task {task_id}
 
+## Response (Model: {model})
 
-def _generate_generic_content(task_id: str, goal: str) -> str:
-    """Generate generic text deliverable content."""
-    return f"""Task ID: {task_id}
-Goal: {goal}
+{response_text}
+
+---
 Generated at: {datetime.now(timezone.utc).isoformat()}
+Task ID: {task_id}
+Model: {model}
 """
 
 
@@ -299,7 +387,8 @@ def process_tasks(
     results_dir: Path,
     deliverables_dir: Path,
     tmp_dir: Path,
-    logger: logging.Logger
+    logger: logging.Logger,
+    llm_client: anthropic.Anthropic
 ) -> int:
     """
     Discover and process all tasks in handoffs_dir.
@@ -365,8 +454,8 @@ def process_tasks(
         logger.info(f"Processing task {task_id}")
         set_task_status(task_file, "running", tmp_dir, logger)
         
-        # Execute task
-        success, summary, deliverables_map = execute_task(task, deliverables_dir, logger)
+        # Execute task with LLM
+        success, summary, deliverables_map = execute_task(task, deliverables_dir, logger, llm_client)
         
         # Write result
         result = {
@@ -401,7 +490,8 @@ def run_executor(
     tmp_dir: Path,
     poll_interval: float,
     watch: bool,
-    logger: logging.Logger
+    logger: logging.Logger,
+    llm_client: anthropic.Anthropic
 ) -> int:
     """
     Main executor loop.
@@ -422,14 +512,14 @@ def run_executor(
             # Watch mode: loop indefinitely
             while True:
                 try:
-                    process_tasks(handoffs_dir, results_dir, deliverables_dir, tmp_dir, logger)
+                    process_tasks(handoffs_dir, results_dir, deliverables_dir, tmp_dir, logger, llm_client)
                     time.sleep(poll_interval)
                 except KeyboardInterrupt:
                     logger.info("Executor interrupted by user")
                     return 0
         else:
             # Run-once mode
-            process_tasks(handoffs_dir, results_dir, deliverables_dir, tmp_dir, logger)
+            process_tasks(handoffs_dir, results_dir, deliverables_dir, tmp_dir, logger, llm_client)
             return 0
     
     except Exception as e:
@@ -443,7 +533,7 @@ def run_executor(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Directory Executor — file-based task executor"
+        description="Directory Executor — LLM-powered file-based task executor"
     )
     parser.add_argument(
         "--handoffs-dir",
@@ -493,6 +583,14 @@ def main():
     # Setup logging
     logger = setup_logging(args.log_file)
     
+    # Initialize LLM client
+    try:
+        llm_client = get_llm_client()
+        logger.info("LLM client initialized successfully")
+    except ValueError as e:
+        logger.error(str(e))
+        sys.exit(1)
+    
     # Run executor
     handoffs_dir = Path(args.handoffs_dir)
     results_dir = Path(args.results_dir)
@@ -506,7 +604,8 @@ def main():
         tmp_dir,
         args.poll_interval,
         args.watch,
-        logger
+        logger,
+        llm_client
     )
     
     sys.exit(exit_code)

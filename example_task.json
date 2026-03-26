@@ -1,0 +1,16 @@
+{
+  "task_id": "CURRDES-0001",
+  "goal": "Create a detailed outline for an advanced Python programming course",
+  "deliverables": ["outline.md"],
+  "plan": {
+    "course_level": "advanced",
+    "duration_weeks": 12,
+    "focus_areas": ["async programming", "metaclasses", "testing frameworks"]
+  },
+  "constraints": {
+    "target_audience": "experienced developers",
+    "max_outline_pages": 5,
+    "include_code_examples": true
+  },
+  "timeout_seconds": 600
+}
