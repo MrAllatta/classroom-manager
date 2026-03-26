@@ -12,6 +12,21 @@ A teacher is accountable for student safety and supervision, attendance, plannin
 - This project is building that glue: shared context, durable handoffs, explicit ownership, and outputs that connect across planning, implementation, assessment, communication, scheduling, and reporting.
 - Success means the teacher supervises a coherent system instead of manually reconciling disconnected tools or partial helpers.
 
+## What "done" looks like
+
+Two canonical teacher requests define the target end state:
+
+1. **"I need plans and materials for week X."**
+   The co-teacher delegates to Planner and Curriculum Designer. They review the scope and sequence and produce lesson plans, materials, and assessments for that week — ready for teacher review and use.
+
+2. **"I need a report on at-risk students for admin."**
+   The co-teacher delegates to Assessor (and Communicator where relevant). They review current student data, apply the relevant thresholds, and produce a formatted, submittable report for teacher review.
+
+Every architectural decision should be evaluated against whether it moves the system closer to serving these patterns reliably.
+
+## How we build
+Incrementally. Each step is scoped so that Eric can review and test it before anything further is added. No increment is larger than what can be examined in one sitting. The question "how far should we go?" has a standing answer: one concrete, testable chunk further. There is no need to ask.
+
 ## Classroom context
 - **School:** Columbia Secondary School, Manhattan, NYC DOE
 - **Population:** Bimodal — gen ed is screened, special ed is unscreened. All sections include students with varied support needs regardless of formal plan status.
@@ -38,6 +53,7 @@ Student data must never pass through an LLM context window in production. Tools 
 3. **Tool-aligned role execution.** Top-level roles may spawn or manage helper roles tied to specific tools, APIs, templates, or recurring workflows.
 4. **The team reduces coordination burden.** If a proposed change increases glue work for the teacher, push back.
 5. **Concrete over abstract.** Every output should be usable immediately.
+6. **One testable chunk at a time.** Scope every increment to what the teacher can review in one sitting.
 
 ## Team structure
 - **Max 4 top-level agent roles** (supervisable, end-to-end accountable)
@@ -61,3 +77,4 @@ The co-teacher is the meta-role that builds and maintains the team itself. She i
 - Validate role handoffs and failure modes before live deployment
 - Ensure auditability: outputs trace back to inputs and governing rubrics/standards
 - All external actions (communications, grade submissions, compliance reports) are mocked until explicitly unlocked
+- The gap between this phase and a live classroom is large. The hardest parts are not technical — they are trust, fidelity under real school conditions, and sustainability over a full year. This system earns the right to go live by proving it works here first.
