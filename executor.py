@@ -52,7 +52,47 @@ except ImportError:
 
 
 # ============================================================================
-# LLM Configuration and Routing
+# Role Specification Loading
+# ============================================================================
+
+ROLE_SPECS_DIR = Path(__file__).parent / "docs" / "roles"
+
+# Mapping from task ID prefix to role spec file
+ROLE_FILE_MAP = {
+    "plan": "planner.md",
+    "currdes": "curriculum_designer.md", 
+    "assess": "assessor.md",
+    "comms": "communicator.md",
+}
+
+
+
+def get_role_prefix(task_id: str) -> str:
+    """Extract role prefix from task_id (e.g., PLAN-CALENDAR -> 'plan')."""
+    try:
+        return task_id.split("-")[0].lower()
+    except (IndexError, AttributeError):
+        return ""
+
+
+def load_role_spec(role_prefix: str) -> Optional[str]:
+    """Load role spec markdown. Returns text or None if not found."""
+    if not role_prefix:
+        return None
+    
+    # Map role prefix to actual filename
+    filename = ROLE_FILE_MAP.get(role_prefix)
+    if not filename:
+        return None
+    
+    spec_file = ROLE_SPECS_DIR / filename
+    try:
+        with open(spec_file, "r") as f:
+            return f.read()
+    except (FileNotFoundError, IOError):
+        return None
+
+
 # ============================================================================
 
 MODEL_MAP = {
@@ -97,18 +137,28 @@ def build_prompt(task: Dict[str, Any]) -> str:
     """
     Build a prompt for the LLM from task structure.
     
-    Includes: goal, plan, constraints, and task metadata.
+    Includes role specification if available, plus goal, plan, constraints.
     """
     task_id = task.get("task_id", "UNKNOWN")
     goal = task.get("goal", "")
     plan = task.get("plan")
     constraints = task.get("constraints")
     
-    lines = [
-        f"Task ID: {task_id}",
-        f"Goal: {goal}",
-        ""
-    ]
+    lines = []
+    
+    # Load and inject role specification if available
+    role_prefix = get_role_prefix(task_id)
+    role_spec = load_role_spec(role_prefix) if role_prefix else None
+    
+    if role_spec:
+        lines.append("# ROLE SPECIFICATION\n")
+        lines.append(role_spec)
+        lines.append("\n" + "=" * 80)
+        lines.append("# TASK DETAILS\n")
+    
+    lines.append(f"Task ID: {task_id}")
+    lines.append(f"Goal: {goal}")
+    lines.append("")
     
     if plan:
         lines.append("Plan:")
@@ -130,10 +180,6 @@ def build_prompt(task: Dict[str, Any]) -> str:
     
     return "\n".join(lines)
 
-
-# ============================================================================
-# Logging Setup
-# ============================================================================
 
 def setup_logging(log_file: Optional[str] = None) -> logging.Logger:
     """Configure logging to stdout and optionally to a file."""
