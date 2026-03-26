@@ -96,13 +96,13 @@ def load_role_spec(role_prefix: str) -> Optional[str]:
 # ============================================================================
 
 MODEL_MAP = {
-    "CURRDES": "claude-sonnet-4-5",   # complex reasoning, standards knowledge
-    "PLAN":    "claude-haiku-3-5",    # structured calendar math, cheap
-    "ASSESS":  "claude-sonnet-4-5",   # data analysis, nuanced judgment
-    "COMMS":   "claude-haiku-3-5",    # templated drafting, cheap
+    "CURRDES": "claude-sonnet-4-6",   # complex reasoning, standards knowledge
+    "PLAN":    "claude-haiku-4-5-20251001",    # structured calendar math, cheap
+    "ASSESS":  "claude-sonnet-4-6",   # data analysis, nuanced judgment
+    "COMMS":   "claude-haiku-4-5-20251001",    # templated drafting, cheap
 }
 
-DEFAULT_MODEL = "claude-haiku-3-5"
+DEFAULT_MODEL = "claude-haiku-4-5-20251001"
 
 def get_llm_client() -> anthropic.Anthropic:
     """
