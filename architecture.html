@@ -231,6 +231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Architecture &amp; Workflows (Canonical)</h1>
 <p>This document is the <strong>single canonical explanation</strong> of how the system fits together and how work moves through it in the current experimental phase.</p>
 <p>If you only read one internal architecture document, read this one.</p>
+<p>The <strong>roadmap for testing</strong> interactions under simulated real-world conditions (which canonical request next, what “pass” means) lives in <code>docs/testing_plan.md</code> and should stay in sync with this narrative.</p>
 <hr>
 <section id="system-overview" class="level2">
 <h2 class="anchored" data-anchor-id="system-overview">System overview</h2>
@@ -426,12 +427,13 @@ COMMS-INTERVENTION-&lt;student&gt;
 <h2 class="anchored" data-anchor-id="context-injection-why-some-tasks-need-more-than-the-goal">Context injection (why some tasks need more than the goal)</h2>
 <p>A critical quality failure mode is “the model generates plausible content from the goal alone” while ignoring the actual curriculum scope/calendar.</p>
 <p>This repository addresses that by injecting minimal stable context into prompts (school context; scoped curriculum context) before role specs + task details.</p>
-<p>For the design and implementation notes, see <code>docs/CONTEXT_INJECTION_ARCHITECTURE.md</code>.</p>
+<p>For the design and implementation notes, see <code>docs/context_injection_architecture.md</code>.</p>
 <hr>
 </section>
 <section id="where-to-go-next" class="level2">
 <h2 class="anchored" data-anchor-id="where-to-go-next">Where to go next</h2>
 <ul>
+<li><strong>Simulated real-world testing (order of operations, pass criteria):</strong> <code>docs/testing_plan.md</code></li>
 <li>Task types and chains: <code>docs/task_schemas_reference.md</code></li>
 <li>Role specs (the behavioral source of truth): <code>docs/roles/</code></li>
 <li>Running the system: <code>executor_quickstart.md</code></li>
