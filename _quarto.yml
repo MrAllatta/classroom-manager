@@ -1,0 +1,41 @@
+project:
+  type: website
+  render:
+    - index.qmd
+    - growth-story.qmd
+    - architecture.qmd
+    - executor.qmd
+    - task-schemas.qmd
+    - roles/index.qmd
+    - roles/planner.qmd
+    - roles/curriculum-designer.qmd
+    - roles/assessor.qmd
+    - roles/communicator.qmd
+    - roles/co-teacher.qmd
+
+website:
+  title: "classroom-manager"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Case study
+      - href: growth-story.qmd
+        text: Growth story
+      - href: architecture.qmd
+        text: Architecture
+      - href: executor.qmd
+        text: Running it
+      - href: task-schemas.qmd
+        text: Task schemas
+      - href: roles/index.qmd
+        text: Roles
+      - href: from_the_human.qmd
+        text: From the Human
+format:
+  html:
+    theme: lux
+    toc: true
+
+execute:
+  freeze: auto
+
