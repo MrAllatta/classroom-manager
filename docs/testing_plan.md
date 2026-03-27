@@ -47,19 +47,17 @@ We have a completed run (PLAN-WEEK6-ALG01). The question is whether the output i
 
 ---
 
-### Test 1.2 — Scope/calendar dependency check
+### Test 1.2 — Scope/calendar actually steer output
 
-**Question:** Does the executor actually pass scope and calendar data to the model, or does it only pass the task JSON?
+**Question:** Does injected scope and calendar content constrain what the model produces, or does the model still write plausible lessons that ignore them?
 
-**Current behavior:** The task JSON references `deliverables/scope_ALG1_fullyear.json` and `deliverables/calendar_ALG1_fullyear.json` as dependencies, but executor.py does not load and inject them — it only sends the task structure.
+**Current behavior:** `executor.py` calls `load_context()` before the role spec: school context always; unit-scoped scope/calendar from `deliverables/` when the task implies a course/unit (see `docs/context_injection_architecture.md`). The failure mode to guard against is no longer “missing injection” but “injection present yet ignored.”
 
-**This is a known gap.** The model is generating plans from the goal description alone, not from the actual scope file.
-
-**Test:** Compare a week 6 lesson plan output against the scope file. Does the content match what the scope says should be covered in week 6? Or is it plausible but disconnected?
+**Test:** Compare Week 6 lesson plan output to `deliverables/scope_ALG1_fullyear.json` (and calendar where relevant). Does the content match what the scope assigns to that week, or is it generic?
 
 **Pass criteria:**
-- [ ] Content covered matches what the scope file specifies for Week 6
-- [ ] OR: gap is documented and a dependency injection mechanism is designed
+- [ ] Content covered matches what the scope file specifies for Week 6 (or discrepancies are explainable from task constraints)
+- [ ] If output drifts from scope despite injection, the fix is tracked (prompt, task JSON, or context selection) and retested
 
 ---
 
@@ -112,7 +110,7 @@ Tracked separately as findings emerge from Phases 1 and 2.
 This testing phase is complete when:
 
 1. Eric has reviewed at least one Week output and called it usable as a starting draft
-2. The scope/calendar dependency gap is either closed or explicitly deferred with a design decision
+2. Scope/calendar injection is verified to steer output (Test 1.2), or remaining drift is documented with a fix path
 3. COMMS and ASSESS have each produced one passing output
 4. No executor crashes observed across at least 5 task runs
 

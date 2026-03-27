@@ -1,5 +1,11 @@
 # File-Based Handoff Workflow — Executor Pattern
 
+**Canonical narrative (read this first):** [`architecture_and_workflows.md`](architecture_and_workflows.md) — same executor pattern, shorter path to “what runs next” and how we test under synthetic conditions.
+
+This file keeps extended task/result schema examples and manual workflow detail.
+
+---
+
 ## Overview
 
 All role-to-role communication in the classroom system uses a **directory executor** pattern. This ensures durable, traceable, atomic handoffs with no ambiguity about task status or deliverables.

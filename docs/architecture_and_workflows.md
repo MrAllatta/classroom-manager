@@ -4,6 +4,8 @@ This document is the **single canonical explanation** of how the system fits tog
 
 If you only read one internal architecture document, read this one.
 
+The **roadmap for testing** interactions under simulated real-world conditions (which canonical request next, what “pass” means) lives in `docs/testing_plan.md` and should stay in sync with this narrative.
+
 ---
 
 ## System overview
@@ -235,12 +237,13 @@ A critical quality failure mode is “the model generates plausible content from
 
 This repository addresses that by injecting minimal stable context into prompts (school context; scoped curriculum context) before role specs + task details.
 
-For the design and implementation notes, see `docs/CONTEXT_INJECTION_ARCHITECTURE.md`.
+For the design and implementation notes, see `docs/context_injection_architecture.md`.
 
 ---
 
 ## Where to go next
 
+- **Simulated real-world testing (order of operations, pass criteria):** `docs/testing_plan.md`
 - Task types and chains: `docs/task_schemas_reference.md`
 - Role specs (the behavioral source of truth): `docs/roles/`
 - Running the system: `executor_quickstart.md`

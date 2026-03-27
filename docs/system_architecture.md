@@ -1,6 +1,8 @@
 # Classroom System Architecture
 
-A visual and conceptual overview of the classroom system, the executor pattern, and how all components fit together.
+**Canonical narrative (read this first):** [`architecture_and_workflows.md`](architecture_and_workflows.md) — how work moves through the system, simulated-real-world testing, and pointers to the rest of the docs.
+
+This file keeps the extended diagrams and component breakdowns below — visual overview, data flow, and executor path in depth.
 
 ---
 

@@ -4,12 +4,15 @@
 
 1. **[README](../README.md)** — What this project is and why it exists
 2. **[Executor Quickstart](../executor_quickstart.md)** — How to run the system
-3. **[Team Structure](roles/README.md)** — The four roles, the handoff map, the governing rules
+3. **[Architecture & workflows](architecture_and_workflows.md)** — Single canonical description of the synthesized classroom loop, file-based handoffs, and where to read next
+4. **[Testing plan](testing_plan.md)** — Active phase: canonical requests, pass criteria, simulated-real-world order of operations
+5. **[Team Structure](roles/README.md)** — The four roles, the handoff map, the governing rules
 
-## Architecture
+## Architecture (supplements)
 
-- **[System Architecture](system_architecture.md)** — Visual overview, data flow, component diagrams
-- **[Handoff Workflow](handoff_workflow.md)** — The file-based executor pattern in detail
+- **[System Architecture](system_architecture.md)** — Extended diagrams (see architecture & workflows first)
+- **[Handoff Workflow](handoff_workflow.md)** — Extended task/result examples (see architecture & workflows first)
+- **[Context injection](context_injection_architecture.md)** — How scope and calendar enter prompts
 - **[Task Schemas Reference](task_schemas_reference.md)** — Quick lookup for all task types
 - **[Agent Architecture](agent-architecture.md)** — How agent bindings work (for platform developers)
 

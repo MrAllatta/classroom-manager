@@ -26,3 +26,4 @@ Use this role when the task is about team design, role definitions, handoff sche
 ## Source of truth
 - Canonical spec: `docs/co-teacher.md`
 - Architecture constraints: `docs/agent-architecture.md`
+- How the classroom loop runs and how we test it (simulated real-world order): `docs/architecture_and_workflows.md` and `docs/testing_plan.md`

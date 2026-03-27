@@ -73,7 +73,7 @@ The co-teacher is the meta-role that builds and maintains the team itself. She i
 7. **Communicate & Admin:** Produce/administer required outputs and communications (mocked in experimental phase)
 
 ## Experimental-phase expectations
-- Use synthetic context and practice end-to-end workflows
+- Use synthetic context and practice end-to-end workflows; active test order and pass criteria live in [`docs/testing_plan.md`](docs/testing_plan.md)
 - Validate role handoffs and failure modes before live deployment
 - Ensure auditability: outputs trace back to inputs and governing rubrics/standards
 - All external actions (communications, grade submissions, compliance reports) are mocked until explicitly unlocked
