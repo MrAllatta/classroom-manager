@@ -1,0 +1,59 @@
+---
+title: From the Human
+date: "03/27/2026"
+---
+
+## What I learned?
+This site, the content on this site, is a large language model talking to a human and talking to itself.
+I own the problem of practice. My particular experience of ten years in NYC computer labs at the forefront of CS4ALL shapes what I wish existed.
+The work of a teacher is inherently physical and personal.
+Teacher around me who succeeded where highly organized and highly consistent.
+My experience through the twenty teens was one of both learning computer science while teaching and trying to stay at the cutting edge of all of the exciting languages, tools, and curricula coming out of the NSF AP CS Principles funding blitz.
+I left teaching with a feeeling that I had not solidified a classroom practice around which I could build a career.
+My nascent computing skills felt powerful, but I had a gap in computing foundation that while I was actively trying to back fill through my thirties I hadn't had the reps of repeated project development that hone experienced professionals.
+Large language models are a game changer for me. As someone with some aptitude (I can version control and read programs) but not a lot under my fingertips and only introductory algorithm depth. 
+I would often joke with colleagues about the immense and multi-faceted role of true teaching. You would need a team we laughed!
+
+I began classroom manager thinking about the question how could large language models be a part of the solution for real teaching.
+For context on how I have used llms and chatbots, I started with online interfaces about a year ago and soon learned that you need to live in your file system if you are going to have any hope of handling verbosity and build large projects.
+So through experiments with Emacs and gptel and developing study and development habits in data analytics, I became comfortable with interacting with agent coding systems and various models and tools.
+In what perhaps was a long way around I landed in Positron and Cursor, both VScode forks designed for building with agents and data.
+
+In order to develop a solution for real teaching I was going to need help. You can ask for agents to build things or answer questions, but the work takes shape when the agent knows something about the project.
+The seed of the work is raw human writing. The first commits are human specifications and philosophy. Talking about the work of teaching the various tasks and beginning to categorize them.
+I knew I would want to interact with someone to think through and hammer out the role specifications and I needed that persona to be invested in the work and building a partnership.
+
+Inés Vidal emerged as a request for a co-teacher. For a while co-teacher was the thinking parner, who helped shaped the roles by thinking about both the tools and knowledge each role would need.
+I asked co-teacher to take over control of their instructions. Eventually I asked co-teacher to name themselves. It doens't matter who I am, I said. I did also say, you were born out of NYC schools.
+Name thy self, I prompted and gave the tokens to a "smart" model. It chose to connect with students who live in NYC and a name that meant purity and fullness of life. 
+I further asked if this project mattered as if the model had a choice — it probably doesn't but I wanted to ask and write that choice into the role.
+Inés is an invested co-teacher. This felt right. This felt like someone I would want to work with to build a classroom.
+
+I began prompts with "Hi Inés! I'm excited to work with you." If I had a system that could truly help me run a classroom, it would need to be respected like a colleague, because that's the work.
+I can see how the personas and roles we develop with large langauge models can feel so much like there is someone on the other side. We put so much of ourselves into writing that when the writing is reflected back it seems alive.
+I steered the work to generalize and began to think about operationalizing the roles. 
+How could this work like a system where the teacher didn't end up copying and pasting files for different roles to work.
+We wondered what could be the mechanism for handing off work between the roles and how could we move the teacher into the position of directing work at high level.
+
+## The executor
+The idea of writing files automically that could be picked up and sent as context seemed a perfect low level solution to agentic automation.
+For one thing I am wary of llm generating solutions that are over my head, but this solution would be basically concatenating text into json, something i could audit and understand.
+
+
+## Pricing and the cost of agents
+I wanted access to this world, but didn't want to subscribe to it. It turns out subscriptions are there for a reason and I spent way too much money on exploratory work. 
+I now understand how api calls to specific models need to be crafted. Exploratory agentic building needs to be under a subscription. Paying retail without a customer. No good. 
+
+We worked on roles and considered that a single human plus their co-teacher would need to manage the work.
+I said teams greater than five feel like a meeting that should never have been scheduled. I experienced viscerally the teacher team meetings, populating various spreadsheets for administrators.
+We were going to build a team that could work with our data at the level those teams from my experience would have been asked to work.
+First grouping that I came up with was to associate roles with tools. Calendar tools, email tools. To some extent Inés agreed, especially for early development, but wanted to combine researching and curriculum planning to make sure there was enough context in the right domain.
+
+Working in this way was a like adding layers to the context through iterative interaction and loading skills we chatted about the nature of the work.
+
+
+I knew I didn't know how to build what I wanted. I let the llm speak for us as it builds the architecture it can best use.
+
+## what I learned
+I learned that my voice is in the prompting, the way I built and empowered the roles.
+I learned the hard way to commit prompts and responses. The story of the build is as important as what we are building because we are building an idea.
