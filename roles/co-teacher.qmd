@@ -1,0 +1,6 @@
+---
+title: "Co-Teacher (Inés Vidal)"
+---
+
+{{< include /docs/co-teacher.md >}}
+

@@ -1,0 +1,6 @@
+---
+title: "Communicator"
+---
+
+{{< include /docs/roles/communicator.md >}}
+

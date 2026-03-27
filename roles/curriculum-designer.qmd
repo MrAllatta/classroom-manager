@@ -1,0 +1,6 @@
+---
+title: "Curriculum Designer"
+---
+
+{{< include /docs/roles/curriculum_designer.md >}}
+

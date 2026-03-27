@@ -1,0 +1,6 @@
+---
+title: "Assessor"
+---
+
+{{< include /docs/roles/assessor.md >}}
+
