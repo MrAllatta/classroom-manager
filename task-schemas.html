@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Task schemas reference – classroom-manager</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-4a0d307fbae98d3ae21e9f86c1c5822d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">classroom-manager</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Case study</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./growth-story.html"> 
+<span class="menu-text">Growth story</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./architecture.html"> 
+<span class="menu-text">Architecture</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./executor.html"> 
+<span class="menu-text">Running it</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./task-schemas.html" aria-current="page"> 
+<span class="menu-text">Task schemas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./roles/index.html"> 
+<span class="menu-text">Roles</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#task-schemas-reference-all-roles" id="toc-task-schemas-reference-all-roles" class="nav-link active" data-scroll-target="#task-schemas-reference-all-roles">Task Schemas Reference — All Roles</a>
+  <ul class="collapse">
+  <li><a href="#curriculum-designer-tasks" id="toc-curriculum-designer-tasks" class="nav-link" data-scroll-target="#curriculum-designer-tasks">Curriculum Designer Tasks</a>
+  <ul class="collapse">
+  <li><a href="#consumed-by-curriculum-designer" id="toc-consumed-by-curriculum-designer" class="nav-link" data-scroll-target="#consumed-by-curriculum-designer">Consumed by Curriculum Designer</a></li>
+  </ul></li>
+  <li><a href="#planner-tasks" id="toc-planner-tasks" class="nav-link" data-scroll-target="#planner-tasks">Planner Tasks</a>
+  <ul class="collapse">
+  <li><a href="#consumed-by-planner" id="toc-consumed-by-planner" class="nav-link" data-scroll-target="#consumed-by-planner">Consumed by Planner</a></li>
+  </ul></li>
+  <li><a href="#assessor-tasks" id="toc-assessor-tasks" class="nav-link" data-scroll-target="#assessor-tasks">Assessor Tasks</a>
+  <ul class="collapse">
+  <li><a href="#consumed-by-assessor" id="toc-consumed-by-assessor" class="nav-link" data-scroll-target="#consumed-by-assessor">Consumed by Assessor</a></li>
+  </ul></li>
+  <li><a href="#communicator-tasks" id="toc-communicator-tasks" class="nav-link" data-scroll-target="#communicator-tasks">Communicator Tasks</a>
+  <ul class="collapse">
+  <li><a href="#consumed-by-communicator" id="toc-consumed-by-communicator" class="nav-link" data-scroll-target="#consumed-by-communicator">Consumed by Communicator</a></li>
+  </ul></li>
+  <li><a href="#task-naming-convention" id="toc-task-naming-convention" class="nav-link" data-scroll-target="#task-naming-convention">Task Naming Convention</a></li>
+  <li><a href="#handoff-chains" id="toc-handoff-chains" class="nav-link" data-scroll-target="#handoff-chains">Handoff Chains</a>
+  <ul class="collapse">
+  <li><a href="#chain-1-build-unit-curriculum-planning-assessment" id="toc-chain-1-build-unit-curriculum-planning-assessment" class="nav-link" data-scroll-target="#chain-1-build-unit-curriculum-planning-assessment">Chain 1: Build Unit (Curriculum → Planning → Assessment)</a></li>
+  <li><a href="#chain-2-execute-assessment-assessor-communication-contact-log" id="toc-chain-2-execute-assessment-assessor-communication-contact-log" class="nav-link" data-scroll-target="#chain-2-execute-assessment-assessor-communication-contact-log">Chain 2: Execute Assessment (Assessor → Communication → Contact Log)</a></li>
+  <li><a href="#chain-3-intervention-loop-assessor-communication-closure" id="toc-chain-3-intervention-loop-assessor-communication-closure" class="nav-link" data-scroll-target="#chain-3-intervention-loop-assessor-communication-closure">Chain 3: Intervention Loop (Assessor → Communication → Closure)</a></li>
+  <li><a href="#chain-4-revision-loop-assessor-curriculum-designer-lessons" id="toc-chain-4-revision-loop-assessor-curriculum-designer-lessons" class="nav-link" data-scroll-target="#chain-4-revision-loop-assessor-curriculum-designer-lessons">Chain 4: Revision Loop (Assessor → Curriculum Designer → Lessons)</a></li>
+  </ul></li>
+  <li><a href="#all-deliverables-by-type" id="toc-all-deliverables-by-type" class="nav-link" data-scroll-target="#all-deliverables-by-type">All Deliverables by Type</a>
+  <ul class="collapse">
+  <li><a href="#curriculum-designer-outputs" id="toc-curriculum-designer-outputs" class="nav-link" data-scroll-target="#curriculum-designer-outputs">Curriculum Designer Outputs</a></li>
+  <li><a href="#planner-outputs" id="toc-planner-outputs" class="nav-link" data-scroll-target="#planner-outputs">Planner Outputs</a></li>
+  <li><a href="#assessor-outputs" id="toc-assessor-outputs" class="nav-link" data-scroll-target="#assessor-outputs">Assessor Outputs</a></li>
+  <li><a href="#communicator-outputs" id="toc-communicator-outputs" class="nav-link" data-scroll-target="#communicator-outputs">Communicator Outputs</a></li>
+  </ul></li>
+  <li><a href="#task-status-lifecycle" id="toc-task-status-lifecycle" class="nav-link" data-scroll-target="#task-status-lifecycle">Task Status Lifecycle</a></li>
+  <li><a href="#key-constraints-and-timeouts" id="toc-key-constraints-and-timeouts" class="nav-link" data-scroll-target="#key-constraints-and-timeouts">Key Constraints and Timeouts</a></li>
+  <li><a href="#validation-rules" id="toc-validation-rules" class="nav-link" data-scroll-target="#validation-rules">Validation Rules</a></li>
+  <li><a href="#using-this-reference" id="toc-using-this-reference" class="nav-link" data-scroll-target="#using-this-reference">Using This Reference</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Task schemas reference</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="task-schemas-reference-all-roles" class="level1">
+<h1>Task Schemas Reference — All Roles</h1>
+<p>This document provides a quick reference of all task types produced by each role, organized by role and task type.</p>
+<hr>
+<section id="curriculum-designer-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="curriculum-designer-tasks">Curriculum Designer Tasks</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task ID Pattern</th>
+<th>Goal</th>
+<th>Deliverables</th>
+<th>Downstream Consumer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>CURRDES-SCOPE-&lt;UNIT_ID&gt;</code></td>
+<td>Generate scope and sequence</td>
+<td><code>scope_&lt;UNIT_ID&gt;.md</code>, <code>objectives_&lt;UNIT_ID&gt;.json</code></td>
+<td>Planner, Assessor, Teacher</td>
+</tr>
+<tr class="even">
+<td><code>CURRDES-ASSESS-&lt;UNIT_ID&gt;</code></td>
+<td>Generate assessments and rubrics</td>
+<td><code>assessments_&lt;UNIT_ID&gt;.md</code>, <code>rubrics_&lt;UNIT_ID&gt;.json</code></td>
+<td>Assessor, Teacher</td>
+</tr>
+<tr class="odd">
+<td><code>CURRDES-LESSONS-&lt;UNIT_ID&gt;</code></td>
+<td>Generate lesson plans and materials</td>
+<td><code>lessons_&lt;UNIT_ID&gt;.md</code></td>
+<td>Planner, Teacher</td>
+</tr>
+</tbody>
+</table>
+<section id="consumed-by-curriculum-designer" class="level3">
+<h3 class="anchored" data-anchor-id="consumed-by-curriculum-designer">Consumed by Curriculum Designer</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source Task Pattern</th>
+<th>Consumed From</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>result-ASSESS-REVISION-&lt;UNIT_ID&gt;</code></td>
+<td>Assessor</td>
+<td>Mastery data triggers material revision</td>
+</tr>
+<tr class="even">
+<td><code>result-PLAN-CONFIRM-&lt;UNIT_ID&gt;</code></td>
+<td>Planner</td>
+<td>Confirmed time blocks scope lessons</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="planner-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="planner-tasks">Planner Tasks</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task ID Pattern</th>
+<th>Goal</th>
+<th>Deliverables</th>
+<th>Downstream Consumer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>PLAN-CALENDAR-&lt;TERM&gt;</code></td>
+<td>Generate master calendar for term</td>
+<td><code>calendar_&lt;TERM&gt;.md</code>, <code>calendar_&lt;TERM&gt;.json</code></td>
+<td>Teacher, all roles</td>
+</tr>
+<tr class="even">
+<td><code>PLAN-PACING-&lt;TERM&gt;</code></td>
+<td>Generate pacing status report</td>
+<td><code>pacing_&lt;TERM&gt;.md</code></td>
+<td>Teacher, Curriculum Designer</td>
+</tr>
+<tr class="odd">
+<td><code>PLAN-CONFIRM-&lt;UNIT_ID&gt;</code></td>
+<td>Confirm time blocks for unit</td>
+<td><code>time_blocks_&lt;UNIT_ID&gt;.json</code></td>
+<td>Curriculum Designer, Teacher</td>
+</tr>
+<tr class="even">
+<td><code>PLAN-COMMS-&lt;EVENT&gt;</code></td>
+<td>Confirm scheduled communication dates</td>
+<td><code>confirmed_schedule_&lt;EVENT&gt;.json</code></td>
+<td>Communicator, Calendar</td>
+</tr>
+<tr class="odd">
+<td><code>PLAN-ADJUST-&lt;UNIT_ID&gt;</code></td>
+<td>Adjust pacing due to conflict</td>
+<td><code>adjusted_schedule_&lt;UNIT_ID&gt;.json</code></td>
+<td>Calendar, Curriculum Designer</td>
+</tr>
+</tbody>
+</table>
+<section id="consumed-by-planner" class="level3">
+<h3 class="anchored" data-anchor-id="consumed-by-planner">Consumed by Planner</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source Task Pattern</th>
+<th>Consumed From</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>result-CURRDES-SCOPE-&lt;UNIT_ID&gt;</code></td>
+<td>Curriculum Designer</td>
+<td>Scope and sequence determines time blocks</td>
+</tr>
+<tr class="even">
+<td><code>result-ASSESS-CLASS-&lt;UNIT_ID&gt;</code></td>
+<td>Assessor</td>
+<td>Performance patterns inform pacing adjustments</td>
+</tr>
+<tr class="odd">
+<td><code>result-COMMS-PROGRESS-&lt;UNIT_ID&gt;</code></td>
+<td>Communicator</td>
+<td>Scheduled communications affect calendar</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="assessor-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="assessor-tasks">Assessor Tasks</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task ID Pattern</th>
+<th>Goal</th>
+<th>Deliverables</th>
+<th>Downstream Consumer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>ASSESS-INIT-&lt;UNIT_ID&gt;</code></td>
+<td>Initialize mastery tracker for unit</td>
+<td><code>mastery_&lt;UNIT_ID&gt;.json</code></td>
+<td>Teacher, Curriculum Designer</td>
+</tr>
+<tr class="even">
+<td><code>ASSESS-SCORE-&lt;ASSESSMENT_ID&gt;</code></td>
+<td>Score assessment and update mastery</td>
+<td><code>mastery_&lt;UNIT_ID&gt;_updated.json</code>, <code>score_report_&lt;ASSESSMENT_ID&gt;.md</code></td>
+<td>Teacher, Communicator</td>
+</tr>
+<tr class="odd">
+<td><code>ASSESS-FLAGS-&lt;TERM&gt;</code></td>
+<td>Identify at-risk students</td>
+<td><code>intervention_flags_&lt;TERM&gt;.json</code></td>
+<td>Communicator, Teacher</td>
+</tr>
+<tr class="even">
+<td><code>ASSESS-CLASS-&lt;UNIT_ID&gt;</code></td>
+<td>Generate class performance report</td>
+<td><code>class_performance_&lt;UNIT_ID&gt;.md</code></td>
+<td>Teacher, Curriculum Designer, Planner</td>
+</tr>
+<tr class="odd">
+<td><code>ASSESS-AUDIT-&lt;UNIT_ID&gt;</code></td>
+<td>Audit assessment quality and alignment</td>
+<td><code>audit_&lt;UNIT_ID&gt;.md</code></td>
+<td>Curriculum Designer, Teacher</td>
+</tr>
+<tr class="even">
+<td><code>ASSESS-REVISION-&lt;UNIT_ID&gt;</code></td>
+<td>Request material revision based on mastery</td>
+<td>Task to Curriculum Designer</td>
+<td>Curriculum Designer</td>
+</tr>
+</tbody>
+</table>
+<section id="consumed-by-assessor" class="level3">
+<h3 class="anchored" data-anchor-id="consumed-by-assessor">Consumed by Assessor</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source Task Pattern</th>
+<th>Consumed From</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>result-CURRDES-ASSESS-&lt;UNIT_ID&gt;</code></td>
+<td>Curriculum Designer</td>
+<td>Assessment instruments and rubrics</td>
+</tr>
+<tr class="even">
+<td><code>result-PLAN-CALENDAR-&lt;TERM&gt;</code></td>
+<td>Planner</td>
+<td>Assessment window dates and deadlines</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="communicator-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="communicator-tasks">Communicator Tasks</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task ID Pattern</th>
+<th>Goal</th>
+<th>Deliverables</th>
+<th>Downstream Consumer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>COMMS-PROGRESS-&lt;UNIT_ID&gt;</code></td>
+<td>Draft progress update email</td>
+<td><code>progress_&lt;UNIT_ID&gt;.md</code>, <code>progress_&lt;UNIT_ID&gt;_email.txt</code></td>
+<td>Teacher (approval), Parents</td>
+</tr>
+<tr class="even">
+<td><code>COMMS-INTERVENTION-&lt;STUDENT_ID&gt;</code></td>
+<td>Draft intervention notification</td>
+<td><code>intervention_&lt;STUDENT_ID&gt;.md</code>, <code>intervention_&lt;STUDENT_ID&gt;_email.txt</code></td>
+<td>Teacher (approval), Parents</td>
+</tr>
+<tr class="odd">
+<td><code>COMMS-LOG-&lt;TERM&gt;</code></td>
+<td>Initialize contact log</td>
+<td><code>contact_log_&lt;TERM&gt;.json</code></td>
+<td>Teacher, Assessor</td>
+</tr>
+<tr class="even">
+<td><code>COMMS-ATTEMPT-&lt;STUDENT_ID&gt;</code></td>
+<td>Log outbound communication</td>
+<td><code>contact_log_&lt;TERM&gt;_updated.json</code></td>
+<td>Teacher, Assessor</td>
+</tr>
+<tr class="odd">
+<td><code>COMMS-ESCALATION-&lt;TERM&gt;</code></td>
+<td>Generate escalation report</td>
+<td><code>escalation_&lt;TERM&gt;.md</code></td>
+<td>Teacher</td>
+</tr>
+</tbody>
+</table>
+<section id="consumed-by-communicator" class="level3">
+<h3 class="anchored" data-anchor-id="consumed-by-communicator">Consumed by Communicator</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source Task Pattern</th>
+<th>Consumed From</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>result-ASSESS-FLAGS-&lt;TERM&gt;</code></td>
+<td>Assessor</td>
+<td>Intervention flags trigger communications</td>
+</tr>
+<tr class="even">
+<td><code>result-ASSESS-SCORE-&lt;ASSESSMENT_ID&gt;</code></td>
+<td>Assessor</td>
+<td>Grade notifications to parents</td>
+</tr>
+<tr class="odd">
+<td><code>result-PLAN-CALENDAR-&lt;TERM&gt;</code></td>
+<td>Planner</td>
+<td>Scheduled event dates</td>
+</tr>
+<tr class="even">
+<td><code>result-PLAN-COMMS-&lt;EVENT&gt;</code></td>
+<td>Planner</td>
+<td>Confirmed communication dates</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="task-naming-convention" class="level2">
+<h2 class="anchored" data-anchor-id="task-naming-convention">Task Naming Convention</h2>
+<p>All task IDs follow the pattern:</p>
+<pre><code>ROLE-FUNCTION-&lt;QUALIFIER&gt;
+
+Examples:
+  CURRDES-SCOPE-UNIT-01       (Curriculum Designer, scope generation, Unit 1)
+  PLAN-CONFIRM-UNIT-01        (Planner, confirm, Unit 1)
+  ASSESS-FLAGS-FALL-2026      (Assessor, flags, Fall 2026 term)
+  COMMS-INTERVENTION-S-001    (Communicator, intervention, Student 001)
+  ASSESS-REVISION-UNIT-02     (Assessor, revision request, Unit 2)</code></pre>
+<p><strong>Role prefixes:</strong> - <code>CURRDES</code> = Curriculum Designer - <code>PLAN</code> = Planner - <code>ASSESS</code> = Assessor - <code>COMMS</code> = Communicator</p>
+<p><strong>Function examples:</strong> - SCOPE, ASSESS, LESSONS = Curriculum Designer functions - CALENDAR, PACING, CONFIRM, COMMS, ADJUST = Planner functions - INIT, SCORE, FLAGS, CLASS, AUDIT, REVISION = Assessor functions - PROGRESS, INTERVENTION, LOG, ATTEMPT, ESCALATION = Communicator functions</p>
+<hr>
+</section>
+<section id="handoff-chains" class="level2">
+<h2 class="anchored" data-anchor-id="handoff-chains">Handoff Chains</h2>
+<section id="chain-1-build-unit-curriculum-planning-assessment" class="level3">
+<h3 class="anchored" data-anchor-id="chain-1-build-unit-curriculum-planning-assessment">Chain 1: Build Unit (Curriculum → Planning → Assessment)</h3>
+<pre><code>CURRDES-SCOPE-UNIT-01
+  ↓
+  Deliverables: scope_UNIT-01.md, objectives_UNIT-01.json
+  ↓
+PLAN-CONFIRM-UNIT-01
+  ↓
+  Deliverables: time_blocks_UNIT-01.json
+  ↓
+CURRDES-ASSESS-UNIT-01
+  ↓
+  Deliverables: assessments_UNIT-01.md, rubrics_UNIT-01.json
+  ↓
+ASSESS-INIT-UNIT-01
+  ↓
+  Deliverables: mastery_UNIT-01.json
+  ↓
+CURRDES-LESSONS-UNIT-01
+  ↓
+  Deliverables: lessons_UNIT-01.md
+  ↓
+Ready for instruction</code></pre>
+</section>
+<section id="chain-2-execute-assessment-assessor-communication-contact-log" class="level3">
+<h3 class="anchored" data-anchor-id="chain-2-execute-assessment-assessor-communication-contact-log">Chain 2: Execute Assessment (Assessor → Communication → Contact Log)</h3>
+<pre><code>ASSESS-SCORE-&lt;ASSESSMENT_ID&gt;
+  ↓
+  Deliverables: score_report_&lt;ASSESSMENT_ID&gt;.md, mastery_&lt;UNIT_ID&gt;_updated.json
+  ↓
+COMMS-PROGRESS-&lt;UNIT_ID&gt;
+  ↓
+  Deliverables: progress_&lt;UNIT_ID&gt;.md, progress_&lt;UNIT_ID&gt;_email.txt
+  ↓
+Teacher approves send
+  ↓
+COMMS-ATTEMPT-&lt;STUDENT_ID&gt;
+  ↓
+  Deliverables: contact_log_&lt;TERM&gt;_updated.json
+  ↓
+Contact logged</code></pre>
+</section>
+<section id="chain-3-intervention-loop-assessor-communication-closure" class="level3">
+<h3 class="anchored" data-anchor-id="chain-3-intervention-loop-assessor-communication-closure">Chain 3: Intervention Loop (Assessor → Communication → Closure)</h3>
+<pre><code>ASSESS-FLAGS-&lt;TERM&gt;
+  ↓
+  Deliverables: intervention_flags_&lt;TERM&gt;.json
+  ↓
+COMMS-INTERVENTION-&lt;STUDENT_ID&gt;
+  ↓
+  Deliverables: intervention_&lt;STUDENT_ID&gt;.md, intervention_&lt;STUDENT_ID&gt;_email.txt
+  ↓
+Teacher approves &amp; initiates intervention
+  ↓
+ASSESS-SCORE-&lt;POST_INTERVENTION_ASSESSMENT&gt;
+  ↓
+  Deliverables: score_report_&lt;ASSESSMENT_ID&gt;.md
+  ↓
+Intervention outcome tracked</code></pre>
+</section>
+<section id="chain-4-revision-loop-assessor-curriculum-designer-lessons" class="level3">
+<h3 class="anchored" data-anchor-id="chain-4-revision-loop-assessor-curriculum-designer-lessons">Chain 4: Revision Loop (Assessor → Curriculum Designer → Lessons)</h3>
+<pre><code>ASSESS-CLASS-&lt;UNIT_ID&gt;
+  ↓
+  Deliverables: class_performance_&lt;UNIT_ID&gt;.md
+  ↓
+Curriculum Designer reviews performance data
+  ↓
+ASSESS-REVISION-&lt;UNIT_ID&gt; (request to revise)
+  ↓
+CURRDES-LESSONS-UNIT-01 (revised with new pedagogy)
+  ↓
+  Deliverables: lessons_UNIT-01.md (revised)
+  ↓
+Ready for re-teaching</code></pre>
+<hr>
+</section>
+</section>
+<section id="all-deliverables-by-type" class="level2">
+<h2 class="anchored" data-anchor-id="all-deliverables-by-type">All Deliverables by Type</h2>
+<section id="curriculum-designer-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="curriculum-designer-outputs">Curriculum Designer Outputs</h3>
+<p><strong>Scope and Planning:</strong> - <code>scope_&lt;UNIT_ID&gt;.md</code> — Unit overview, standards, objectives, assessment checkpoints - <code>objectives_&lt;UNIT_ID&gt;.json</code> — Lesson-level objectives and standards</p>
+<p><strong>Assessments:</strong> - <code>assessments_&lt;UNIT_ID&gt;.md</code> — Assessment instruments with answer keys - <code>rubrics_&lt;UNIT_ID&gt;.json</code> — Rubric definitions with anchors</p>
+<p><strong>Instruction:</strong> - <code>lessons_&lt;UNIT_ID&gt;.md</code> — Detailed lesson plans with student materials</p>
+<hr>
+</section>
+<section id="planner-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="planner-outputs">Planner Outputs</h3>
+<p><strong>Calendar:</strong> - <code>calendar_&lt;TERM&gt;.md</code> — Week-by-week calendar view - <code>calendar_&lt;TERM&gt;.json</code> — Structured calendar data</p>
+<p><strong>Pacing:</strong> - <code>pacing_&lt;TERM&gt;.md</code> — Pacing status per unit - <code>time_blocks_&lt;UNIT_ID&gt;.json</code> — Confirmed schedule for unit - <code>adjusted_schedule_&lt;UNIT_ID&gt;.json</code> — Updated schedule after adjustment</p>
+<p><strong>Scheduling:</strong> - <code>confirmed_schedule_&lt;EVENT&gt;.json</code> — Confirmed dates for communication events</p>
+<hr>
+</section>
+<section id="assessor-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="assessor-outputs">Assessor Outputs</h3>
+<p><strong>Tracking:</strong> - <code>mastery_&lt;UNIT_ID&gt;.json</code> — Per-student mastery tracking - <code>mastery_&lt;UNIT_ID&gt;_updated.json</code> — Updated mastery after assessment</p>
+<p><strong>Reporting:</strong> - <code>score_report_&lt;ASSESSMENT_ID&gt;.md</code> — Assessment results and class summary - <code>class_performance_&lt;UNIT_ID&gt;.md</code> — Unit-level performance analysis - <code>intervention_flags_&lt;TERM&gt;.json</code> — At-risk student flags</p>
+<p><strong>Quality Assurance:</strong> - <code>audit_&lt;UNIT_ID&gt;.md</code> — Assessment quality audit findings</p>
+<hr>
+</section>
+<section id="communicator-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="communicator-outputs">Communicator Outputs</h3>
+<p><strong>Drafts:</strong> - <code>progress_&lt;UNIT_ID&gt;.md</code> — Progress update overview - <code>progress_&lt;UNIT_ID&gt;_email.txt</code> — Parent email template - <code>intervention_&lt;STUDENT_ID&gt;.md</code> — Intervention notification overview - <code>intervention_&lt;STUDENT_ID&gt;_email.txt</code> — Parent email template</p>
+<p><strong>Tracking:</strong> - <code>contact_log_&lt;TERM&gt;.json</code> — Student contact information and attempt history - <code>contact_log_&lt;TERM&gt;_updated.json</code> — Updated contact log after attempt</p>
+<p><strong>Escalation:</strong> - <code>escalation_&lt;TERM&gt;.md</code> — Non-responsive and urgent cases</p>
+<hr>
+</section>
+</section>
+<section id="task-status-lifecycle" class="level2">
+<h2 class="anchored" data-anchor-id="task-status-lifecycle">Task Status Lifecycle</h2>
+<p>All tasks follow this lifecycle:</p>
+<pre><code>queued
+  ↓ (when executor processes)
+running
+  ↓ (on success)
+done
+  ↓ (or on failure)
+failed
+  ↓
+(skipped on future executor runs)</code></pre>
+<p>Task JSON contains the current status. Result JSON (written by executor) records the final status and outcome.</p>
+<hr>
+</section>
+<section id="key-constraints-and-timeouts" class="level2">
+<h2 class="anchored" data-anchor-id="key-constraints-and-timeouts">Key Constraints and Timeouts</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Role</th>
+<th>Task Type</th>
+<th>Default Timeout</th>
+<th>Typical Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Curriculum Designer</td>
+<td>Scope generation</td>
+<td>600s</td>
+<td>5-10 min</td>
+</tr>
+<tr class="even">
+<td>Curriculum Designer</td>
+<td>Assessment generation</td>
+<td>900s</td>
+<td>5-15 min</td>
+</tr>
+<tr class="odd">
+<td>Curriculum Designer</td>
+<td>Lesson planning</td>
+<td>1200s</td>
+<td>10-20 min</td>
+</tr>
+<tr class="even">
+<td>Planner</td>
+<td>Calendar generation</td>
+<td>600s</td>
+<td>5-10 min</td>
+</tr>
+<tr class="odd">
+<td>Planner</td>
+<td>Pacing report</td>
+<td>300s</td>
+<td>2-5 min</td>
+</tr>
+<tr class="even">
+<td>Planner</td>
+<td>Time block confirmation</td>
+<td>300s</td>
+<td>2-5 min</td>
+</tr>
+<tr class="odd">
+<td>Assessor</td>
+<td>Mastery tracker init</td>
+<td>600s</td>
+<td>5-10 min</td>
+</tr>
+<tr class="even">
+<td>Assessor</td>
+<td>Score assessment</td>
+<td>900s</td>
+<td>5-15 min</td>
+</tr>
+<tr class="odd">
+<td>Assessor</td>
+<td>Generate flags</td>
+<td>300s</td>
+<td>2-5 min</td>
+</tr>
+<tr class="even">
+<td>Assessor</td>
+<td>Class report</td>
+<td>600s</td>
+<td>5-10 min</td>
+</tr>
+<tr class="odd">
+<td>Assessor</td>
+<td>Assessment audit</td>
+<td>600s</td>
+<td>5-10 min</td>
+</tr>
+<tr class="even">
+<td>Communicator</td>
+<td>Draft communication</td>
+<td>600s</td>
+<td>5-10 min</td>
+</tr>
+<tr class="odd">
+<td>Communicator</td>
+<td>Initialize contact log</td>
+<td>300s</td>
+<td>2-5 min</td>
+</tr>
+<tr class="even">
+<td>Communicator</td>
+<td>Log attempt</td>
+<td>200s</td>
+<td>1-2 min</td>
+</tr>
+<tr class="odd">
+<td>Communicator</td>
+<td>Generate escalation</td>
+<td>300s</td>
+<td>2-5 min</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="validation-rules" class="level2">
+<h2 class="anchored" data-anchor-id="validation-rules">Validation Rules</h2>
+<p>Every task must have: - <code>task_id</code> (non-empty string) - <code>goal</code> (non-empty string describing objective) - <code>deliverables</code> (non-empty array of filenames) - <code>status</code> (one of: queued, running, done, failed)</p>
+<p>Every result must have: - <code>task_id</code> (matching the task) - <code>status</code> (done or failed) - <code>summary</code> (non-empty string) - <code>deliverables</code> (object mapping filenames to paths, or empty if failed) - <code>completed_at</code> (ISO 8601 timestamp) - <code>error</code> (optional; present if status is failed)</p>
+<hr>
+</section>
+<section id="using-this-reference" class="level2">
+<h2 class="anchored" data-anchor-id="using-this-reference">Using This Reference</h2>
+<p>When creating a new task:</p>
+<ol type="1">
+<li><strong>Find your role</strong> in the section above</li>
+<li><strong>Pick the task type</strong> that matches your intent</li>
+<li><strong>Copy the task ID pattern</strong> and substitute qualifiers</li>
+<li><strong>Check what you need to consume</strong> (look at “Consumed by…” section)</li>
+<li><strong>Read the full role spec</strong> (e.g., <code>docs/roles/assessor.md</code>) for JSON schema details</li>
+<li><strong>Write the task JSON</strong> to <code>handoffs/task-&lt;YOUR_TASK_ID&gt;.json</code></li>
+<li><strong>Run the executor</strong> to process</li>
+</ol>
+<p>When consuming a result:</p>
+<ol type="1">
+<li><strong>Check <code>results/result-&lt;TASK_ID&gt;.json</code></strong> to confirm status is “done”</li>
+<li><strong>Read all deliverables</strong> listed in the result’s <code>deliverables</code> object</li>
+<li><strong>Use deliverables as inputs</strong> to your next task</li>
+<li><strong>Trace back</strong> to the source task for context and version info</li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/MrAllatta\.github\.io\/classroom-manager\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
