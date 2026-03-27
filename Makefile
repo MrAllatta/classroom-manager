@@ -5,7 +5,7 @@ VENV = .venv
 PIP = $(VENV)/bin/pip
 PYTHON = $(VENV)/bin/python
 
-.PHONY: venv install execute execute-watch prepare submit clean
+.PHONY: venv install execute execute-watch prepare submit clean publish
 
 venv:
 	python -m venv $(VENV)
@@ -46,4 +46,7 @@ submit-task:
 clean:
 	rm -rf $(VENV) __pycache__ tmp/*.tmp
 	find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
-		
+
+publish:
+	quarto publish gh-pages
+
