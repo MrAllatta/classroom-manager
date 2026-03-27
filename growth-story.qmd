@@ -1,0 +1,6 @@
+---
+title: "Growth story"
+---
+
+{{< include project_growth_story_recruiter.md >}}
+

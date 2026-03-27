@@ -1,0 +1,6 @@
+---
+title: "Classroom-Manager (Case Study)"
+---
+
+{{< include public_artifact.md >}}
+

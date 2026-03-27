@@ -1,0 +1,6 @@
+---
+title: "Architecture & workflows"
+---
+
+{{< include docs/architecture_and_workflows.md >}}
+

@@ -1,0 +1,6 @@
+---
+title: "Running the system"
+---
+
+{{< include executor_quickstart.md >}}
+
