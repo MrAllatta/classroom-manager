@@ -59,7 +59,8 @@ units:
   required: true
   description: >
     Ordered instructional units. Each object: unit_number (int), title (string),
-    instructional_days (int), summative_assessment (string), ccss_standards (list[string]),
+    instructional_days (int), summative_assessment (string), ccss_standards (list[string];
+    values may be CCSS-style tags or course-prefixed codes such as NYS Algebra I AI-*),
     essential_questions (list[string]).
 
 # ── SECTION FILE CROSS-REFERENCE ────────────────────────────────────────────────
