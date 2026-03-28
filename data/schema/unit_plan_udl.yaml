@@ -1,0 +1,310 @@
+# Unit plan schema (UDL + backward design)
+# Defines the shape of per-unit plan files under data/courses/<course_id>/units/.
+# Reference only — not student data. Low sensitivity; safe for agent planning context.
+#
+# Design intent:
+#   - Backward plan from the unit summative: define acceptable evidence and criteria first,
+#     then formative checkpoints, then lesson sequence. Scope (`scope.yaml`) remains the
+#     course-level source of truth for unit titles, day budgets, and standard lists; unit
+#     plans refine or subset those fields where needed.
+#   - Universal Design for Learning (UDL) is modeled on CAST’s three principles and
+#     guideline clusters (engagement, representation, action & expression). Lists hold
+#     concrete classroom options (formats, scaffolds, choices), not student-specific data.
+#
+# CAST UDL Guidelines: https://udlguidelines.cast.org/
+#
+# Used by: Curriculum Designer, Planner (unit timing), Teacher (implementation)
+
+# ── FILE PLACEMENT ───────────────────────────────────────────────────────────────
+# Convention (canonical):
+#   data/courses/<course_id>/units/unit_<NN>.yaml
+#   NN = zero-padded unit_number from scope (e.g., unit_01.yaml … unit_10.yaml).
+# Link from scope is implicit via (course_id, unit_number); no required pointer in scope.
+
+# ── ROOT ─────────────────────────────────────────────────────────────────────────
+course_id:
+  type: string
+  required: true
+  description: Stable slug matching data/courses/<course_id>/ (e.g., algebra_1).
+
+unit_number:
+  type: integer
+  required: true
+  description: Must match the unit_number for this unit in data/courses/<course_id>/scope.yaml.
+
+title:
+  type: string
+  required: true
+  description: Unit title; typically matches scope, may be a teaching-facing refinement.
+
+school_year:
+  type: string
+  required: false
+  description: School year label (e.g., 2026-27) when the plan applies.
+
+instructional_days:
+  type: integer
+  required: false
+  description: Copy from scope for convenience; scope remains authoritative if they differ.
+
+essential_questions:
+  type: list[string]
+  required: false
+  description: Often mirrored from scope; may be narrowed for this unit pass.
+
+standards_focus:
+  type: list[string]
+  required: false
+  description: >
+    Subset or reorder of scope unit standards (e.g., AI-* codes). Use when the plan
+    emphasizes specific standards within the scope list.
+
+generated_by:
+  type: string
+  required: false
+  description: Agent or human tag when this unit plan was produced.
+
+generated_at:
+  type: string
+  required: false
+  description: ISO-8601 timestamp when generated_by last wrote this file.
+
+# ── BACKWARD DESIGN (summative first) ───────────────────────────────────────────
+backward_plan:
+  type: object
+  required: true
+  description: >
+    Stage-1/2 style anchors: what students must demonstrate by the end of the unit,
+    then the evidence trail that supports it. Lesson-level detail lives under lessons.
+
+  properties:
+    transfer_goal:
+      type: string
+      required: false
+      description: >
+        One sentence on what learners should be able to do in novel contexts after the unit.
+
+    enduring_understandings:
+      type: list[string]
+      required: false
+      description: Big ideas students should retain; supports prioritizing tasks and texts.
+
+    summative:
+      type: object
+      required: true
+      description: End-of-unit capstone aligned to scope.summative_assessment for this unit.
+
+      properties:
+        instrument:
+          type: string
+          required: true
+          description: >
+            Identifier or label (e.g., end_of_unit_test, performance_task, portfolio_review).
+            Should align with scope unit summative_assessment when applicable.
+
+        student_facing_name:
+          type: string
+          required: false
+          description: Name as it appears on the calendar or to students.
+
+        claims:
+          type: list[string]
+          required: true
+          description: >
+            What proficiency looks like — observable claims tied to standards_focus or
+            scope standards (e.g., "Justifies equivalent forms of an expression using properties").
+
+        success_criteria:
+          type: list[string]
+          required: true
+          description: >
+            Criteria for meeting the claims; rubric anchors or checklist language.
+            Prefer observable, student-actionable phrasing.
+
+        aligned_standards:
+          type: list[string]
+          required: false
+          description: Explicit standard IDs assessed on the summative; defaults to standards_focus/scope if omitted.
+
+    formative_checkpoints:
+      type: list[object]
+      required: true
+      description: >
+        Planned evidence before the summative; ordered roughly chronologically.
+        Each item should trace backward from summative claims.
+
+      item_properties:
+        checkpoint_id:
+          type: string
+          required: true
+          description: Stable slug within the unit (e.g., fc_exit_w2, fc_quiz_mid).
+
+        label:
+          type: string
+          required: true
+          description: Short human-readable name.
+
+        purpose:
+          type: string
+          required: true
+          description: Which summative claim(s) this checkpoint monitors.
+
+        evidence_type:
+          type: string
+          required: true
+          description: e.g., exit_ticket, homework_sample, quiz, observation_protocol, draft_task.
+
+        approximate_timing:
+          type: string
+          required: false
+          description: Relative placement (e.g., "after lesson 4", "week 2").
+
+        feedback_loop:
+          type: string
+          required: false
+          description: How results change next instruction (re-teach, small group, etc.).
+
+    prerequisite_gaps_to_monitor:
+      type: list[string]
+      required: false
+      description: >
+        Prior-grade or prior-unit skills that often block success; informs warm-ups and
+        intervention without naming individual students.
+
+# ── UDL (CAST: three principles) ────────────────────────────────────────────────
+udl:
+  type: object
+  required: true
+  description: >
+    Course- and unit-level options that make the unit accessible and rigorous for the
+    full range of learners. Use lists of strategies, not IEP/504 specifics (those stay
+    in student profiles and section notes).
+
+  properties:
+    engagement:
+      type: object
+      required: true
+      description: Multiple means of engagement (why learn; effort and persistence; self-regulation).
+
+      properties:
+        recruiting_interest:
+          type: list[string]
+          required: true
+          description: >
+            Options for relevance, choice, authenticity, minimizing threat (CAST: optimize choice,
+            optimize relevance, optimize challenge).
+
+        sustaining_effort_persistence:
+          type: list[string]
+          required: true
+          description: >
+            Scaffolds for goals, coping strategies, collaboration, self-assessment (CAST: mastery-oriented feedback, etc.).
+
+        self_regulation:
+          type: list[string]
+          required: true
+          description: >
+            Expectations, reflection, coping with frustration, strategy instruction (CAST: promote expectations,
+            develop self-assessment and reflection).
+
+    representation:
+      type: object
+      required: true
+      description: Multiple means of representation (what is taught).
+
+      properties:
+        perception:
+          type: list[string]
+          required: true
+          description: >
+            Alternatives for audio, visual, text size/contrast, clarity of display (CAST: offer alternatives for perception).
+
+        language_symbols:
+          type: list[string]
+          required: true
+          description: >
+            Vocabulary supports, notation charts, multilingual resources, concrete/representational/abstract sequencing
+            (CAST: offer alternatives for language and symbols).
+
+        comprehension:
+          type: list[string]
+          required: true
+          description: >
+            Graphic organizers, highlighting big ideas, bridging informal and formal math, guided sense-making
+            (CAST: activate background knowledge, highlight patterns, support memory transfer).
+
+    action_expression:
+      type: object
+      required: true
+      description: Multiple means of action & expression (how students show learning).
+
+      properties:
+        physical_action:
+          type: list[string]
+          required: true
+          description: >
+            Alternatives to pencil-paper only (CAST: vary methods for response and navigation).
+
+        expression_communication:
+          type: list[string]
+          required: true
+          description: >
+            Oral, written, visual, digital, collaborative options; scaffolds for showing work
+            (CAST: use multiple media for communication).
+
+        executive_functions:
+          type: list[string]
+          required: true
+          description: >
+            Goal templates, checklists, chunking, timers, models of worked examples and partial solutions
+            (CAST: guide information processing and fluency).
+
+# ── TOP-DOWN SEQUENCE (after backward anchors) ─────────────────────────────────
+lessons:
+  type: list[object]
+  required: false
+  description: >
+    Ordered lesson stubs or full plans. Populate in a later pass; may reference formative checkpoint_ids.
+
+  item_properties:
+    lesson_number:
+      type: integer
+      required: true
+      description: 1-based order within the unit.
+
+    title:
+      type: string
+      required: true
+
+    instructional_days:
+      type: number
+      required: false
+      description: Fractional days allowed (e.g., 0.5 for a single block).
+
+    learning_targets:
+      type: list[string]
+      required: false
+      description: Student-friendly outcomes for the lesson.
+
+    linked_formative_checkpoints:
+      type: list[string]
+      required: false
+      description: checkpoint_id values from backward_plan.formative_checkpoints.
+
+    notes:
+      type: string
+      required: false
+
+# ── CROSS-CUTTING NOTES (optional) ──────────────────────────────────────────────
+section_implementation_notes:
+  type: string
+  required: false
+  description: >
+    ICT, lab, or section-specific delivery notes that do not belong in student records.
+    Keep aggregate; avoid PII.
+
+core_resources:
+  type: list[string]
+  required: false
+  description: >
+    High-level list of primary texts, kits, or digital tools for the unit (titles only or stable IDs).
