@@ -7,6 +7,7 @@ section:
   id: ALG-01
   course: Algebra I
   course_code: MTH-ALG1  # placeholder; update with official school course code
+  course_scope_id: algebra_1
   period: 1
   room: TBD
   grade_levels: [9]  # expected; confirm at scheduling
@@ -39,7 +40,7 @@ special_education:
   co_teacher_coverage: none
 
 pacing:
-  curriculum_reference: null  # link to curriculum document when available
+  curriculum_reference: data/courses/algebra_1/scope.yaml
   pacing_guide: null
 
 notes: >

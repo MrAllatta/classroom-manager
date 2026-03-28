@@ -1,6 +1,6 @@
 # Data Directory
 
-This directory holds the structured metadata that runs the classroom system. It is organized in three layers, each with distinct ownership, access rules, and sensitivity levels.
+This directory holds the structured metadata that runs the classroom system. It is organized in three layers plus **course scope** (shared curriculum files referenced by sections), each with distinct ownership, access rules, and sensitivity levels.
 
 ---
 
@@ -57,6 +57,7 @@ Reference documents that define structure. Not student data.
 |---|---|
 | `schema/student_profile.yaml` | Canonical field definitions for a student record |
 | `schema/accommodation_types.yaml` | Structured list of accommodation codes with labels, categories, and implementation notes |
+| `schema/course_scope.yaml` | Shape of course scope files under `courses/<course_id>/` |
 
 Schema files are safe to read into any agent context. They contain no student data.
 
@@ -117,8 +118,9 @@ AP exam accommodations are a separate process from classroom IEP/504 accommodati
 |---|---|---|
 | New school year, new school | Teacher (Eric) | `school/context.yaml` |
 | Enrollment or staffing changes | Co-teacher or Teacher | `sections/<section>.yaml` |
+| Course scope / sequence revision | Curriculum Designer or Teacher | `courses/<course_id>/scope.yaml` |
 | New student joins | Assessor or Teacher (via tool) | `students/<id>.yaml` |
 | New accommodation type needed | Co-teacher | `schema/accommodation_types.yaml` |
 | Schema field added or changed | Co-teacher | `schema/student_profile.yaml` + this README |
 
-Last updated: 2026-03-25
+Last updated: 2026-03-27

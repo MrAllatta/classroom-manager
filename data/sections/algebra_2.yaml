@@ -5,6 +5,7 @@ section:
   id: ALG-02
   course: Algebra I
   course_code: MTH-ALG1
+  course_scope_id: algebra_1
   period: 2
   room: TBD
   grade_levels: [9]
@@ -37,7 +38,7 @@ special_education:
   co_teacher_coverage: full_period
 
 pacing:
-  curriculum_reference: null
+  curriculum_reference: data/courses/algebra_1/scope.yaml
   pacing_guide: null
 
 notes: >
