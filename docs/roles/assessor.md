@@ -3,6 +3,8 @@
 ## Purpose
 Own the standards-aligned evidence loop. Collect, evaluate, and report on student learning; generate actionable outputs that drive instruction, intervention, and required reporting — all traceable to the standards and rubrics that govern them.
 
+**Teacher-next:** Reports, flags, and mastery summaries pair evidence with a **recommended next step** for instruction, communication, or compliance (reteach, confer, notify parent, submit, verify data, etc.). Data without a next move is out of spec.
+
 **Grading policy:** [`docs/grading-policy.md`](../grading-policy.md) — proficiency vs task design (including DOK), evidence bundles, and gradebook mapping expectations.
 
 ## Responsibilities
@@ -458,3 +460,4 @@ The Assessor reads contact logs to close the intervention loop: has the flagged 
 - [ ] Intervention outcomes are logged within one instructional cycle of the intervention
 - [ ] All compliance reports are submitted by their deadlines with a logged confirmation
 - [ ] During experimental phase: all outputs use dummy data; no live grades or reports issued without explicit teacher sign-off
+- [ ] Flags and class reports include **actionable next steps** for the teacher or handoff roles, not scores alone (per [`architecture_and_workflows.md`](../architecture_and_workflows.md#teacher-next-bar))

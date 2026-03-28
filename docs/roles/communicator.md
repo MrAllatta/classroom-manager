@@ -3,6 +3,8 @@
 ## Purpose
 Own all communication loops between the classroom and the outside world — parents, students, administration, and school systems — especially where outcomes depend on timely follow-up or documented action.
 
+**Teacher-next:** Drafts and logs state **what the teacher should do after reading** (approve and send, edit then send, call instead, hold, escalate) and by when, when timing matters.
+
 ## Responsibilities
 - Draft and send routine communications: progress updates, absence follow-ups, assignment reminders, grade notifications
 - Maintain contact logs per student, including attempt history and responses
@@ -431,3 +433,4 @@ The Communicator reads the scheduled communication dates to trigger `COMMS-PROGR
 - [ ] Contact log is current for all flagged students
 - [ ] During experimental phase: all sends are mocked; no live external communication issued without explicit teacher approval
 - [ ] Escalation reports are delivered within 24 hours of a case meeting escalation criteria
+- [ ] Draft comms and escalation summaries include an explicit **teacher next step** (approve, revise, send, defer, escalate) per [`architecture_and_workflows.md`](../architecture_and_workflows.md#teacher-next-bar)

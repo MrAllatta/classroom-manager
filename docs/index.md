@@ -4,7 +4,7 @@
 
 1. **[README](../README.md)** — What this project is and why it exists
 2. **[Executor Quickstart](../executor_quickstart.md)** — How to run the system
-3. **[Architecture & workflows](architecture_and_workflows.md)** — Single canonical description of the synthesized classroom loop, file-based handoffs, and where to read next
+3. **[Architecture & workflows](architecture_and_workflows.md)** — Single canonical description of the synthesized classroom loop, file-based handoffs, the **teacher-next** output bar, and where to read next
 4. **[Testing plan](testing_plan.md)** — Active phase: canonical requests, pass criteria, simulated-real-world order of operations
 5. **[Team Structure](roles/README.md)** — The four roles, the handoff map, the governing rules
 

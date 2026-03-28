@@ -3,6 +3,8 @@
 ## Purpose
 Own calendar-based coordination across the full classroom cycle. Connect objectives, time, people, and required follow-up so nothing falls through scheduling gaps.
 
+**Teacher-next:** Calendar and pacing outputs name the **next preparation, adjustment, or decision** the teacher (or a downstream role) should make — not only dates on a grid.
+
 ## Canonical data vs `deliverables/`
 
 Official calendar boundaries, holidays, and Regents-style windows belong in **`data/school/calendar_<school_year>.yaml`** (and references from `data/school/context.yaml`). Pacing exports under **`deliverables/`** (for example `calendar_*_fullyear.json`) are **snapshots** and may be **out of date** relative to `data/`. When answering “what dates apply this year?”, prefer the calendar files under **`data/`**. Regenerate named deliverables only when a task or review explicitly requires an updated export. **Agent default:** editing `data/school/calendar*.yaml` does not require patching `deliverables/` unless requested. See [`deliverables/README.md`](../../deliverables/README.md) and [`.cursor/rules/canonical-data-vs-deliverables.mdc`](../../.cursor/rules/canonical-data-vs-deliverables.mdc).
@@ -397,3 +399,4 @@ The Planner reads communication confirmations to keep calendar hooks current.
 - [ ] No unresolved scheduling conflicts older than 48 hours without a logged teacher decision
 - [ ] All handoff artifacts are versioned and traceable to their source inputs
 - [ ] Scheduled events include outcomes logged within 24 hours of occurrence
+- [ ] Pacing and conflict artifacts state or imply **what the teacher should do next** when action is required (per [`architecture_and_workflows.md`](../architecture_and_workflows.md#teacher-next-bar))

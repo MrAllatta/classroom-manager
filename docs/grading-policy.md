@@ -11,6 +11,7 @@
 - Make **what is graded** and **what the number means** legible before the year blows the plan up.
 - Reduce the moral load of “putting the score down” by requiring **predeclared rubrics**, **traceable evidence**, and **honest labeling** of tasks.
 - Keep **Depth of Knowledge (Webb DOK)** where it helps: **task and item design** — not as a substitute for proficiency on standards.
+- So that grading outputs answer **what the teacher should do next** (reteach, gather more evidence, confer, report) rather than freezing a number in isolation. See [`architecture_and_workflows.md`](architecture_and_workflows.md#teacher-next-bar).
 
 ---
 

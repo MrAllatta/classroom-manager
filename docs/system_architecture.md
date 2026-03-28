@@ -4,6 +4,8 @@
 
 This file keeps the extended diagrams and component breakdowns below — visual overview, data flow, and executor path in depth.
 
+The system is architected so role outputs reduce teacher glue work; concretely, artifacts should answer **what the teacher should do next** ([`architecture_and_workflows.md`](architecture_and_workflows.md#teacher-next-bar)).
+
 ---
 
 ## System Overview

@@ -21,6 +21,8 @@ Updating canonical YAML or JSON under `data/` **does not require** refreshing ev
 
 Do **not** treat “keep the repo consistent” as “touch every historical artifact on every change.” Prefer surgical updates to `data/` and regenerate downstream exports only when the workflow calls for it.
 
+Regenerated exports meant for teacher review should still meet the **teacher-next** bar ([`docs/architecture_and_workflows.md`](../docs/architecture_and_workflows.md#teacher-next-bar)): the reader should know **what to do next**, not only what changed.
+
 **Automated assistants (Cursor / agents):** When the user asks only to update canonical course or school data, **skip `deliverables/`** unless they explicitly name files here or ask for a regenerated export. Persistent guidance: [`.cursor/rules/canonical-data-vs-deliverables.mdc`](../.cursor/rules/canonical-data-vs-deliverables.mdc).
 
 ## Relationship to other folders

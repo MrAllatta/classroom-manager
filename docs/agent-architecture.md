@@ -5,7 +5,7 @@
 Agent instructions have two distinct kinds of content that must not be conflated:
 
 1. **Platform-specific configuration** — tool permissions, agent metadata, binding syntax. This is specific to the agentic container (Positron, Claude Code, Cursor, a custom harness, etc.) and will need to be rewritten when the platform changes.
-2. **Portable behavioral spec** — identity, purpose, operating principles, responsibilities, inputs, outputs, handoffs, done criteria. This is stable across platforms and should never be duplicated in a platform-specific file.
+2. **Portable behavioral spec** — identity, purpose, operating principles, responsibilities, inputs, outputs, handoffs, done criteria. Specs should make **teacher-next** explicit: outputs ought to answer *what the teacher should do next* (see `docs/architecture_and_workflows.md`, Teacher-next bar). This is stable across platforms and should never be duplicated in a platform-specific file.
 
 Conflating them creates two problems:
 - **Duplication.** The spec gets copied into the platform file and drifts.
@@ -94,4 +94,4 @@ When Eric provides new operating guidance or philosophy:
 3. If a new role is needed, define it in `docs/roles/` before creating the agent binding.
 4. The co-teacher (Inés) is responsible for keeping this document current.
 
-Last updated: 2026-03-25
+Last updated: 2026-03-27

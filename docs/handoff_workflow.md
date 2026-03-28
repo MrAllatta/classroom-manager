@@ -12,6 +12,8 @@ All role-to-role communication in the classroom system uses a **directory execut
 
 This document describes the manual execution workflow for the experimental phase. Later, this pattern can be extended to continuous polling or event-triggered execution without changing the file structure or task schemas.
 
+Handoffs succeed when the next role — or the teacher — can act without reverse-engineering intent; that is the same **teacher-next** standard as in [`architecture_and_workflows.md`](architecture_and_workflows.md#teacher-next-bar).
+
 ---
 
 ## Directory Structure

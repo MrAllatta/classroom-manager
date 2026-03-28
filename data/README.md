@@ -2,6 +2,8 @@
 
 This directory holds the structured metadata that runs the classroom system. It is organized in three layers plus **course scope** (shared curriculum files referenced by sections), each with distinct ownership, access rules, and sensitivity levels.
 
+Structured data exists so agents and tools can support **decisions**, not so the teacher digs through fields. Downstream reports and handoffs should still satisfy the **teacher-next** bar: after reading a computed summary, the teacher knows **what to do next**. See [`docs/architecture_and_workflows.md`](../docs/architecture_and_workflows.md#teacher-next-bar).
+
 ---
 
 ## Three-layer architecture

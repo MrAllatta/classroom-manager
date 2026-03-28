@@ -3,6 +3,8 @@
 ## Purpose
 Own the full instructional content loop: research what works, build and adapt scope and sequence, write lesson materials and assessments, and revise based on mastery data. This role collapses the Researcher and Curriculum candidate areas into a single owner to prevent a handoff inside the knowledge-to-material pipeline.
 
+**Teacher-next:** Lessons, materials, and assessments make the **next instructional or evidence-gathering step** legible (what to run, what to collect, what to look for when scoring).
+
 ## Canonical data vs `deliverables/`
 
 Full-year scope and sequence for a course is canonical in **`data/courses/<course_id>/scope.yaml`** (referenced by section files). JSON or markdown under **`deliverables/`** (for example `scope_*_fullyear.json`) are **exports or snapshots** and may **lag** behind `data/`. Update **`data/`** when the teacher-approved truth changes; refresh **`deliverables/`** only when producing a reviewed artifact or satisfying a task that names those paths. **Agent default:** a scope or standards alignment pass edits **`data/courses/.../scope.yaml`** (and linked section YAML if needed) only — **not** `deliverables/`, unless the user explicitly requests export updates. Avoid comments in `scope.yaml` that say an export has the “same content” as canonical; that invites unwanted syncing. See [`deliverables/README.md`](../../deliverables/README.md) and [`.cursor/rules/canonical-data-vs-deliverables.mdc`](../../.cursor/rules/canonical-data-vs-deliverables.mdc).
@@ -287,3 +289,4 @@ See [Handoff Format](#handoff-format) above for task schemas and deliverable spe
 - [ ] Differentiated versions exist for all assessments flagged as requiring them
 - [ ] Material revisions triggered by Assessor data are completed within one unit cycle
 - [ ] During experimental phase: all materials are dummy/sample; live student-facing deployment requires explicit teacher approval
+- [ ] Unit and lesson deliverables leave the teacher clear on **what to teach, assess, or revise next** when the artifact is consumed cold (per [`architecture_and_workflows.md`](../architecture_and_workflows.md#teacher-next-bar))

@@ -14,6 +14,10 @@ Everything here traces back to these:
 1. **"I need plans and materials for week X."** → Planner + Curriculum Designer
 2. **"I need a report on at-risk students for admin."** → Assessor (+ Communicator)
 
+### Teacher-next (pass criteria for all phases)
+
+A run **passes** on substance only if Eric can answer **what to do next** from the primary deliverable without inferring from tone alone: prepare instruction, adjust the calendar, contact a family, submit to admin, revise a rubric, or confirm no action. Lesson packs should imply day-by-day **next teaching moves**; flags and comms drafts should pair **evidence + suggested action**. If an output is only descriptive, file it as a failure mode and fix prompts or role specs.
+
 ---
 
 ## Phase 1: Output quality — Canonical Request 1
@@ -36,6 +40,7 @@ We have a completed run (PLAN-WEEK6-ALG01). The question is whether the output i
 - [ ] Warm-ups and exit tickets are present and scoped correctly (not full lessons)
 - [ ] Assessment is scoped to Unit 1 content only
 - [ ] Eric would use these as a starting draft without needing to restructure them
+- [ ] Each day or block makes the **next instructional move** obvious (teacher-next bar)
 
 **Failure modes to watch for:**
 - Generic lesson templates that ignore the week's position in the unit sequence
@@ -72,6 +77,7 @@ We have a completed run (PLAN-WEEK6-ALG01). The question is whether the output i
 - [ ] Output is a usable draft parent/guardian communication
 - [ ] Tone is appropriate for Columbia Secondary context
 - [ ] No content that would need to be removed before sending
+- [ ] Draft states **what Eric should do next** (e.g. approve and send by date X, or revise for tone)
 
 ### Test 2.2 — ASSESS: At-risk student report
 
@@ -81,6 +87,7 @@ We have a completed run (PLAN-WEEK6-ALG01). The question is whether the output i
 - [ ] Report format is appropriate for admin submission
 - [ ] Criteria applied are explicit and traceable (not opaque)
 - [ ] Eric could submit this report after review without restructuring it
+- [ ] Report pairs at-risk identification with **recommended teacher or team actions** (not a table of names only)
 
 ---
 

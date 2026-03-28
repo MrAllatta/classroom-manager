@@ -12,6 +12,10 @@ The **roadmap for testing** interactions under simulated real-world conditions (
 
 `classroom-manager` is a role-based multi-agent prototype for classroom operations. It treats teaching as team-shaped work and tests whether explicit role ownership + durable handoffs can reduce teacher glue work.
 
+### Teacher-next bar
+
+Every artifact the team produces — plans, flags, drafts, reports, calendar exports — should make the **next move obvious** for the teacher of record. The acceptance question is: **What should the teacher do next?** (prepare something, decide something, send something, reteach something, escalate, or explicitly “no action — informational only.”) If an output does not answer that cleanly, it is noise or extra cognitive load; revise the spec or the deliverable shape until it does. Role specs in `docs/roles/` encode this per loop.
+
 At runtime, the system is deliberately simple:
 
 ```

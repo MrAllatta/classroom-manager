@@ -4,6 +4,8 @@
 
 **Test 1.1 Critical Finding:** The executor was passing task descriptions to the model without curriculum scope and calendar context. The model had to infer unit structure from goal alone, resulting in wrong unit content being generated.
 
+Without that grounding, outputs read as plausible but generic — which fails the **teacher-next** bar ([`architecture_and_workflows.md`](architecture_and_workflows.md#teacher-next-bar)) because they do not tell the teacher what to run **this** week in **this** course.
+
 Root cause: `executor.py` called `build_prompt()` with only role spec + task structure, not the actual scope and calendar files the task declared as dependencies.
 
 ## Solution: Minimal Stable Core + Task-Scoped Curriculum Context

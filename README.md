@@ -24,6 +24,8 @@ Two canonical teacher requests define the target end state:
 
 Every architectural decision should be evaluated against whether it moves the system closer to serving these patterns reliably.
 
+**Output bar:** Favor artifacts that answer **what the teacher should do next** (prepare, decide, communicate, adjust instruction, or confirm “no action”). Vague summaries that leave the next step implicit fail the bar. See [`docs/architecture_and_workflows.md`](docs/architecture_and_workflows.md#teacher-next-bar).
+
 ## How we build
 Incrementally. Each step is scoped so that Eric can review and test it before anything further is added. No increment is larger than what can be examined in one sitting. The question "how far should we go?" has a standing answer: one concrete, testable chunk further. There is no need to ask.
 
@@ -53,7 +55,8 @@ Student data must never pass through an LLM context window in production. Tools 
 3. **Tool-aligned role execution.** Top-level roles may spawn or manage helper roles tied to specific tools, APIs, templates, or recurring workflows.
 4. **The team reduces coordination burden.** If a proposed change increases glue work for the teacher, push back.
 5. **Concrete over abstract.** Every output should be usable immediately.
-6. **One testable chunk at a time.** Scope every increment to what the teacher can review in one sitting.
+6. **Teacher-next.** Deliverables should state or imply the teacher’s next action; dashboards of undifferentiated data do not.
+7. **One testable chunk at a time.** Scope every increment to what the teacher can review in one sitting.
 
 ## Team structure
 - **Max 4 top-level agent roles** (supervisable, end-to-end accountable)

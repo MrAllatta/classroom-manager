@@ -2,6 +2,8 @@
 
 This document provides a quick reference of all task types produced by each role, organized by role and task type.
 
+Deliverables from these tasks should support the **teacher-next** bar: the teacher can tell **what to do next** after reading the primary output ([`architecture_and_workflows.md`](architecture_and_workflows.md#teacher-next-bar)).
+
 ---
 
 ## Curriculum Designer Tasks

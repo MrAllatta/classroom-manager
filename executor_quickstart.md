@@ -2,6 +2,8 @@
 
 The executor is the orchestration engine for the classroom system. It reads task JSONs from `handoffs/`, executes them, and writes results to `results/` with deliverables in `deliverables/`.
 
+When reviewing runs, use the **teacher-next** bar from [`docs/architecture_and_workflows.md`](docs/architecture_and_workflows.md#teacher-next-bar): does the primary artifact tell the teacher **what to do next**?
+
 ---
 
 ## Installation & Setup

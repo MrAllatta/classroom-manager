@@ -11,4 +11,4 @@ Use when the task is about **team design**, **role definitions**, **handoff sche
 
 **Data vs deliverables:** Canonical structured metadata lives under `data/`; `deliverables/`, `handoffs/`, and `results/` may lag. Do not mirror `deliverables/` to every `data/` edit unless the user or task explicitly requires it. See `deliverables/README.md`, `docs/roles/README.md` (rule 8), and `.cursor/rules/canonical-data-vs-deliverables.mdc`.
 
-**Architecture context:** `docs/agent-architecture.md`, `docs/architecture_and_workflows.md`, `docs/testing_plan.md`.
+**Architecture context:** `docs/agent-architecture.md`, `docs/architecture_and_workflows.md` (includes **teacher-next** output bar), `docs/testing_plan.md`.
