@@ -15,8 +15,39 @@ section:
 
 enrollment:
   target_size: 22
-  actual_size: null
-  note: AP enrollment is self-selected and typically smaller. May include students who also carry plans.
+  actual_size: 24
+  roster_compiled_at: "2026-03-28"
+  roster_derivation: >-
+    Aggregated from each student's `sections` in data/students/*.yaml. Reconcile manually
+    if student files and section rolls diverge.
+  student_ids:
+    - 1000084
+    - 1000085
+    - 1000086
+    - 1000087
+    - 1000088
+    - 1000089
+    - 1000090
+    - 1000091
+    - 1000092
+    - 1000093
+    - 1000094
+    - 1000095
+    - 1000096
+    - 1000097
+    - 1000098
+    - 1000099
+    - 1000100
+    - 1000101
+    - 1000102
+    - 1000103
+    - 1000104
+    - 1000105
+    - 1000106
+    - 1000107
+  note: >
+    Synthetic cohort slightly above historical target; self-selected AP population may still carry IEP/504.
+    Period placement TBD.
 
 staffing:
   teacher: Eric
@@ -25,9 +56,9 @@ staffing:
   paraprofessional: null
 
 special_education:
-  estimated_iep_count: null
-  estimated_504_count: null
-  estimated_percent_with_plan: null
+  estimated_iep_count: 3
+  estimated_504_count: 3
+  estimated_percent_with_plan: 25.0
   common_accommodation_codes: []
   differentiation_note: >
     AP course context does not reduce accommodation obligations. Students with

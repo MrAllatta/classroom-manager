@@ -15,8 +15,41 @@ section:
 
 enrollment:
   target_size: 22
-  actual_size: null
-  note: AP enrollment is self-selected. Lab capacity may constrain enrollment ceiling.
+  actual_size: 26
+  roster_compiled_at: "2026-03-28"
+  roster_derivation: >-
+    Aggregated from each student's `sections` in data/students/*.yaml. Reconcile manually
+    if student files and section rolls diverge.
+  student_ids:
+    - 1000108
+    - 1000109
+    - 1000110
+    - 1000111
+    - 1000112
+    - 1000113
+    - 1000114
+    - 1000115
+    - 1000116
+    - 1000117
+    - 1000118
+    - 1000119
+    - 1000120
+    - 1000121
+    - 1000122
+    - 1000123
+    - 1000124
+    - 1000125
+    - 1000126
+    - 1000127
+    - 1000128
+    - 1000129
+    - 1000130
+    - 1000131
+    - 1000132
+    - 1000133
+  note: >
+    Synthetic cohort above planning target; confirm lab capacity when real schedule is known.
+    Period placement TBD.
 
 staffing:
   teacher: Eric
@@ -25,9 +58,9 @@ staffing:
   paraprofessional: null
 
 special_education:
-  estimated_iep_count: null
-  estimated_504_count: null
-  estimated_percent_with_plan: null
+  estimated_iep_count: 8
+  estimated_504_count: 3
+  estimated_percent_with_plan: 42.3
   common_accommodation_codes: []
   differentiation_note: >
     AP course. All accommodation obligations apply. Note that some standard

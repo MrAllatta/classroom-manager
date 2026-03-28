@@ -15,8 +15,40 @@ section:
 
 enrollment:
   target_size: 28
-  actual_size: null
-  note: Target sizes are estimates; actual enrollment TBD.
+  actual_size: 26
+  roster_compiled_at: "2026-03-28"
+  roster_derivation: >-
+    Aggregated from each student's `sections` in data/students/*.yaml. Reconcile manually
+    if student files and section rolls diverge.
+  student_ids:
+    - 1000029
+    - 1000030
+    - 1000031
+    - 1000032
+    - 1000033
+    - 1000034
+    - 1000035
+    - 1000036
+    - 1000037
+    - 1000038
+    - 1000039
+    - 1000040
+    - 1000041
+    - 1000042
+    - 1000043
+    - 1000044
+    - 1000045
+    - 1000046
+    - 1000047
+    - 1000048
+    - 1000049
+    - 1000050
+    - 1000051
+    - 1000052
+    - 1000053
+    - 1000054
+  note: >
+    Bell schedule / period placement still TBD; course membership is canonical from student records.
 
 staffing:
   teacher: Eric
@@ -25,9 +57,9 @@ staffing:
   paraprofessional: null
 
 special_education:
-  estimated_iep_count: null
-  estimated_504_count: null
-  estimated_percent_with_plan: null
+  estimated_iep_count: 7
+  estimated_504_count: 4
+  estimated_percent_with_plan: 42.3
   common_accommodation_codes: []
   differentiation_note: >
     ICT section. Co-teacher shares instructional and accommodation implementation
