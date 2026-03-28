@@ -1,0 +1,19 @@
+---
+description: Canonical truth in data/; do not sync deliverables/ on routine data edits
+alwaysApply: true
+---
+
+# Canonical `data/` vs `deliverables/`
+
+- **`data/`** (`data/courses/*/scope.yaml`, `data/school/calendar*.yaml`, `data/sections/*.yaml`, etc.) is the **source of truth** for structured school and course metadata.
+- **`deliverables/`** holds **exports, mirrors, and task snapshots** that may legitimately **lag** behind `data/`. Staleness is expected.
+
+## Editing passes (scope, calendar, sections)
+
+- When updating canonical files under **`data/`**, **do not** also edit **`deliverables/`** (JSON, Markdown, or other) unless:
+  - the **user explicitly** asks to refresh, regenerate, or save named paths under `deliverables/`, or
+  - a **task / acceptance criteria** you are executing names specific `deliverables/` outputs.
+- **Do not** touch `deliverables/`, `handoffs/`, or `results/` solely to “keep the repo consistent” with a canonical change.
+- If a comment in `data/` mentions a path under `deliverables/`, treat it as an **optional historical export**, not a mandate to update both places.
+
+Full policy: [`deliverables/README.md`](deliverables/README.md) and [`docs/roles/README.md`](docs/roles/README.md) (rule 8).

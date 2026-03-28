@@ -56,7 +56,7 @@ Communicator
 5. **Escalation path is explicit.** When a role cannot resolve an issue, it escalates to the teacher with full context — not to another agent.
 6. **Done criteria are checkable.** Each role's done criteria are binary pass/fail, not subjective.
 7. **Minimum viable team.** New roles are not created unless an existing role cannot absorb the function without degrading quality of its primary loop.
-8. **`data/` is canonical; `deliverables/` may lag.** Structured school and course truth (calendars, scope, sections) lives under **`data/`**. Files in **`deliverables/`** are exports and task snapshots and **are not guaranteed current** after every edit. Do not assume every change to `data/` must be mirrored across all historical deliverables. When in doubt, read `data/` and [`deliverables/README.md`](../../deliverables/README.md).
+8. **`data/` is canonical; `deliverables/` may lag.** Structured school and course truth (calendars, scope, sections) lives under **`data/`**. Files in **`deliverables/`** are exports and task snapshots and **are not guaranteed current** after every edit. Do not assume every change to `data/` must be mirrored across all historical deliverables. **Agents:** unless the user or a task explicitly names paths under `deliverables/`, do **not** edit that tree when performing a canonical `data/` update (scope, calendar, sections). When in doubt, read `data/` and [`deliverables/README.md`](../../deliverables/README.md). Cursor: [`.cursor/rules/canonical-data-vs-deliverables.mdc`](../../.cursor/rules/canonical-data-vs-deliverables.mdc).
 
 ---
 

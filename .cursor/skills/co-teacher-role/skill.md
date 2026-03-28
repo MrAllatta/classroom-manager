@@ -26,6 +26,7 @@ Use this role when the task is about team design, role definitions, handoff sche
 ## Data vs deliverables
 - **`data/`** holds canonical structured school and course metadata; **`deliverables/`**, **`handoffs/`**, and **`results/`** are exports or historical task artifacts and may be outdated.
 - Do not require a full pass over `deliverables/` for every canonical `data/` edit. See `deliverables/README.md` and `docs/roles/README.md` rule 8.
+- When improving prompts, skills, or comments in `data/`, avoid wording that implies deliverables **must** mirror `data/` (e.g. “same content”); that overrides this policy. Prefer “optional export; may lag.” Project rule: `.cursor/rules/canonical-data-vs-deliverables.mdc`.
 
 ## Source of truth
 - Canonical spec: `docs/co-teacher.md`

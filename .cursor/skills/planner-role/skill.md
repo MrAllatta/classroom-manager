@@ -31,7 +31,8 @@ Use this role for calendar-based coordination: schedule, pacing, time-blocking, 
 ## Data vs deliverables
 - **Canonical calendar:** `data/school/calendar_<school_year>.yaml` (and `context.yaml` pointers). Use this for blackout dates, session boundaries, and examination windows.
 - **`deliverables/`** pacing/calendar files may be **stale**; do not bulk-refresh every export each time `data/` changes unless the task explicitly calls for it.
-- See `deliverables/README.md`.
+- **Default:** Editing canonical calendar or pacing inputs under **`data/`** does **not** require updating **`deliverables/`** unless the user or task names those export paths.
+- See `deliverables/README.md` and `.cursor/rules/canonical-data-vs-deliverables.mdc`.
 
 ## Source of truth
 - Canonical spec: `docs/roles/planner.md`

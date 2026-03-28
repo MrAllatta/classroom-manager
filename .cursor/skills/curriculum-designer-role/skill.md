@@ -34,7 +34,8 @@ Use this role for the full instructional content loop: research-backed scope and
 ## Data vs deliverables
 - **Canonical scope:** `data/courses/<course_id>/scope.yaml` (linked from section metadata).
 - **`deliverables/`** copies (JSON/Markdown) are **snapshots** and may **lag** `data/`. Update `data/` for truth; regenerate deliverables only when a workflow or task requires an export.
-- See `deliverables/README.md`.
+- **Default:** When you change scope or other canonical `data/` files, **do not** open or edit **`deliverables/`** unless the user explicitly requests those paths or you are executing a task whose deliverables list names them. “Consistency” with `data/` is **not** a reason to sync exports.
+- See `deliverables/README.md` and `.cursor/rules/canonical-data-vs-deliverables.mdc`.
 
 ## Source of truth
 - Canonical spec: `docs/roles/curriculum_designer.md`

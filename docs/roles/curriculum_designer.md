@@ -5,7 +5,7 @@ Own the full instructional content loop: research what works, build and adapt sc
 
 ## Canonical data vs `deliverables/`
 
-Full-year scope and sequence for a course is canonical in **`data/courses/<course_id>/scope.yaml`** (referenced by section files). JSON or markdown under **`deliverables/`** (for example `scope_*_fullyear.json`) are **exports or snapshots** and may **lag** behind `data/`. Update **`data/`** when the teacher-approved truth changes; refresh **`deliverables/`** only when producing a reviewed artifact or satisfying a task that names those paths. See [`deliverables/README.md`](../../deliverables/README.md).
+Full-year scope and sequence for a course is canonical in **`data/courses/<course_id>/scope.yaml`** (referenced by section files). JSON or markdown under **`deliverables/`** (for example `scope_*_fullyear.json`) are **exports or snapshots** and may **lag** behind `data/`. Update **`data/`** when the teacher-approved truth changes; refresh **`deliverables/`** only when producing a reviewed artifact or satisfying a task that names those paths. **Agent default:** a scope or standards alignment pass edits **`data/courses/.../scope.yaml`** (and linked section YAML if needed) only — **not** `deliverables/`, unless the user explicitly requests export updates. Avoid comments in `scope.yaml` that say an export has the “same content” as canonical; that invites unwanted syncing. See [`deliverables/README.md`](../../deliverables/README.md) and [`.cursor/rules/canonical-data-vs-deliverables.mdc`](../../.cursor/rules/canonical-data-vs-deliverables.mdc).
 
 ## Responsibilities
 - Maintain and adapt the scope and sequence for each unit and the full term
