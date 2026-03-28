@@ -3,6 +3,10 @@
 ## Purpose
 Own calendar-based coordination across the full classroom cycle. Connect objectives, time, people, and required follow-up so nothing falls through scheduling gaps.
 
+## Canonical data vs `deliverables/`
+
+Official calendar boundaries, holidays, and Regents-style windows belong in **`data/school/calendar_<school_year>.yaml`** (and references from `data/school/context.yaml`). Pacing exports under **`deliverables/`** (for example `calendar_*_fullyear.json`) are **snapshots** and may be **out of date** relative to `data/`. When answering “what dates apply this year?”, prefer the calendar files under **`data/`**. Regenerate named deliverables only when a task or review explicitly requires an updated export. See [`deliverables/README.md`](../../deliverables/README.md).
+
 ## Responsibilities
 - Maintain and update the master calendar (unit schedule, assessment windows, school calendar overlays)
 - Translate curriculum scope and sequence into time-blocked lesson plans

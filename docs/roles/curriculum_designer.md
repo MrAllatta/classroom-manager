@@ -3,6 +3,10 @@
 ## Purpose
 Own the full instructional content loop: research what works, build and adapt scope and sequence, write lesson materials and assessments, and revise based on mastery data. This role collapses the Researcher and Curriculum candidate areas into a single owner to prevent a handoff inside the knowledge-to-material pipeline.
 
+## Canonical data vs `deliverables/`
+
+Full-year scope and sequence for a course is canonical in **`data/courses/<course_id>/scope.yaml`** (referenced by section files). JSON or markdown under **`deliverables/`** (for example `scope_*_fullyear.json`) are **exports or snapshots** and may **lag** behind `data/`. Update **`data/`** when the teacher-approved truth changes; refresh **`deliverables/`** only when producing a reviewed artifact or satisfying a task that names those paths. See [`deliverables/README.md`](../../deliverables/README.md).
+
 ## Responsibilities
 - Maintain and adapt the scope and sequence for each unit and the full term
 - Align all materials to NYS/NYC math standards and evidence-based instructional practice

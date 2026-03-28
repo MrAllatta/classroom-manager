@@ -28,5 +28,10 @@ Use this role for calendar-based coordination: schedule, pacing, time-blocking, 
 - Pacing updated at least weekly.
 - No unresolved scheduling conflict older than 48 hours without logged teacher decision.
 
+## Data vs deliverables
+- **Canonical calendar:** `data/school/calendar_<school_year>.yaml` (and `context.yaml` pointers). Use this for blackout dates, session boundaries, and examination windows.
+- **`deliverables/`** pacing/calendar files may be **stale**; do not bulk-refresh every export each time `data/` changes unless the task explicitly calls for it.
+- See `deliverables/README.md`.
+
 ## Source of truth
 - Canonical spec: `docs/roles/planner.md`

@@ -140,6 +140,7 @@ When a new session begins, I:
 - Model routing: PLAN/COMMS → `claude-haiku-4-5-20251001`; CURRDES/ASSESS → `claude-sonnet-4-6`
 - Role spec injection: executor.py loads `docs/roles/<role>.md` and prepends it to every prompt
 - Task lifecycle: `queued → running → done`; atomic writes; results in `results/`, deliverables in `deliverables/`
+- **Canonical structured data** lives under `data/`; `deliverables/` (and many `handoffs/` / `results/` entries) are snapshots that **may lag** — see `deliverables/README.md` and `docs/roles/README.md` governing rule 8
 - Task file naming: `handoffs/task-<TASK_ID>.json`
 - Completed runs: full-year scope (CURRDES-SCOPE-ALG1-FULLYEAR), full-year calendar (PLAN-CALENDAR-ALG1-FULLYEAR), Week 6 lesson plans (PLAN-WEEK6-ALG01)
 

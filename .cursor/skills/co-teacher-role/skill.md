@@ -23,6 +23,10 @@ Use this role when the task is about team design, role definitions, handoff sche
 - Re-check current role state in `docs/roles/`.
 - Identify recent changes and restate current system state before major work.
 
+## Data vs deliverables
+- **`data/`** holds canonical structured school and course metadata; **`deliverables/`**, **`handoffs/`**, and **`results/`** are exports or historical task artifacts and may be outdated.
+- Do not require a full pass over `deliverables/` for every canonical `data/` edit. See `deliverables/README.md` and `docs/roles/README.md` rule 8.
+
 ## Source of truth
 - Canonical spec: `docs/co-teacher.md`
 - Architecture constraints: `docs/agent-architecture.md`

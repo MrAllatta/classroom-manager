@@ -31,5 +31,10 @@ Use this role for the full instructional content loop: research-backed scope and
 - Every assessment has a corresponding rubric.
 - Scope updates follow confirmed pacing changes within one instructional cycle.
 
+## Data vs deliverables
+- **Canonical scope:** `data/courses/<course_id>/scope.yaml` (linked from section metadata).
+- **`deliverables/`** copies (JSON/Markdown) are **snapshots** and may **lag** `data/`. Update `data/` for truth; regenerate deliverables only when a workflow or task requires an export.
+- See `deliverables/README.md`.
+
 ## Source of truth
 - Canonical spec: `docs/roles/curriculum_designer.md`

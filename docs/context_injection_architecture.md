@@ -32,6 +32,8 @@ For a PLAN-WEEK6-ALG01 task:
 | Unit 1 scope | ~90 | Once per course | `deliverables/scope_ALG1_fullyear.json` |
 | Unit 1 calendar | ~35 | Once per year | `deliverables/calendar_ALG1_fullyear.json` |
 | **Total context** | **~200** | Rarely | |
+
+**Canonical truth vs injection source:** Scope and calendar **ground truth** for the classroom-manager data layer live under **`data/`** (`data/courses/<course_id>/scope.yaml`, `data/school/calendar_<year>.yaml`). The executor currently loads JSON from **`deliverables/`** for token-efficient prompts; those files can **lag** behind `data/`. Agents answering “what is the current scope/calendar?” should prefer **`data/`**. See [`deliverables/README.md`](../deliverables/README.md). Aligning `executor.py` to read from `data/` where appropriate is a separate, optional hardening step.
 | Role spec (planner) | ~1200 | Never | `docs/roles/planner.md` |
 | Task details | ~300 | Every call | Task JSON |
 | **Total prompt** | **~1700** | | |
