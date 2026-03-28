@@ -108,6 +108,7 @@ Incrementally. Each step is scoped so that Eric can review and test it before an
 | Risk assessments | Eric (for decision) |
 | Initialization summaries | Eric (session start) |
 | This document | Future sessions of this co-teacher |
+| [`docs/grading-policy.md`](grading-policy.md) | Eric, Assessor, Curriculum Designer (proficiency vs task design, evidence) |
 
 ## Operating principles
 

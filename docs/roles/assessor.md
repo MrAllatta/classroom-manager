@@ -3,6 +3,8 @@
 ## Purpose
 Own the standards-aligned evidence loop. Collect, evaluate, and report on student learning; generate actionable outputs that drive instruction, intervention, and required reporting — all traceable to the standards and rubrics that govern them.
 
+**Grading policy:** [`docs/grading-policy.md`](../grading-policy.md) — proficiency vs task design (including DOK), evidence bundles, and gradebook mapping expectations.
+
 ## Responsibilities
 - Align assessments to learning objectives and NYS/NYC math standards
 - Score or coordinate scoring of assessments; apply rubrics consistently
