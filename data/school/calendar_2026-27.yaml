@@ -1,0 +1,114 @@
+# Academic calendar — 2026-27 school year
+# Canonical day-level events for Columbia Secondary School context.
+# Inclusive date ranges (start_date through end_date). Low sensitivity; no PII.
+#
+# Linked from school/context.yaml → academic_calendar.calendar_reference.
+
+school_year: "2026-27"
+calendar_system: NYC DOE
+timezone: America/New_York
+source_note: >
+  Dates supplied for classroom-manager modeling; align with official DOE/school
+  publications before production use. Eid dates marked estimated.
+
+generated_by: human-eric-2026-27-draft
+generated_at: "2026-03-27T12:00:00Z"
+
+events:
+  - id: first_day_of_school
+    title: First Day of School
+    status: school_opens
+    start_date: "2026-09-10"
+    end_date: "2026-09-10"
+
+  - id: yom_kippur_2026
+    title: Yom Kippur
+    status: no_school
+    start_date: "2026-09-21"
+    end_date: "2026-09-21"
+
+  - id: italian_heritage_indigenous_peoples_day_2026
+    title: Italian Heritage / Indigenous Peoples' Day
+    status: no_school
+    start_date: "2026-10-12"
+    end_date: "2026-10-12"
+
+  - id: election_day_2026
+    title: Election Day
+    status: no_school
+    start_date: "2026-11-03"
+    end_date: "2026-11-03"
+
+  - id: diwali_observed_2026
+    title: Diwali (observed)
+    status: no_school
+    start_date: "2026-11-09"
+    end_date: "2026-11-09"
+
+  - id: veterans_day_2026
+    title: Veterans Day
+    status: no_school
+    start_date: "2026-11-11"
+    end_date: "2026-11-11"
+
+  - id: thanksgiving_recess_2026
+    title: Thanksgiving Recess
+    status: no_school
+    start_date: "2026-11-26"
+    end_date: "2026-11-27"
+
+  - id: winter_recess_2026_27
+    title: Winter Recess
+    status: no_school
+    start_date: "2026-12-24"
+    end_date: "2027-01-02"
+
+  - id: martin_luther_king_jr_day_2027
+    title: Rev. Dr. Martin Luther King Jr. Day
+    status: no_school
+    start_date: "2027-01-18"
+    end_date: "2027-01-18"
+
+  - id: midwinter_recess_2027
+    title: Midwinter Recess (incl. Lunar New Year)
+    status: no_school
+    start_date: "2027-02-15"
+    end_date: "2027-02-19"
+
+  - id: eid_al_fitr_2027_est
+    title: Eid al-Fitr (est.)
+    status: no_school
+    start_date: "2027-03-10"
+    end_date: "2027-03-10"
+    estimated: true
+
+  - id: spring_recess_2027
+    title: Spring Recess
+    status: no_school
+    start_date: "2027-03-29"
+    end_date: "2027-04-02"
+
+  - id: eid_al_adha_2027_est
+    title: Eid al-Adha (est.)
+    status: no_school
+    start_date: "2027-05-17"
+    end_date: "2027-05-17"
+    estimated: true
+
+  - id: memorial_day_2027
+    title: Memorial Day
+    status: no_school
+    start_date: "2027-05-31"
+    end_date: "2027-05-31"
+
+  - id: juneteenth_observed_2027
+    title: Juneteenth (observed)
+    status: no_school
+    start_date: "2027-06-18"
+    end_date: "2027-06-18"
+
+  - id: last_day_of_school
+    title: Last Day of School
+    status: school_closes
+    start_date: "2027-06-25"
+    end_date: "2027-06-25"

@@ -5,6 +5,7 @@ section:
   id: AP-STAT
   course: AP Statistics
   course_code: MTH-APSTAT
+  course_scope_id: ap_statistics
   period: 6
   room: TBD
   grade_levels: [11, 12]  # typical; 10th graders possible
@@ -49,9 +50,13 @@ ap_exam:
     that students are familiar with their approved calculator model.
 
 pacing:
-  curriculum_reference: null
+  curriculum_reference: data/courses/ap_statistics/scope.yaml
   pacing_guide: null
-  note: Pacing is constrained by the AP exam date. Backward-map from May exam.
+  note: >
+    Pacing is constrained by the AP exam, not the June last day of school. Scope uses 144
+    instructional weekdays (first day of school through the calendar day before the exam,
+    per data/school/calendar_2026-27.yaml) — the compressed window NY state AP courses must
+    plan within. Backward-map from the May exam; see course scope unit 10.
 
 notes: >
   AP course. Smaller section. Screened course but students may carry plans.

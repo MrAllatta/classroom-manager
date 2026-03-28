@@ -1,0 +1,124 @@
+# AP Statistics — full-year scope and sequence (canonical)
+# Linked from AP Statistics section files via pacing.curriculum_reference.
+# Standards framework: College Board CED; ccss_standards list is a CCSS-M crosswalk
+# for planning and IEP alignment where useful. Low sensitivity; no PII.
+#
+# Pacing assumes backward-mapping from the May AP Exam; built-in review days are explicit.
+#
+# total_instructional_days counts Mon–Fri school days from first day of school through the
+# calendar day before the AP Statistics exam, excluding holidays/recess from
+# data/school/calendar_<school_year>.yaml. For 2026-27 with exam Thu 2027-05-06, that is 144
+# days — the compressed window NY AP courses must plan within (vs. June end-of-year).
+
+course_id: ap_statistics
+course: AP Statistics
+sections: [AP-STAT]
+school_year: "2026-27"
+standards_framework: College Board AP Statistics Course and Exam Description (CED)
+ny_next_gen_revision: deferred
+total_instructional_days: 144
+summative_model: end_of_unit_test
+generated_by: CURRDES-SCOPE-APSTAT-FULLYEAR
+generated_at: "2026-03-27T12:00:00Z"
+
+units:
+  - unit_number: 1
+    title: Exploring One-Variable Data
+    instructional_days: 14
+    summative_assessment: end_of_unit_test
+    ccss_standards: [S-ID.1, S-ID.2, S-ID.3]
+    essential_questions:
+      - How do we choose, construct, and interpret displays for different variable types?
+      - What do shape, center, spread, and unusual values tell us about a distribution?
+      - When are summary statistics (and which ones) appropriate for describing data?
+
+  - unit_number: 2
+    title: Exploring Two-Variable Data
+    instructional_days: 12
+    summative_assessment: end_of_unit_test
+    ccss_standards: [S-ID.5, S-ID.6a, S-ID.6b, S-ID.6c, S-ID.7, S-ID.8, S-ID.9]
+    essential_questions:
+      - How do we describe association between two variables using graphs and numeric summaries?
+      - What does a linear model claim, and how do we assess whether that claim is reasonable?
+      - How do we keep correlation, causation, and confounding distinct in real settings?
+
+  - unit_number: 3
+    title: Collecting Data
+    instructional_days: 13
+    summative_assessment: end_of_unit_test
+    ccss_standards: [S-IC.1, S-IC.3, S-IC.6]
+    essential_questions:
+      - What makes a statistical question answerable with data, and what limits do answers have?
+      - How do sampling and assignment support (or weaken) claims about cause and effect?
+      - Where do bias, variability, and scope of inference enter study design?
+
+  - unit_number: 4
+    title: Probability, Random Variables, and Probability Distributions
+    instructional_days: 20
+    summative_assessment: end_of_unit_test
+    ccss_standards:
+      [S-CP.1, S-CP.2, S-CP.3, S-CP.4, S-CP.5, S-CP.6, S-CP.7, S-MD.1, S-MD.2, S-MD.3, S-MD.4]
+    essential_questions:
+      - How do we model uncertainty with probability in ways that match the story we are telling?
+      - How do independence and conditional probability change how we count and combine chances?
+      - What is a random variable, and how do its distribution and expected value support inference later?
+
+  - unit_number: 5
+    title: Sampling Distributions
+    instructional_days: 12
+    summative_assessment: end_of_unit_test
+    ccss_standards: [S-IC.1, S-IC.2, S-IC.4, S-IC.5]
+    essential_questions:
+      - Why does the distribution of a statistic differ from the distribution of individual data values?
+      - How does sample size affect variability, and when does a sampling distribution become approximately normal?
+      - How do simulation and theory work together to justify inference procedures?
+
+  - unit_number: 6
+    title: "Inference for Categorical Data: Proportions"
+    instructional_days: 15
+    summative_assessment: end_of_unit_test
+    ccss_standards: [S-IC.4, S-IC.5, S-IC.6]
+    essential_questions:
+      - What does a confidence interval for a proportion estimate, and what does it not claim?
+      - How do we structure hypotheses, check conditions, and interpret a P-value in context?
+      - When are one-sample vs. two-sample methods for proportions the right tool?
+
+  - unit_number: 7
+    title: "Inference for Quantitative Data: Means"
+    instructional_days: 17
+    summative_assessment: end_of_unit_test
+    ccss_standards: [S-IC.4, S-IC.5, S-IC.6]
+    essential_questions:
+      - How do t-procedures differ from z-procedures, and why does degrees of freedom matter?
+      - How do we compare means (paired vs. two-sample) in a way that matches the study design?
+      - What do conditions for inference teach us about robustness and the role of diagnostics?
+
+  - unit_number: 8
+    title: "Inference for Categorical Data: Chi-Square"
+    instructional_days: 12
+    summative_assessment: end_of_unit_test
+    ccss_standards: [S-IC.5, S-CP.4]
+    essential_questions:
+      - How do chi-square tests for goodness-of-fit, homogeneity, and independence differ in question and setup?
+      - What does “expected counts” mean, and why are conditions for chi-square non-negotiable?
+      - How do we interpret chi-square results in the language of the original investigation?
+
+  - unit_number: 9
+    title: "Inference for Quantitative Data: Slopes"
+    instructional_days: 12
+    summative_assessment: end_of_unit_test
+    ccss_standards: [S-ID.7, S-ID.8, S-IC.4, S-IC.5]
+    essential_questions:
+      - What does inference on a slope add beyond “the line fits” descriptively?
+      - How do we check conditions for regression inference and understand residual thinking?
+      - How do we connect inference for slopes back to causation limits from study design?
+
+  - unit_number: 10
+    title: "Review, Integration, and AP Exam Readiness"
+    instructional_days: 17
+    summative_assessment: cumulative_review
+    ccss_standards: [S-ID.1, S-IC.4, S-IC.5, S-CP.4]
+    essential_questions:
+      - How do we select an appropriate inference procedure from a messy, real-world prompt?
+      - What communication habits (conditions, notation, linked conclusions) earn full credit on free response?
+      - Where are the recurring traps that cause students to confuse descriptive and inferential claims?

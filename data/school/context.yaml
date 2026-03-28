@@ -62,7 +62,10 @@ privacy:
 academic_calendar:
   system: NYC DOE
   year: "2026-27"
-  note: Calendar details to be populated when school year schedule is confirmed.
+  calendar_reference: data/school/calendar_2026-27.yaml
+  note: >
+    Day-level openings, closures, and no-school dates live in the calendar file.
+    Confirm against official DOE/school publications before production use.
 
 teacher:
   name: Eric

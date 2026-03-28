@@ -1,0 +1,83 @@
+# School calendar schema
+# Defines the shape of academic calendar files under data/school/calendar_<school_year>.yaml
+# (e.g., calendar_2026-27.yaml). Reference only — not student data. Low sensitivity.
+#
+# Used by: Planner, Co-teacher, Communicator (scheduling), Curriculum Designer (pacing)
+
+# ── ROOT ────────────────────────────────────────────────────────────────────────
+school_year:
+  type: string
+  required: true
+  description: Label matching school year (e.g., 2026-27). Must align with school/context.yaml academic_calendar.year.
+
+calendar_system:
+  type: string
+  required: false
+  description: Issuing authority or calendar family (e.g., NYC DOE).
+
+timezone:
+  type: string
+  required: false
+  description: IANA timezone for interpreting calendar dates (e.g., America/New_York).
+
+source_note:
+  type: string
+  required: false
+  description: Human note on provenance (official PDF, negotiated local observances, etc.).
+
+generated_by:
+  type: string
+  required: false
+  description: Agent or human tag when the file was produced or refreshed.
+
+generated_at:
+  type: string
+  required: false
+  description: ISO-8601 timestamp when generated_by last wrote this file.
+
+events:
+  type: list[object]
+  required: true
+  description: >
+    Chronological (recommended) list of session boundaries and non-instructional days.
+    Each event uses inclusive calendar dates in ISO-8601 (local calendar date strings).
+
+# ── EVENT OBJECT ────────────────────────────────────────────────────────────────
+# id:
+#   type: string
+#   required: true
+#   description: Stable slug unique within the file (snake_case).
+#
+# title:
+#   type: string
+#   required: true
+#   description: Display name as published on the school or district calendar.
+#
+# status:
+#   type: string
+#   required: true
+#   enum: [school_opens, school_closes, no_school]
+#   description: >
+#     school_opens = first day of the session (instruction begins);
+#     school_closes = last day of the session (instruction ends);
+#     no_school = no student attendance / no instruction that day (holiday, recess, closure).
+#
+# start_date:
+#   type: string
+#   required: true
+#   description: Inclusive start, ISO-8601 calendar date (YYYY-MM-DD).
+#
+# end_date:
+#   type: string
+#   required: true
+#   description: Inclusive end, ISO-8601 calendar date. Same as start_date for a single day.
+#
+# estimated:
+#   type: boolean
+#   required: false
+#   description: True when the date is provisional (e.g., religious observance marked estimated).
+#
+# ── CROSS-REFERENCE ─────────────────────────────────────────────────────────────
+# In school/context.yaml, set:
+#   academic_calendar.calendar_reference: data/school/calendar_<school_year>.yaml
+#   academic_calendar.year: <school_year>  # must match school_year in the calendar file

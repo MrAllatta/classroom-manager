@@ -12,6 +12,7 @@ Environmental constants. Set once per school year; updated rarely.
 | File | Contents |
 |---|---|
 | `school/context.yaml` | School name, population characteristics, special education framework, privacy policy, calendar system, teacher identity |
+| `school/calendar_<school_year>.yaml` | Academic calendar events (session boundaries, holidays, recesses); referenced from `context.yaml` |
 
 **Sensitivity:** Low. No student data. Safe to read into any agent context.
 
@@ -58,6 +59,7 @@ Reference documents that define structure. Not student data.
 | `schema/student_profile.yaml` | Canonical field definitions for a student record |
 | `schema/accommodation_types.yaml` | Structured list of accommodation codes with labels, categories, and implementation notes |
 | `schema/course_scope.yaml` | Shape of course scope files under `courses/<course_id>/` |
+| `schema/school_calendar.yaml` | Shape of academic calendar files under `school/calendar_<school_year>.yaml` |
 
 Schema files are safe to read into any agent context. They contain no student data.
 
@@ -116,7 +118,7 @@ AP exam accommodations are a separate process from classroom IEP/504 accommodati
 
 | What changed | Who updates it | Where |
 |---|---|---|
-| New school year, new school | Teacher (Eric) | `school/context.yaml` |
+| New school year, new school | Teacher (Eric) | `school/context.yaml`, `school/calendar_<school_year>.yaml` |
 | Enrollment or staffing changes | Co-teacher or Teacher | `sections/<section>.yaml` |
 | Course scope / sequence revision | Curriculum Designer or Teacher | `courses/<course_id>/scope.yaml` |
 | New student joins | Assessor or Teacher (via tool) | `students/<id>.yaml` |
