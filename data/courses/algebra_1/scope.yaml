@@ -3,6 +3,12 @@
 # Low sensitivity; no PII. Used by Planner and Curriculum Designer.
 #
 # Deliverables snapshot: deliverables/scope_ALG1_fullyear.json (same content + provenance).
+#
+# total_instructional_days counts Mon–Fri school days from the first day of school through the
+# last day of regular instruction for non-AP courses (2027-06-14 for 2026-27), excluding
+# holidays/recess from data/school/calendar_<school_year>.yaml. The NY Regents window
+# (2027-06-15–2027-06-25) has no regular instruction and is after this course’s instructional
+# calendar for pacing purposes.
 
 course_id: algebra_1
 course: Algebra I
@@ -13,7 +19,7 @@ ny_next_gen_revision: deferred
 total_instructional_days: 170
 summative_model: end_of_unit_test
 generated_by: CURRDES-SCOPE-ALG1-FULLYEAR
-generated_at: "2026-03-25T22:41:00Z"
+generated_at: "2026-03-27T18:00:00Z"
 
 units:
   - unit_number: 1

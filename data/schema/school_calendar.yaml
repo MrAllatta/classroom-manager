@@ -39,8 +39,9 @@ events:
   type: list[object]
   required: true
   description: >
-    Chronological (recommended) list of session boundaries and non-instructional days.
-    Each event uses inclusive calendar dates in ISO-8601 (local calendar date strings).
+    Chronological (recommended) list of session boundaries, holidays, recesses, examination
+    windows, and cohort-specific instruction boundaries. Each event uses inclusive calendar
+    dates in ISO-8601 (local calendar date strings).
 
 # ── EVENT OBJECT ────────────────────────────────────────────────────────────────
 # id:
@@ -56,11 +57,15 @@ events:
 # status:
 #   type: string
 #   required: true
-#   enum: [school_opens, school_closes, no_school]
+#   enum: [school_opens, school_closes, no_school, regular_instruction_ends, regents_exams]
 #   description: >
 #     school_opens = first day of the session (instruction begins);
 #     school_closes = last day of the session (instruction ends);
-#     no_school = no student attendance / no instruction that day (holiday, recess, closure).
+#     no_school = no student attendance / no instruction that day (holiday, recess, closure);
+#     regular_instruction_ends = last day of standard classroom instruction for a stated cohort
+#       (e.g., non-AP courses before Regents); not necessarily the legal last day of school;
+#     regents_exams = NY State Regents examination window; no regular classroom instruction;
+#       exam administration and related attendance rules apply (not a holiday closure).
 #
 # start_date:
 #   type: string

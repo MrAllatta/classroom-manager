@@ -12,7 +12,7 @@ source_note: >
   publications before production use. Eid dates marked estimated.
 
 generated_by: human-eric-2026-27-draft
-generated_at: "2026-03-27T12:00:00Z"
+generated_at: "2026-03-27T18:00:00Z"
 
 events:
   - id: first_day_of_school
@@ -100,6 +100,18 @@ events:
     status: no_school
     start_date: "2027-05-31"
     end_date: "2027-05-31"
+
+  - id: last_day_regular_instruction_non_ap
+    title: Last Day of Regular Instruction (non-AP courses)
+    status: regular_instruction_ends
+    start_date: "2027-06-14"
+    end_date: "2027-06-14"
+
+  - id: ny_regents_examination_period_2027
+    title: NY Regents Examination Period
+    status: regents_exams
+    start_date: "2027-06-15"
+    end_date: "2027-06-25"
 
   - id: juneteenth_observed_2027
     title: Juneteenth (observed)
