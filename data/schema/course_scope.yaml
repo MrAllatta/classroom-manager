@@ -1,0 +1,68 @@
+# Course scope schema
+# Defines the shape of full-year (or course-level) scope files under data/courses/<course_id>/.
+# Reference only — not student data. Low sensitivity; safe for agent planning context.
+#
+# Used by: Planner, Curriculum Designer, Co-teacher (structure)
+
+# ── ROOT (file: scope.yaml) ─────────────────────────────────────────────────────
+course_id:
+  type: string
+  required: true
+  description: Stable slug matching the directory under data/courses/ (e.g., algebra_1).
+
+course:
+  type: string
+  required: true
+  description: Display name of the course (e.g., Algebra I).
+
+sections:
+  type: list[string]
+  required: true
+  description: Section IDs that share this scope (e.g., ALG-01, ALG-02).
+
+school_year:
+  type: string
+  required: true
+  description: School year label (e.g., 2026-27).
+
+standards_framework:
+  type: string
+  required: true
+  example: CCSS-M
+
+ny_next_gen_revision:
+  type: string
+  required: false
+  description: Status of alignment to NY Next Gen when applicable (e.g., deferred).
+
+total_instructional_days:
+  type: integer
+  required: true
+
+summative_model:
+  type: string
+  required: true
+  description: Default summative pattern for the course (e.g., end_of_unit_test).
+
+generated_by:
+  type: string
+  required: false
+  description: Agent or human tag when scope was produced from a workflow.
+
+generated_at:
+  type: string
+  required: false
+  description: ISO-8601 timestamp when generated_by last wrote this file.
+
+units:
+  type: list[object]
+  required: true
+  description: >
+    Ordered instructional units. Each object: unit_number (int), title (string),
+    instructional_days (int), summative_assessment (string), ccss_standards (list[string]),
+    essential_questions (list[string]).
+
+# ── SECTION FILE CROSS-REFERENCE ────────────────────────────────────────────────
+# In data/sections/*.yaml, link via:
+#   section.course_scope_id: <course_id>   # must match course_id in scope file
+#   pacing.curriculum_reference: data/courses/<course_id>/scope.yaml
