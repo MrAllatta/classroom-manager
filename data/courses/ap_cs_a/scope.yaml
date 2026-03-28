@@ -1,0 +1,134 @@
+# AP Computer Science A — full-year scope and sequence (canonical)
+# Linked from AP CSA section files via pacing.curriculum_reference.
+# Standards framework: College Board CED; ccss_standards lists CSTA K-12 Level 3A/3B tags
+# as a CS crosswalk for planning (shared field name in data/schema/course_scope.yaml).
+# Low sensitivity; no PII.
+#
+# Pacing assumes backward-mapping from the May AP Exam; built-in review days are explicit.
+#
+# total_instructional_days counts Mon–Fri school days from first day of school through the
+# calendar day before the AP CSA exam, excluding holidays/recess from
+# data/school/calendar_2026-27.yaml. For 2026-27 with exam Fri 2027-05-14, that is 150
+# days — the instructional window for planning through exam day.
+
+course_id: ap_cs_a
+course: AP Computer Science A
+sections: [AP-CSA]
+school_year: "2026-27"
+standards_framework: College Board AP Computer Science A Course and Exam Description (CED)
+ny_next_gen_revision: deferred
+total_instructional_days: 150
+summative_model: end_of_unit_test
+generated_by: CURRDES-SCOPE-APCSA-FULLYEAR
+generated_at: "2026-03-27T12:00:00Z"
+
+units:
+  - unit_number: 1
+    title: Primitive Types
+    instructional_days: 12
+    summative_assessment: end_of_unit_test
+    ccss_standards: [3A-AP-13, 3A-DA-09]
+    essential_questions:
+      - How do types, literals, and operators shape what Java can represent and compute?
+      - Where do rounding, overflow, and casting change the meaning of a program?
+      - How do we read and trace small programs to predict output before running them?
+
+  - unit_number: 2
+    title: Using Objects
+    instructional_days: 12
+    summative_assessment: end_of_unit_test
+    ccss_standards: [3A-AP-16, 3B-AP-14]
+    essential_questions:
+      - What is the difference between a reference and the object it points to?
+      - How do constructors, methods, and the Java API documentation support correct usage?
+      - When does mutability (especially with `String`) lead to surprising behavior?
+
+  - unit_number: 3
+    title: Boolean Expressions and if Statements
+    instructional_days: 11
+    summative_assessment: end_of_unit_test
+    ccss_standards: [3A-AP-14, 3A-AP-15]
+    essential_questions:
+      - How do we translate decision rules in plain language into correct compound conditions?
+      - What is the role of tracing and test cases when branches interact?
+      - How do De Morgan’s laws and careful boundary checks prevent off-by-one logic errors?
+
+  - unit_number: 4
+    title: Iteration
+    instructional_days: 13
+    summative_assessment: end_of_unit_test
+    ccss_standards: [3A-AP-14, 3A-AP-15]
+    essential_questions:
+      - How do we choose among `while`, `for`, and enhanced `for` for a given task?
+      - What invariants help us reason that a loop terminates and does the right work?
+      - How do nested loops affect efficiency and correctness in common algorithms?
+
+  - unit_number: 5
+    title: Writing Classes
+    instructional_days: 21
+    summative_assessment: end_of_unit_test
+    ccss_standards: [3A-AP-16, 3A-AP-17, 3A-AP-21]
+    essential_questions:
+      - How do encapsulation, `private` fields, and accessors protect object state?
+      - When should behavior live in an instance method versus a `static` utility?
+      - How do we design constructors and `toString` so objects are easy to use and debug?
+
+  - unit_number: 6
+    title: Array
+    instructional_days: 11
+    summative_assessment: end_of_unit_test
+    ccss_standards: [3A-AP-13, 3A-AP-15]
+    essential_questions:
+      - How do indexing, length, and off-by-one errors show up in real programs?
+      - What patterns (search, accumulate, filter) recur across array algorithms?
+      - How do parallel arrays compare to modeling with objects when data grows?
+
+  - unit_number: 7
+    title: ArrayList
+    instructional_days: 13
+    summative_assessment: end_of_unit_test
+    ccss_standards: [3A-AP-16, 3B-AP-12]
+    essential_questions:
+      - Why does generics syntax (`ArrayList<E>`) matter for type safety?
+      - How do wrap/unwrap and `Integer` vs `int` interact with lists and the exam?
+      - When is an `ArrayList` preferable to an array, and what are the tradeoffs?
+
+  - unit_number: 8
+    title: 2D Array
+    instructional_days: 11
+    summative_assessment: end_of_unit_test
+    ccss_standards: [3A-AP-15, 3A-AP-17]
+    essential_questions:
+      - How do row-major traversal and nested index loops model grids and tables?
+      - What strategies help debug 2D boundary mistakes (corners, edges, full grid)?
+      - How do 2D arrays connect to later topics (images, games, matrices) conceptually?
+
+  - unit_number: 9
+    title: Inheritance
+    instructional_days: 15
+    summative_assessment: end_of_unit_test
+    ccss_standards: [3A-AP-16, 3B-AP-16]
+    essential_questions:
+      - How do subclasses extend behavior while respecting substitutability?
+      - What is the difference between overriding and overloading, and why does it matter?
+      - How do abstract classes and polymorphism support flexible designs?
+
+  - unit_number: 10
+    title: Recursion
+    instructional_days: 9
+    summative_assessment: end_of_unit_test
+    ccss_standards: [3A-AP-15, 3B-AP-13]
+    essential_questions:
+      - What is the relationship between a recursive call and its base case?
+      - How do call stacks explain memory use and common recursion mistakes?
+      - When is recursion clarifying versus when is iteration the clearer tool?
+
+  - unit_number: 11
+    title: "Review, Integration, and AP Exam Readiness"
+    instructional_days: 22
+    summative_assessment: cumulative_review
+    ccss_standards: [3A-AP-21, 3A-AP-22, 3B-AP-11]
+    essential_questions:
+      - How do we manage time and partial credit on multiple-choice and free-response Java tasks?
+      - What habits (precondition checks, clear variable names, stepwise refinement) reduce FRQ errors?
+      - How do we integrate arrays, classes, inheritance, and recursion in multi-part exam problems?

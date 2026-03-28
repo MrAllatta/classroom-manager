@@ -5,6 +5,7 @@ section:
   id: AP-CSA
   course: AP Computer Science A
   course_code: CS-APCSA
+  course_scope_id: ap_cs_a
   period: 8
   room: TBD  # likely a computer lab; confirm with administration
   grade_levels: [10, 11, 12]
@@ -50,10 +51,13 @@ ap_exam:
     on the free-response section.
 
 pacing:
-  curriculum_reference: null
+  curriculum_reference: data/courses/ap_cs_a/scope.yaml
   pacing_guide: null
   note: >
-    Pacing must account for lab time for coding practice. Backward-map from May exam.
+    Pacing is constrained by the AP exam, not the June last day of school. Scope uses 150
+    instructional weekdays (first day of school through the calendar day before the exam,
+    Fri 2027-05-14, per data/school/calendar_2026-27.yaml). Backward-map from the May exam;
+    see course scope unit 11. Lab time for coding practice remains essential throughout.
     Java is the required language for the AP exam.
 
 notes: >
