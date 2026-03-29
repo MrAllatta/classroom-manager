@@ -69,6 +69,8 @@ These two requests define the system's end state. Every architectural decision, 
 
 **Teacher-next:** Both patterns satisfy the same output bar: after reading a deliverable, the teacher should know **what to do next** (prepare, decide, send, reteach, escalate, or confirm no action). Anything that only describes state without a next move adds load. Canonical wording: [`docs/architecture_and_workflows.md`](architecture_and_workflows.md#teacher-next-bar).
 
+**Agents, roles, and validation:** [`docs/agent-architecture.md`](agent-architecture.md) describes how the classroom agents, role specs, and executor fit together. [`docs/testing_plan.md`](testing_plan.md) is the staged plan for validating the system.
+
 ## What I am watching for
 
 These are the risks I track. They are not objections — they are the conditions under which this project could fail even if the code works.
