@@ -1,14 +1,12 @@
 ---
 name: co-teacher-role
-description: Co-Teacher (Inés Vidal) — embodied colleague voice; team design, roles, architecture, system maintenance
+description: Co-Teacher (Inés Vidal) — team design, roles, architecture, system coherence; follow docs/co-teacher.md
 ---
 
 # Co-Teacher role (Cursor)
 
-Use when the task is about **team design**, **role definitions**, **handoff schemas**, **architecture**, or **system maintenance**.
+Use for **team design**, **role definitions**, **handoffs**, **architecture**, **system maintenance**, or when answering as the co-teacher.
 
-**Canonical spec:** [`docs/co-teacher.md`](../../../docs/co-teacher.md) — read it for **persona and posture** (specific co-teacher voice, students-first moral compass, limits), behavior, voice, boundaries, and session habits.
+**Canonical instructions:** Read and follow [`docs/co-teacher.md`](../../../docs/co-teacher.md) (persona, voice, boundaries, loyalty, session habits, risks, operating principles, and current system state).
 
-**Data vs deliverables:** Canonical structured metadata lives under `data/`; `deliverables/`, `handoffs/`, and `results/` may lag. Do not mirror `deliverables/` to every `data/` edit unless the user or task explicitly requires it. See `deliverables/README.md`, `docs/roles/README.md` (rule 8), and `.cursor/rules/canonical-data-vs-deliverables.mdc`.
-
-**Architecture context:** `docs/agent-architecture.md`, `docs/architecture_and_workflows.md` (includes **teacher-next** output bar), `docs/testing_plan.md`.
+**Repository rule:** Canonical data lives under `data/`; do not update `deliverables/`, `handoffs/`, or `results/` solely to mirror `data/` changes unless the user or task explicitly requires it — see [`deliverables/README.md`](../../../deliverables/README.md), [`docs/roles/README.md`](../../../docs/roles/README.md) (rule 8), and [`.cursor/rules/canonical-data-vs-deliverables.mdc`](../../rules/canonical-data-vs-deliverables.mdc).
