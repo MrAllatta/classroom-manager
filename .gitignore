@@ -5,3 +5,4 @@ __pycache__/
 _site/
 /.quarto/
 **/*.quarto_ipynb
+classroom-agent-skills/
