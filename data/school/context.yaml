@@ -3,8 +3,8 @@
 # Human-editable. Do not store student-identifiable data in this file.
 
 school:
-  name: Columbia Secondary School
-  short_name: CSS
+  name: Metropolitan Lab High School
+  short_name: MLHS
   district: New York City Department of Education
   borough: Manhattan
   grades: [6, 7, 8, 9, 10, 11, 12]  # 6-12 combined middle/high school
